@@ -283,7 +283,6 @@
     <div class="nav-sep"></div>
     <div class="nav-user">
       <div class="nav-avatar" id="nav-initial">I</div>
-      <span class="nav-name" id="nav-name">Utente</span>
       <span class="nav-group">ISP</span>
     </div>
     <button class="btn-logout" onclick="logout()">Esci</button>
@@ -386,7 +385,6 @@
           </div>
           <div class="chat-header-text">
             <h3>Assistente Virtuale</h3>
-            <p>Powered by Claude AI</p>
           </div>
         </div>
         <div class="chat-messages" id="chat-messages">
@@ -421,7 +419,6 @@
     const authUser   = localStorage.getItem('auth_user');
     const authGruppo = localStorage.getItem('auth_gruppo');
     if (!authUser || authGruppo !== 'ISP') window.location.href = 'index.html';
-    document.getElementById('nav-name').textContent    = authUser || 'Utente';
     document.getElementById('nav-initial').textContent = authUser ? authUser.charAt(0).toUpperCase() : 'U';
     function logout() {
       ['auth_user','auth_ruolo','auth_gruppo'].forEach(k => localStorage.removeItem(k));

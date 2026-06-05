@@ -5,23 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dashboard — Interaziendale</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --blue:     #2563EB;
-      --cyan:     #0891B2;
-      --teal:     #0D9488;
-      --violet:   #7C3AED;
-      --emerald:  #059669;
-      --s50:      #F8FAFC;
-      --s100:     #F1F5F9;
-      --s200:     #E2E8F0;
-      --s400:     #94A3B8;
-      --s500:     #64748B;
-      --s700:     #334155;
-      --s800:     #1E293B;
-      --s900:     #0F172A;
+      --blue:    #1a56db;
+      --blue2:   #2563EB;
+      --cyan:    #0891B2;
+      --teal:    #0D9488;
+      --s50:     #F8FAFC;
+      --s100:    #F1F5F9;
+      --s200:    #E2E8F0;
+      --s400:    #94A3B8;
+      --s500:    #64748B;
+      --s700:    #334155;
+      --s800:    #1E293B;
+      --s900:    #0F172A;
     }
     html, body { min-height: 100vh; font-family: 'Inter', sans-serif; background: var(--s50); color: var(--s800); }
 
@@ -29,88 +28,125 @@
     .nav {
       background: var(--s900);
       height: 60px;
-      display: flex;
-      align-items: center;
-      padding: 0 32px;
-      gap: 16px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      display: flex; align-items: center;
+      padding: 0 32px; gap: 16px;
+      position: sticky; top: 0; z-index: 100;
     }
-    .nav-logo img { height: 36px; filter: brightness(0) invert(1); opacity: .9; }
+    .nav-school {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 17px; font-weight: 400; font-style: italic;
+      color: rgba(255,255,255,.88);
+      letter-spacing: 0.03em; white-space: nowrap;
+    }
+    .nav-school strong { font-style: normal; font-weight: 600; color: #fff; }
     .nav-sep { flex: 1; }
     .nav-user { display: flex; align-items: center; gap: 10px; }
     .nav-avatar {
-      width: 34px; height: 34px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--teal), var(--emerald));
+      width: 34px; height: 34px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
       display: flex; align-items: center; justify-content: center;
       font-family: 'Plus Jakarta Sans', sans-serif;
       font-size: 13px; font-weight: 700; color: #fff;
     }
     .nav-name { font-size: 13px; font-weight: 500; color: rgba(255,255,255,.75); }
     .nav-group {
-      font-size: 11px; font-weight: 600;
-      letter-spacing: 1px; text-transform: uppercase;
-      color: #6EE7B7;
-      background: rgba(16,185,129,.15);
-      border: 1px solid rgba(16,185,129,.25);
+      font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+      color: #FCD34D;
+      background: rgba(245,158,11,.15); border: 1px solid rgba(245,158,11,.25);
       padding: 3px 10px; border-radius: 100px;
     }
     .btn-logout {
       margin-left: 8px;
-      background: rgba(255,255,255,.07);
-      border: 1px solid rgba(255,255,255,.12);
-      color: rgba(255,255,255,.5);
-      font-size: 12px; font-weight: 500;
-      padding: 6px 14px; border-radius: 7px;
-      cursor: pointer; transition: background .2s, color .2s;
+      background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.5); font-size: 12px; font-weight: 500;
+      padding: 6px 14px; border-radius: 7px; cursor: pointer;
+      transition: background .2s, color .2s;
     }
     .btn-logout:hover { background: rgba(255,255,255,.13); color: #fff; }
 
     /* ── HERO ── */
     .hero {
-      background: linear-gradient(135deg, #0F2D27 0%, #0D3D35 50%, #0A4D40 100%);
-      padding: 48px 32px 56px;
-      position: relative;
-      overflow: hidden;
+      background: linear-gradient(135deg, #0F172A 0%, #1E3A5F 55%, #0F4C75 100%);
+      padding: 48px 32px 52px;
+      position: relative; overflow: hidden;
     }
     .hero::before {
-      content: '';
-      position: absolute;
-      width: 600px; height: 600px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(16,185,129,.15) 0%, transparent 70%);
+      content: ''; position: absolute;
+      width: 600px; height: 600px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(26,86,219,.2) 0%, transparent 70%);
       top: -200px; right: -100px;
     }
     .hero::after {
-      content: '';
-      position: absolute;
-      width: 400px; height: 400px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(8,145,178,.1) 0%, transparent 70%);
+      content: ''; position: absolute;
+      width: 400px; height: 400px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(8,145,178,.12) 0%, transparent 70%);
       bottom: -150px; left: -50px;
     }
     .hero-inner { max-width: 900px; margin: 0 auto; position: relative; z-index: 1; }
     .hero-tag {
       display: inline-flex; align-items: center; gap: 7px;
-      font-size: 11px; font-weight: 600; letter-spacing: 1.5px;
-      text-transform: uppercase; color: #6EE7B7; margin-bottom: 14px;
+      font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
+      color: #FCD34D; margin-bottom: 14px;
     }
     .hero h1 {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 32px; font-weight: 800; color: #fff;
-      letter-spacing: -0.4px; margin-bottom: 8px;
+      font-size: 30px; font-weight: 800; color: #fff;
+      letter-spacing: -0.3px; margin-bottom: 8px;
     }
-    .hero h1 span { color: #6EE7B7; }
-    .hero p { font-size: 14.5px; color: rgba(255,255,255,.55); line-height: 1.6; }
+    .hero h1 em { font-style: normal; color: #7DD3FC; }
+    .hero p { font-size: 14px; color: rgba(255,255,255,.52); line-height: 1.6; }
+
+    /* ── COUNTDOWN ── */
+    .countdown-section {
+      background: linear-gradient(135deg, #0F172A 0%, #1a2e5a 100%);
+      border-top: 1px solid rgba(255,255,255,.06);
+      padding: 28px 32px;
+    }
+    .countdown-inner {
+      max-width: 900px; margin: 0 auto;
+      display: flex; align-items: center; gap: 32px; flex-wrap: wrap;
+    }
+    .countdown-label {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
+      color: rgba(255,255,255,.45); white-space: nowrap;
+    }
+    .countdown-label svg { color: var(--cyan); flex-shrink: 0; }
+    .countdown-grid {
+      display: flex; align-items: center; gap: 8px; flex: 1;
+    }
+    .count-box {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 10px;
+      padding: 10px 16px;
+      text-align: center; min-width: 68px;
+    }
+    .count-num {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 26px; font-weight: 800; color: #fff; line-height: 1;
+      margin-bottom: 4px;
+      font-variant-numeric: tabular-nums;
+    }
+    .count-lbl {
+      font-size: 9px; font-weight: 600; letter-spacing: 1.5px;
+      text-transform: uppercase; color: rgba(255,255,255,.35);
+    }
+    .count-sep {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 24px; font-weight: 700;
+      color: rgba(255,255,255,.2); line-height: 1; padding-bottom: 14px;
+    }
+    .countdown-date {
+      font-size: 12px; color: rgba(255,255,255,.35);
+      font-style: italic; white-space: nowrap;
+    }
 
     /* ── MAIN ── */
     .main { max-width: 900px; margin: 0 auto; padding: 40px 32px 64px; }
     .section-label {
-      font-size: 11px; font-weight: 700; letter-spacing: 2px;
-      text-transform: uppercase; color: var(--s400);
-      margin-bottom: 20px;
+      font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--s400); margin-bottom: 20px;
       display: flex; align-items: center; gap: 10px;
     }
     .section-label::after { content: ''; flex: 1; height: 1px; background: var(--s200); }
@@ -130,19 +166,19 @@
     }
     .card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,.08); border-color: transparent; }
     .card:hover::before { opacity: 1; }
-    .card-micro::before { background: linear-gradient(90deg, var(--teal), var(--emerald)); }
-    .card-full::before  { background: linear-gradient(90deg, var(--cyan), var(--blue)); }
+    .card:hover .card-btn { gap: 12px; }
+    .card-micro::before { background: linear-gradient(90deg, var(--blue), var(--cyan)); }
+    .card-full::before  { background: linear-gradient(90deg, var(--cyan), var(--teal)); }
 
     .card-icon {
       width: 52px; height: 52px; border-radius: 14px;
-      display: flex; align-items: center; justify-content: center;
-      margin-bottom: 20px;
+      display: flex; align-items: center; justify-content: center; margin-bottom: 20px;
     }
-    .card-micro .card-icon { background: linear-gradient(135deg, #CCFBF1, #A7F3D0); color: var(--teal); }
-    .card-full  .card-icon { background: linear-gradient(135deg, #DBEAFE, #BAE6FD); color: var(--cyan); }
+    .card-micro .card-icon { background: linear-gradient(135deg, #DBEAFE, #BAE6FD); color: var(--blue); }
+    .card-full  .card-icon { background: linear-gradient(135deg, #BAE6FD, #CCFBF1); color: var(--cyan); }
 
     .card-tag { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; }
-    .card-micro .card-tag { color: var(--teal); }
+    .card-micro .card-tag { color: var(--blue); }
     .card-full  .card-tag { color: var(--cyan); }
 
     .card-title {
@@ -163,14 +199,13 @@
       transition: gap .2s; text-decoration: none;
     }
     .card-micro .card-btn {
-      background: linear-gradient(135deg, var(--teal), var(--emerald));
-      color: #fff; box-shadow: 0 3px 12px rgba(13,148,136,.28);
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      color: #fff; box-shadow: 0 3px 12px rgba(26,86,219,.25);
     }
     .card-full .card-btn {
-      background: linear-gradient(135deg, var(--cyan), var(--blue));
-      color: #fff; box-shadow: 0 3px 12px rgba(8,145,178,.28);
+      background: linear-gradient(135deg, var(--cyan), var(--teal));
+      color: #fff; box-shadow: 0 3px 12px rgba(8,145,178,.25);
     }
-    .card:hover .card-btn { gap: 12px; }
 
     /* ── RESULTS ── */
     .results-empty {
@@ -178,15 +213,15 @@
       border-radius: 12px; padding: 32px;
       text-align: center; color: var(--s400); font-size: 13.5px;
     }
-    .results-empty svg { margin-bottom: 10px; opacity: .4; }
+    .results-empty svg { margin-bottom: 10px; opacity: .4; display: block; margin-inline: auto; }
     .result-row {
       background: #fff; border: 1.5px solid var(--s200);
       border-radius: 12px; padding: 18px 22px;
       display: flex; align-items: center; gap: 16px; margin-bottom: 10px;
     }
     .result-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
-    .result-dot.micro  { background: var(--teal); }
-    .result-dot.full   { background: var(--cyan); }
+    .result-dot.micro { background: var(--blue); }
+    .result-dot.full  { background: var(--cyan); }
     .result-info { flex: 1; }
     .result-type { font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--s400); }
     .result-score { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 22px; font-weight: 800; color: var(--s800); }
@@ -198,16 +233,23 @@
 
     @media (max-width: 640px) {
       .cards { grid-template-columns: 1fr; }
-      .hero { padding: 32px 20px 40px; }
+      .hero { padding: 28px 20px 36px; }
+      .hero h1 { font-size: 24px; }
+      .countdown-section { padding: 20px; }
+      .countdown-inner { gap: 16px; }
+      .count-box { min-width: 56px; padding: 8px 10px; }
+      .count-num { font-size: 20px; }
+      .countdown-date { display: none; }
       .main { padding: 28px 20px 48px; }
-      .nav { padding: 0 20px; }
+      .nav { padding: 0 16px; }
+      .nav-school { font-size: 14px; }
     }
   </style>
 </head>
 <body>
 
   <nav class="nav">
-    <div class="nav-logo"><img src="logo_3a.png" alt="Logo" /></div>
+    <div class="nav-school"><strong>Scuola Internazionale</strong> Etica &amp; Sicurezza</div>
     <div class="nav-sep"></div>
     <div class="nav-user">
       <div class="nav-avatar" id="nav-initial">I</div>
@@ -220,11 +262,31 @@
   <div class="hero">
     <div class="hero-inner">
       <div class="hero-tag">
-        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         Classe Interaziendale
       </div>
-      <h1>Ciao, <span id="greeting-name">Utente</span> 👋</h1>
-      <p>Seleziona il tipo di simulazione che vuoi svolgere oggi.</p>
+      <h1>Ciao! Ogni simulazione<br/>ti avvicina al <em>successo</em> ✨</h1>
+      <p>Scegli il tipo di simulazione e inizia ad allenarti.</p>
+    </div>
+  </div>
+
+  <!-- COUNTDOWN -->
+  <div class="countdown-section">
+    <div class="countdown-inner">
+      <div class="countdown-label">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        Il tuo esame tra
+      </div>
+      <div class="countdown-grid">
+        <div class="count-box"><div class="count-num" id="cd-days">--</div><div class="count-lbl">Giorni</div></div>
+        <div class="count-sep">:</div>
+        <div class="count-box"><div class="count-num" id="cd-hours">--</div><div class="count-lbl">Ore</div></div>
+        <div class="count-sep">:</div>
+        <div class="count-box"><div class="count-num" id="cd-mins">--</div><div class="count-lbl">Minuti</div></div>
+        <div class="count-sep">:</div>
+        <div class="count-box"><div class="count-num" id="cd-secs">--</div><div class="count-lbl">Secondi</div></div>
+      </div>
+      <div class="countdown-date">26 novembre 2026</div>
     </div>
   </div>
 
@@ -232,13 +294,13 @@
     <div class="section-label">Simulazioni disponibili</div>
 
     <div class="cards">
-      <div class="card card-micro" onclick="startSim('micro')">
+      <div class="card card-micro">
         <div class="card-icon">
           <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
         </div>
         <div class="card-tag">Modulo breve</div>
         <div class="card-title">Microsimulazione</div>
-        <p class="card-desc">Sessione focalizzata su un singolo scenario. Rapida, mirata, ideale per allenarsi su un'area specifica.</p>
+        <p class="card-desc">Sessione focalizzata su un singolo tema. Rapida, mirata, ideale per allenarsi su un'area specifica.</p>
         <div class="card-meta">
           <div class="meta-item">
             <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -246,7 +308,7 @@
           </div>
           <div class="meta-item">
             <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-            1 scenario
+            15 domande
           </div>
         </div>
         <a class="card-btn" href="microsim.html">
@@ -255,13 +317,13 @@
         </a>
       </div>
 
-      <div class="card card-full" onclick="startSim('full')">
+      <div class="card card-full">
         <div class="card-icon">
           <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8h10M7 12h6"/></svg>
         </div>
         <div class="card-tag">Modulo completo</div>
         <div class="card-title">Simulazione Completa</div>
-        <p class="card-desc">Esame strutturato su più scenari consecutivi. Valuta competenze trasversali e reazione sotto pressione.</p>
+        <p class="card-desc">Esame integrale su tutti i temi. Replica le condizioni reali della prova scritta finale.</p>
         <div class="card-meta">
           <div class="meta-item">
             <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -269,7 +331,7 @@
           </div>
           <div class="meta-item">
             <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-            Multi-scenario
+            30 domande
           </div>
         </div>
         <a class="card-btn" href="test.html">
@@ -295,16 +357,31 @@
     const authGruppo = localStorage.getItem('auth_gruppo');
     if (!authUser || authGruppo !== gruppo) window.location.href = 'index.html';
 
-    document.getElementById('greeting-name').textContent =
-      authUser ? authUser.charAt(0).toUpperCase() + authUser.slice(1) : 'Utente';
-    document.getElementById('nav-name').textContent = authUser || 'Utente';
-    document.getElementById('nav-initial').textContent =
-      authUser ? authUser.charAt(0).toUpperCase() : 'U';
+    document.getElementById('nav-name').textContent    = authUser || 'Utente';
+    document.getElementById('nav-initial').textContent = authUser ? authUser.charAt(0).toUpperCase() : 'U';
 
+    /* ── countdown ── */
+    const EXAM = new Date('2026-11-26T09:00:00');
+    function updateCountdown() {
+      const diff = EXAM - new Date();
+      if (diff <= 0) {
+        ['cd-days','cd-hours','cd-mins','cd-secs'].forEach(id => document.getElementById(id).textContent = '00');
+        return;
+      }
+      const pad = n => String(n).padStart(2, '0');
+      document.getElementById('cd-days').textContent  = pad(Math.floor(diff / 86400000));
+      document.getElementById('cd-hours').textContent = pad(Math.floor((diff % 86400000) / 3600000));
+      document.getElementById('cd-mins').textContent  = pad(Math.floor((diff % 3600000) / 60000));
+      document.getElementById('cd-secs').textContent  = pad(Math.floor((diff % 60000) / 1000));
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    /* ── results ── */
     function renderResults() {
       const key  = 'alpha_test_results_' + (authUser || '');
       const data = JSON.parse(localStorage.getItem(key) || '[]');
-      const list = document.getElementById('results-list');
+      const list  = document.getElementById('results-list');
       const empty = document.getElementById('results-empty');
       if (!data.length) { empty.style.display = ''; list.innerHTML = ''; return; }
       empty.style.display = 'none';
@@ -327,9 +404,7 @@
     renderResults();
 
     function logout() {
-      localStorage.removeItem('auth_user');
-      localStorage.removeItem('auth_ruolo');
-      localStorage.removeItem('auth_gruppo');
+      ['auth_user','auth_ruolo','auth_gruppo'].forEach(k => localStorage.removeItem(k));
       window.location.href = 'index.html';
     }
   </script>

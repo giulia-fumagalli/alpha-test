@@ -12,20 +12,26 @@
       --blue:  #1a56db;
       --cyan:  #0891B2;
       --teal:  #0D9488;
-      --s50:   #F8FAFC;
       --s200:  #E2E8F0;
       --s400:  #94A3B8;
       --s500:  #64748B;
       --s800:  #1E293B;
       --s900:  #0F172A;
     }
-    html, body { min-height: 100vh; font-family: 'Inter', sans-serif; background: var(--s50); color: var(--s800); }
+    html, body {
+      min-height: 100vh;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #ffffff 0%, #eef3ff 100%);
+      background-attachment: fixed;
+      color: var(--s800);
+    }
 
     /* ── NAVBAR ── */
     .nav {
       background: var(--s900); height: 60px;
       display: flex; align-items: center; padding: 0 32px; gap: 16px;
       position: sticky; top: 0; z-index: 100;
+      box-shadow: 0 1px 0 rgba(255,255,255,.04);
     }
     .nav-school {
       font-family: 'Cormorant Garamond', serif;
@@ -41,7 +47,6 @@
       display: flex; align-items: center; justify-content: center;
       font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 700; color: #fff;
     }
-    .nav-name { font-size: 13px; font-weight: 500; color: rgba(255,255,255,.75); }
     .nav-group {
       font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
       color: #FCD34D; background: rgba(245,158,11,.15); border: 1px solid rgba(245,158,11,.25);
@@ -54,17 +59,30 @@
     }
     .btn-logout:hover { background: rgba(255,255,255,.13); color: #fff; }
 
-    /* ── HERO ── */
+    /* ── HERO BLOCK (hero + countdown, unico gradiente continuo) ── */
+    .hero-block {
+      background: linear-gradient(160deg, #0F172A 0%, #1a3568 50%, #0c4972 100%);
+      position: relative; overflow: hidden;
+    }
+    .hero-block::before {
+      content: ''; position: absolute;
+      width: 700px; height: 700px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(26,86,219,.18) 0%, transparent 68%);
+      top: -250px; right: -120px; pointer-events: none;
+    }
+    .hero-block::after {
+      content: ''; position: absolute;
+      width: 400px; height: 400px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(8,145,178,.10) 0%, transparent 70%);
+      bottom: -140px; left: -60px; pointer-events: none;
+    }
+
     .hero {
-      background: linear-gradient(135deg, #0F172A 0%, #1E3A5F 55%, #0F4C75 100%);
-      padding: 36px 32px 40px; position: relative; overflow: hidden;
+      background: transparent;
+      padding: 40px 32px 20px;
+      position: relative; z-index: 1;
     }
-    .hero::before {
-      content: ''; position: absolute; width: 500px; height: 500px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(26,86,219,.22) 0%, transparent 70%);
-      top: -180px; right: -80px;
-    }
-    .hero-inner { max-width: 1400px; margin: 0 auto; position: relative; z-index: 1; }
+    .hero-inner { max-width: 1400px; margin: 0 auto; }
     .hero-tag {
       display: inline-flex; align-items: center; gap: 7px;
       font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
@@ -75,41 +93,42 @@
       font-size: 26px; font-weight: 800; color: #fff; letter-spacing: -.3px; margin-bottom: 4px;
     }
     .hero h1 em { font-style: normal; color: #7DD3FC; }
-    .hero p { font-size: 13px; color: rgba(255,255,255,.5); }
+    .hero p { font-size: 13px; color: rgba(255,255,255,.48); }
 
-    /* ── COUNTDOWN ── */
     .countdown-section {
-      background: linear-gradient(135deg, #0F172A 0%, #1a2e5a 100%);
-      border-top: 1px solid rgba(255,255,255,.06); padding: 20px 32px;
+      background: transparent;
+      padding: 18px 32px 28px;
+      position: relative; z-index: 1;
     }
     .countdown-inner {
       max-width: 1400px; margin: 0 auto;
       display: flex; align-items: center; gap: 28px; flex-wrap: wrap;
+      border-top: 1px solid rgba(255,255,255,.08); padding-top: 18px;
     }
     .countdown-label {
       display: flex; align-items: center; gap: 8px;
       font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
-      color: rgba(255,255,255,.4); white-space: nowrap;
+      color: rgba(255,255,255,.38); white-space: nowrap;
     }
     .countdown-label svg { color: var(--cyan); }
     .countdown-grid { display: flex; align-items: center; gap: 8px; }
     .count-box {
-      background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
-      border-radius: 9px; padding: 8px 14px; text-align: center; min-width: 62px;
+      background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.1);
+      border-radius: 10px; padding: 8px 14px; text-align: center; min-width: 64px;
+      backdrop-filter: blur(4px);
     }
     .count-num {
       font-family: 'Plus Jakarta Sans', sans-serif; font-size: 22px; font-weight: 800;
       color: #fff; line-height: 1; margin-bottom: 3px; font-variant-numeric: tabular-nums;
     }
-    .count-lbl { font-size: 9px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,.3); }
-    .count-sep { font-size: 20px; font-weight: 700; color: rgba(255,255,255,.2); padding-bottom: 12px; }
-    .countdown-date { font-size: 12px; color: rgba(255,255,255,.3); font-style: italic; white-space: nowrap; }
+    .count-lbl { font-size: 9px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,.28); }
+    .count-sep { font-size: 18px; font-weight: 700; color: rgba(255,255,255,.18); padding-bottom: 12px; }
+    .countdown-date { font-size: 12px; color: rgba(255,255,255,.28); font-style: italic; white-space: nowrap; }
 
     /* ── PAGE GRID ── */
     .page-grid {
-      display: grid; grid-template-columns: 1fr 400px; gap: 24px;
+      display: grid; grid-template-columns: 1fr 380px; gap: 24px; align-items: stretch;
       max-width: 1400px; margin: 0 auto; padding: 28px 32px;
-      min-height: calc(100vh - 60px - 180px - 80px);
     }
     .section-label {
       font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
@@ -119,25 +138,35 @@
     .section-label::after { content: ''; flex: 1; height: 1px; background: var(--s200); }
 
     /* ── LEFT COLUMN: CARDS ── */
-    .left-col { display: flex; flex-direction: column; }
-    .cards-stack { display: flex; flex-direction: column; gap: 16px; flex: 1; }
+    .left-col { display: flex; flex-direction: column; min-width: 0; }
+    .cards-stack { display: flex; flex-direction: row; gap: 16px; flex: 1; }
     .card {
-      background: #fff; border: 1.5px solid var(--s200); border-radius: 16px;
-      padding: 28px 28px 24px; cursor: pointer; text-decoration: none; color: inherit;
-      position: relative; overflow: hidden; flex: 1;
-      transition: transform .2s, box-shadow .2s, border-color .2s;
+      background: #fff;
+      border: 1px solid rgba(226,232,240,.8);
+      border-radius: 20px;
+      padding: 28px 24px 24px;
+      text-decoration: none; color: inherit;
+      position: relative; overflow: hidden; flex: 1; min-width: 0;
+      box-shadow: 0 2px 16px rgba(15,23,42,.05);
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
       display: flex; flex-direction: column;
     }
     .card::before {
       content: ''; position: absolute; top: 0; left: 0; right: 0;
-      height: 3px; border-radius: 16px 16px 0 0; opacity: 0; transition: opacity .2s;
+      height: 3px; border-radius: 20px 20px 0 0; opacity: 0;
+      transition: opacity .25s ease;
     }
-    .card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,.09); border-color: transparent; }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 48px rgba(15,23,42,.10);
+      border-color: transparent;
+    }
     .card:hover::before { opacity: 1; }
+    .card:hover .card-btn { gap: 12px; }
     .card-micro::before { background: linear-gradient(90deg, var(--blue), var(--cyan)); }
     .card-full::before  { background: linear-gradient(90deg, var(--teal), var(--cyan)); }
     .card-icon {
-      width: 48px; height: 48px; border-radius: 13px;
+      width: 48px; height: 48px; border-radius: 14px;
       display: flex; align-items: center; justify-content: center; margin-bottom: 16px;
     }
     .card-micro .card-icon { background: linear-gradient(135deg, #DBEAFE, #BAE6FD); color: var(--blue); }
@@ -146,32 +175,35 @@
     .card-micro .card-tag { color: var(--blue); }
     .card-full  .card-tag { color: var(--teal); }
     .card-title {
-      font-family: 'Plus Jakarta Sans', sans-serif; font-size: 21px; font-weight: 700;
+      font-family: 'Plus Jakarta Sans', sans-serif; font-size: 19px; font-weight: 700;
       color: var(--s800); margin-bottom: 8px; letter-spacing: -.2px;
     }
-    .card-desc { font-size: 13.5px; color: var(--s500); line-height: 1.6; flex: 1; margin-bottom: 20px; }
-    .card-meta { display: flex; gap: 16px; margin-bottom: 18px; }
+    .card-desc { font-size: 13px; color: var(--s500); line-height: 1.6; flex: 1; margin-bottom: 20px; }
+    .card-meta { display: flex; gap: 14px; margin-bottom: 18px; flex-wrap: wrap; }
     .meta-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--s400); }
     .card-btn {
       display: inline-flex; align-items: center; gap: 8px;
-      padding: 10px 18px; border-radius: 9px;
+      padding: 10px 16px; border-radius: 10px;
       font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 700;
       border: none; cursor: pointer; align-self: flex-start;
-      transition: gap .15s, box-shadow .15s; text-decoration: none;
+      transition: gap .2s ease; text-decoration: none;
     }
-    .card:hover .card-btn { gap: 12px; }
-    .card-micro .card-btn { background: linear-gradient(135deg, var(--blue), var(--cyan)); color: #fff; box-shadow: 0 3px 12px rgba(26,86,219,.25); }
-    .card-full  .card-btn { background: linear-gradient(135deg, var(--teal), var(--cyan)); color: #fff; box-shadow: 0 3px 12px rgba(13,148,136,.25); }
+    .card-micro .card-btn { background: linear-gradient(135deg, var(--blue), var(--cyan)); color: #fff; box-shadow: 0 3px 14px rgba(26,86,219,.28); }
+    .card-full  .card-btn { background: linear-gradient(135deg, var(--teal), var(--cyan)); color: #fff; box-shadow: 0 3px 14px rgba(13,148,136,.28); }
 
-    /* ── RIGHT COLUMN: CHAT ── */
-    .right-col { display: flex; flex-direction: column; }
+    /* ── RIGHT COLUMN: CHAT (full height, left accent) ── */
+    .right-col { display: flex; flex-direction: column; min-width: 0; }
     .chat-panel {
       flex: 1; display: flex; flex-direction: column;
-      background: #fff; border: 1.5px solid var(--s200); border-radius: 16px; overflow: hidden;
-      min-height: 420px;
+      background: #fff;
+      border: 1px solid rgba(226,232,240,.8);
+      border-left: 3px solid rgba(26,86,219,.35);
+      border-radius: 20px;
+      box-shadow: 0 2px 16px rgba(15,23,42,.05);
+      overflow: hidden;
     }
     .chat-header {
-      background: linear-gradient(135deg, var(--s900), #1e2e4a);
+      background: linear-gradient(135deg, var(--s900) 0%, #1b2f52 100%);
       padding: 14px 18px; display: flex; align-items: center; gap: 10px; flex-shrink: 0;
     }
     .chat-header-icon {
@@ -182,7 +214,6 @@
     .chat-header-text h3 {
       font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 700; color: #fff;
     }
-    .chat-header-text p { font-size: 11px; color: rgba(255,255,255,.45); }
     .chat-messages {
       flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 12px;
       scroll-behavior: smooth;
@@ -198,13 +229,12 @@
     .bubble-row.assistant .bubble-avatar { background: linear-gradient(135deg, var(--blue), var(--cyan)); color: #fff; }
     .bubble-row.user .bubble-avatar { background: var(--s200); color: var(--s500); }
     .bubble-text {
-      max-width: 80%; padding: 9px 13px; border-radius: 12px; font-size: 13px; line-height: 1.55;
+      max-width: 82%; padding: 9px 13px; border-radius: 12px; font-size: 13px; line-height: 1.55;
     }
-    .bubble-row.assistant .bubble-text { background: var(--s50); color: var(--s800); border-bottom-left-radius: 4px; }
+    .bubble-row.assistant .bubble-text { background: #f1f5f9; color: var(--s800); border-bottom-left-radius: 4px; }
     .bubble-row.user .bubble-text { background: var(--blue); color: #fff; border-bottom-right-radius: 4px; }
     .bubble-row.error .bubble-text { background: #FEE2E2; color: #991B1B; border-radius: 10px; }
 
-    /* typing dots */
     .typing-dots { display: flex; gap: 4px; align-items: center; padding: 4px 2px; }
     .typing-dots span {
       width: 6px; height: 6px; border-radius: 50%; background: var(--s400);
@@ -215,7 +245,8 @@
     @keyframes blink { 0%,80%,100% { opacity:.2; } 40% { opacity:1; } }
 
     .chat-footer {
-      border-top: 1px solid var(--s200); padding: 12px; display: flex; gap: 8px; align-items: flex-end; flex-shrink: 0;
+      border-top: 1px solid var(--s200); padding: 12px;
+      display: flex; gap: 8px; align-items: flex-end; flex-shrink: 0;
     }
     #chat-input {
       flex: 1; border: 1.5px solid var(--s200); border-radius: 10px;
@@ -226,24 +257,25 @@
     #chat-input:focus { border-color: var(--blue); }
     #chat-input::placeholder { color: var(--s400); }
     #chat-send {
-      width: 38px; height: 38px; border-radius: 9px; flex-shrink: 0;
+      width: 38px; height: 38px; border-radius: 10px; flex-shrink: 0;
       background: linear-gradient(135deg, var(--blue), var(--cyan));
       border: none; cursor: pointer; display: flex; align-items: center; justify-content: center;
-      color: #fff; transition: opacity .2s;
+      color: #fff; transition: opacity .2s, transform .15s;
     }
     #chat-send:disabled { opacity: .4; cursor: default; }
-    #chat-send:hover:not(:disabled) { opacity: .9; }
+    #chat-send:hover:not(:disabled) { opacity: .88; transform: scale(1.05); }
 
     /* ── RESULTS ── */
     .results-section { max-width: 1400px; margin: 0 auto; padding: 0 32px 56px; }
     .results-empty {
-      background: #fff; border: 1.5px dashed var(--s200); border-radius: 12px; padding: 28px;
+      background: #fff; border: 1.5px dashed var(--s200); border-radius: 20px; padding: 28px;
       text-align: center; color: var(--s400); font-size: 13.5px;
     }
     .results-empty svg { margin-bottom: 8px; opacity: .4; display: block; margin-inline: auto; }
     .result-row {
-      background: #fff; border: 1.5px solid var(--s200); border-radius: 12px; padding: 16px 20px;
+      background: #fff; border: 1px solid rgba(226,232,240,.8); border-radius: 14px; padding: 16px 20px;
       display: flex; align-items: center; gap: 14px; margin-bottom: 10px;
+      box-shadow: 0 1px 8px rgba(15,23,42,.04);
     }
     .result-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
     .result-dot.micro { background: var(--blue); }
@@ -257,18 +289,18 @@
     .badge-pass { background: #D1FAE5; color: #065F46; }
     .badge-fail { background: #FEE2E2; color: #991B1B; }
 
-    @media (max-width: 900px) {
+    @media (max-width: 1000px) {
       .page-grid { grid-template-columns: 1fr; }
-      .chat-panel { min-height: 400px; }
-      .right-col { margin-top: 0; }
+      .cards-stack { flex-direction: row; }
     }
     @media (max-width: 640px) {
-      .hero { padding: 24px 16px 28px; }
+      .hero { padding: 24px 16px 16px; }
       .hero h1 { font-size: 22px; }
-      .countdown-section { padding: 16px; }
+      .countdown-section { padding: 12px 16px 22px; }
       .count-num { font-size: 18px; }
-      .count-box { min-width: 52px; padding: 6px 10px; }
+      .count-box { min-width: 50px; padding: 6px 10px; }
       .countdown-date { display: none; }
+      .cards-stack { flex-direction: column; }
       .page-grid { padding: 16px; gap: 16px; }
       .results-section { padding: 0 16px 40px; }
       .nav { padding: 0 16px; }
@@ -288,40 +320,42 @@
     <button class="btn-logout" onclick="logout()">Esci</button>
   </nav>
 
-  <div class="hero">
-    <div class="hero-inner">
-      <div class="hero-tag">
-        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        Classe ISP
+  <!-- HERO + COUNTDOWN: unico blocco continuo -->
+  <div class="hero-block">
+    <div class="hero">
+      <div class="hero-inner">
+        <div class="hero-tag">
+          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Classe ISP
+        </div>
+        <h1>Ciao! Ogni simulazione ti avvicina al <em>successo</em> ✨</h1>
+        <p>Scegli il tipo di simulazione o chiedi aiuto al tuo assistente virtuale.</p>
       </div>
-      <h1>Ciao! Ogni simulazione ti avvicina al <em>successo</em> ✨</h1>
-      <p>Scegli il tipo di simulazione o chiedi aiuto al tuo assistente IA.</p>
     </div>
-  </div>
-
-  <div class="countdown-section">
-    <div class="countdown-inner">
-      <div class="countdown-label">
-        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-        Il tuo esame tra
+    <div class="countdown-section">
+      <div class="countdown-inner">
+        <div class="countdown-label">
+          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Il tuo esame tra
+        </div>
+        <div class="countdown-grid">
+          <div class="count-box"><div class="count-num" id="cd-days">--</div><div class="count-lbl">Giorni</div></div>
+          <div class="count-sep">:</div>
+          <div class="count-box"><div class="count-num" id="cd-hours">--</div><div class="count-lbl">Ore</div></div>
+          <div class="count-sep">:</div>
+          <div class="count-box"><div class="count-num" id="cd-mins">--</div><div class="count-lbl">Minuti</div></div>
+          <div class="count-sep">:</div>
+          <div class="count-box"><div class="count-num" id="cd-secs">--</div><div class="count-lbl">Secondi</div></div>
+        </div>
+        <div class="countdown-date">3 dicembre 2026</div>
       </div>
-      <div class="countdown-grid">
-        <div class="count-box"><div class="count-num" id="cd-days">--</div><div class="count-lbl">Giorni</div></div>
-        <div class="count-sep">:</div>
-        <div class="count-box"><div class="count-num" id="cd-hours">--</div><div class="count-lbl">Ore</div></div>
-        <div class="count-sep">:</div>
-        <div class="count-box"><div class="count-num" id="cd-mins">--</div><div class="count-lbl">Minuti</div></div>
-        <div class="count-sep">:</div>
-        <div class="count-box"><div class="count-num" id="cd-secs">--</div><div class="count-lbl">Secondi</div></div>
-      </div>
-      <div class="countdown-date">3 dicembre 2026</div>
     </div>
   </div>
 
   <!-- MAIN GRID -->
   <div class="page-grid">
 
-    <!-- LEFT: CARDS -->
+    <!-- LEFT: CARDS SIDE BY SIDE -->
     <div class="left-col">
       <div class="section-label">Simulazioni disponibili</div>
       <div class="cards-stack">
@@ -344,7 +378,7 @@
             </div>
           </div>
           <span class="card-btn">
-            Inizia simulazione
+            Inizia
             <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </span>
         </a>
@@ -367,7 +401,7 @@
             </div>
           </div>
           <span class="card-btn">
-            Inizia simulazione
+            Inizia
             <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </span>
         </a>
@@ -375,9 +409,9 @@
       </div>
     </div>
 
-    <!-- RIGHT: AI CHAT -->
+    <!-- RIGHT: AI CHAT (full height) -->
     <div class="right-col">
-      <div class="section-label">Assistente IA</div>
+      <div class="section-label">Assistente Virtuale</div>
       <div class="chat-panel">
         <div class="chat-header">
           <div class="chat-header-icon">
@@ -471,7 +505,6 @@
     function norm(s) {
       return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9\s\/]/g,' ');
     }
-
     function getResponse(input) {
       const n = norm(input);
       for (const rule of RESPONSES) {
@@ -486,11 +519,9 @@
       textarea.style.height = 'auto';
       textarea.style.height = Math.min(textarea.scrollHeight, 120) + 'px';
     });
-
     function handleKey(e) {
       if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
     }
-
     function appendBubble(role, html) {
       const msgs = document.getElementById('chat-messages');
       const row = document.createElement('div');
@@ -506,7 +537,6 @@
       msgs.scrollTop = msgs.scrollHeight;
       return row;
     }
-
     function appendTyping() {
       const msgs = document.getElementById('chat-messages');
       const row = document.createElement('div');
@@ -516,7 +546,6 @@
       msgs.scrollTop = msgs.scrollHeight;
       return row;
     }
-
     function sendMessage() {
       const text = textarea.value.trim();
       if (!text || isSending) return;

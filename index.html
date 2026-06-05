@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Accesso — Piattaforma Formativa</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -42,24 +42,55 @@
     .bg-photo {
       position: absolute;
       inset: 0;
-      background: linear-gradient(155deg, #1D4ED8 0%, #0891B2 50%, #0D9488 100%);
+      background: url('student.png') center center / cover no-repeat;
     }
 
     .bg-overlay {
       position: absolute;
       inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background: linear-gradient(
+        160deg,
+        rgba(10, 30, 90, 0.82) 0%,
+        rgba(8, 80, 130, 0.70) 45%,
+        rgba(8, 100, 100, 0.75) 100%
+      );
     }
 
-    .bg-overlay img {
-      width: 62%;
-      max-width: 320px;
-      opacity: 0.22;
-      filter: brightness(0) invert(1);
-      pointer-events: none;
-      user-select: none;
+    .school-header {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      padding: 36px 44px;
+      z-index: 3;
+    }
+
+    .school-eyebrow {
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      margin-bottom: 5px;
+    }
+
+    .school-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.92);
+      letter-spacing: 0.04em;
+      line-height: 1.25;
+    }
+
+    .school-name em {
+      font-style: italic;
+      color: #FCD34D;
+    }
+
+    .school-divider {
+      width: 32px;
+      height: 1px;
+      background: rgba(245,158,11,0.5);
+      margin-top: 10px;
     }
 
     .bg-shapes {
@@ -91,6 +122,11 @@
     }
 
     .logo-area { display: none; }
+
+    @media (max-width: 800px) {
+      .school-header { padding: 20px 24px; }
+      .school-name { font-size: 16px; }
+    }
 
     .left-content {
       position: relative;
@@ -377,8 +413,14 @@
   <!-- ── LEFT ── -->
   <div class="left-panel">
     <div class="bg-photo"></div>
-    <div class="bg-overlay"><img src="logo_3a.png" alt="Logo" /></div>
+    <div class="bg-overlay"></div>
     <div class="bg-shapes"></div>
+
+    <div class="school-header">
+      <div class="school-eyebrow">Scuola Internazionale</div>
+      <div class="school-name"><em>Etica</em> &amp; Sicurezza</div>
+      <div class="school-divider"></div>
+    </div>
 
     <div class="left-content">
       <div class="badge"><div class="dot"></div><span>Piattaforma Formativa</span></div>

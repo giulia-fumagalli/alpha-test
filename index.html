@@ -42,7 +42,10 @@
     .bg-photo {
       position: absolute;
       inset: 0;
-      background: url('student.png') center center / cover no-repeat;
+      background-image: url('student.png');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
     }
 
     .bg-overlay {
@@ -92,11 +95,6 @@
     .bg-shapes { display: none; }
 
     .logo-area { display: none; }
-
-    @media (max-width: 800px) {
-      .school-header { padding: 20px 24px; }
-      .school-name { font-size: 16px; }
-    }
 
     .left-content {
       position: relative;
@@ -368,11 +366,12 @@
     /* ── RESPONSIVE ── */
     @media (max-width: 800px) {
       body { flex-direction: column; }
-      .left-panel { flex: 0 0 200px; }
-      .logo-area { top: 20px; left: 20px; }
-      .logo-area img { height: 36px; }
+      .left-panel { flex: 0 0 220px; }
+      .school-header { padding: 16px 20px; }
+      .school-title { font-size: 14px; }
       .left-content { padding: 20px; }
-      .hero-title { font-size: 24px; }
+      .badge { margin-top: 48px; }
+      .hero-title { font-size: 22px; }
       .hero-sub, .feat-list { display: none; }
       .right-panel { padding: 32px 24px; align-items: flex-start; padding-top: 36px; }
     }

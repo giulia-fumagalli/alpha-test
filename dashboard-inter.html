@@ -312,79 +312,63 @@
     #chat-send:disabled { opacity: .35; cursor: default; box-shadow: none; }
     #chat-send:hover:not(:disabled) { transform: scale(1.06); box-shadow: 0 6px 22px rgba(26,86,219,.42); }
 
-    /* ── RESULTS SECTION ── */
-    .results-section {
+    /* ── PILLOLE DI NOZIONI ── */
+    .pills-section {
       border-top: 1px solid var(--border);
       background: linear-gradient(180deg, var(--card-alt) 0%, var(--bg) 100%);
       padding: 40px 32px 56px;
     }
-    .results-inner { max-width: 1400px; margin: 0 auto; }
-    .results-header {
-      display: flex; align-items: center; justify-content: space-between;
-      margin-bottom: 28px; flex-wrap: wrap; gap: 12px;
-    }
-    .results-title {
+    .pills-inner { max-width: 1400px; margin: 0 auto; }
+    .pills-header { margin-bottom: 28px; }
+    .pills-title {
       font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; font-weight: 800;
       color: var(--text); letter-spacing: -.2px;
     }
-    .results-subtitle { font-size: 12px; color: var(--text-dim); margin-top: 2px; }
-    .no-results-badge {
-      font-size: 11px; color: var(--text-dim); background: var(--card);
-      border: 1px solid var(--border); padding: 4px 12px; border-radius: 100px;
-    }
+    .pills-subtitle { font-size: 12px; color: var(--text-dim); margin-top: 4px; }
 
-    /* stats grid */
-    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 28px; }
-    .stat-card {
-      background: var(--card); border: 1px solid var(--border); border-radius: 14px;
-      padding: 18px 20px; position: relative; overflow: hidden;
+    .pills-group { margin-bottom: 30px; }
+    .pills-group:last-child { margin-bottom: 0; }
+    .pills-group-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+    .cat-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 11px; font-weight: 700; letter-spacing: .4px;
+      padding: 5px 14px; border-radius: 100px;
+      background: var(--cat-bg); color: var(--cat);
+    }
+    .cat-badge .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--cat); display: block; }
+
+    .pills-row {
+      display: flex; gap: 16px; overflow-x: auto; padding: 4px 4px 12px;
+      scroll-snap-type: x proximity;
+    }
+    .pills-row::-webkit-scrollbar { height: 6px; }
+    .pills-row::-webkit-scrollbar-thumb { background: var(--border); border-radius: 5px; }
+
+    .pill-card {
+      scroll-snap-align: start;
+      flex: 0 0 250px;
+      background: var(--card);
+      border: 1px solid var(--border-soft);
+      border-top: 3px solid var(--cat);
+      border-radius: 16px;
+      padding: 18px 20px;
       box-shadow: 0 2px 16px rgba(26,86,219,.05);
+      opacity: 0; transform: translateY(20px);
+      transition: opacity .6s ease, transform .6s ease;
     }
-    .stat-card::before {
-      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1.5px;
-      background: linear-gradient(90deg, transparent, var(--blue), transparent);
-      opacity: .6;
+    .pill-card.visible { opacity: 1; transform: translateY(0); }
+    .pill-title {
+      font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13.5px; font-weight: 700;
+      color: var(--text); margin-bottom: 8px; letter-spacing: -.1px;
     }
-    .stat-label { font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-dim); margin-bottom: 6px; }
-    .stat-value { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 28px; font-weight: 800; color: var(--text); line-height: 1; }
-    .stat-value.green { color: #059669; }
-    .stat-value.blue  { color: var(--blue); }
-    .stat-value.amber { color: #d97706; }
-    .stat-sub { font-size: 11px; color: var(--text-mute); margin-top: 4px; }
+    .pill-text { font-size: 12px; color: var(--text-dim); line-height: 1.6; }
 
-    /* results 2-col layout */
-    .results-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-
-    /* history bars */
-    .history-panel, .objective-panel {
-      background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 22px 24px;
-      box-shadow: 0 2px 16px rgba(26,86,219,.05);
-    }
-    .panel-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 16px; }
-
-    .result-bar-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
-    .result-bar-row:last-child { margin-bottom: 0; }
-    .rbar-label { min-width: 80px; }
-    .rbar-type { font-size: 11px; font-weight: 600; color: var(--text); display: block; }
-    .rbar-date { font-size: 10px; color: var(--text-dim); display: block; }
-    .rbar-track { flex: 1; height: 6px; background: var(--card-alt); border-radius: 100px; overflow: hidden; }
-    .rbar-fill { height: 100%; border-radius: 100px; transition: width .8s ease; }
-    .rbar-pct { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 12px; font-weight: 700; color: var(--text); min-width: 34px; text-align: right; }
-    .rbar-empty { font-size: 12px; color: var(--text-mute); text-align: center; padding: 16px 0; }
-
-    /* objective */
-    .objective-box {
-      background: rgba(26,86,219,.06); border: 1px solid rgba(26,86,219,.16);
-      border-radius: 12px; padding: 16px 18px; margin-bottom: 14px;
-    }
-    .obj-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
-    .obj-desc { font-size: 12px; color: var(--text-dim); }
-    .progress-ring { display: flex; align-items: center; gap: 16px; }
-    .progress-track { flex: 1; height: 8px; background: var(--card-alt); border-radius: 100px; overflow: hidden; }
-    .progress-fill { height: 100%; border-radius: 100px; background: linear-gradient(90deg, var(--blue), var(--cyan)); box-shadow: 0 0 10px rgba(26,86,219,.3); transition: width .8s ease; }
-    .progress-pct { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 700; color: var(--blue); min-width: 36px; text-align: right; }
-    .threshold-line { display: flex; align-items: center; justify-content: space-between; margin-top: 6px; }
-    .threshold-lbl { font-size: 10px; color: var(--text-mute); }
+    .topic-normativa { --cat: #1a56db; --cat-bg: rgba(26,86,219,.10); }
+    .topic-procedure { --cat: #0891b2; --cat-bg: rgba(8,145,178,.10); }
+    .topic-rischio   { --cat: #f59e0b; --cat-bg: rgba(245,158,11,.12); }
+    .topic-fisica    { --cat: #0d9488; --cat-bg: rgba(13,148,136,.10); }
+    .topic-cyber     { --cat: #6366f1; --cat-bg: rgba(99,102,241,.10); }
+    .topic-emergency { --cat: #f43f5e; --cat-bg: rgba(244,63,94,.10); }
 
     @media (max-width: 1100px) {
       .main-grid { grid-template-columns: 1fr 1fr; }
@@ -394,13 +378,11 @@
     @media (max-width: 700px) {
       .main-grid { grid-template-columns: 1fr; padding: 16px; gap: 14px; }
       .hero-content { padding: 32px 16px 24px; }
-      .stats-grid { grid-template-columns: 1fr 1fr; }
-      .results-grid { grid-template-columns: 1fr; }
-      .results-section { padding: 28px 16px 40px; }
+      .pills-section { padding: 28px 16px 40px; }
+      .pill-card { flex-basis: 220px; }
       .nav { padding: 0 16px; }
       .hero-countdown { display: none; }
     }
-
   </style>
 </head>
 <body>
@@ -543,62 +525,84 @@
 
   </div>
 
-  <!-- RESULTS SECTION -->
-  <div class="results-section">
-    <div class="results-inner">
-      <div class="results-header">
-        <div>
-          <div class="results-title">I tuoi progressi</div>
-          <div class="results-subtitle" id="results-subtitle">Nessuna simulazione completata ancora</div>
-        </div>
-        <span class="no-results-badge" id="results-badge" style="display:none">0 simulazioni</span>
+  <!-- PILLOLE DI NOZIONI -->
+  <div class="pills-section">
+    <div class="pills-inner">
+      <div class="pills-header">
+        <div class="pills-title">Pillole di Nozioni 💡</div>
+        <div class="pills-subtitle">Scorri per ripassare i concetti chiave</div>
       </div>
 
-      <div class="stats-grid">
-        <div class="stat-card">
-          <div class="stat-label">Media punteggio</div>
-          <div class="stat-value blue" id="stat-avg">—</div>
-          <div class="stat-sub">su tutte le simulazioni</div>
+      <div class="pills-group topic-normativa">
+        <div class="pills-group-head">
+          <span class="cat-badge"><span class="dot"></span>Normativa</span>
         </div>
-        <div class="stat-card">
-          <div class="stat-label">Simulazioni</div>
-          <div class="stat-value" id="stat-total">—</div>
-          <div class="stat-sub" id="stat-types">micro + complete</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-label">Tasso superamento</div>
-          <div class="stat-value green" id="stat-pass">—</div>
-          <div class="stat-sub">soglia: 60%</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-label">Miglior risultato</div>
-          <div class="stat-value amber" id="stat-best">—</div>
-          <div class="stat-sub">punteggio massimo</div>
+        <div class="pills-row">
+          <div class="pill-card"><div class="pill-title">Quadro normativo di riferimento</div><p class="pill-text">Contenuto in arrivo...</p></div>
+          <div class="pill-card"><div class="pill-title">Obblighi e responsabilità</div><p class="pill-text">Contenuto in arrivo...</p></div>
+          <div class="pill-card"><div class="pill-title">Certificazioni richieste</div><p class="pill-text">Contenuto in arrivo...</p></div>
+          <div class="pill-card"><div class="pill-title">Aggiornamenti normativi recenti</div><p class="pill-text">Contenuto in arrivo...</p></div>
         </div>
       </div>
 
-      <div class="results-grid">
-        <div class="history-panel">
-          <div class="panel-title">Ultime simulazioni</div>
-          <div id="history-bars"><p class="rbar-empty">Completa la prima simulazione per vedere i risultati qui.</p></div>
+      <div class="pills-group topic-procedure">
+        <div class="pills-group-head">
+          <span class="cat-badge"><span class="dot"></span>Procedure Operative</span>
         </div>
-        <div class="objective-panel">
-          <div class="panel-title">Prossimo obiettivo</div>
-          <div class="objective-box">
-            <div class="obj-title" id="obj-title">Completa la prima simulazione</div>
-            <div class="obj-desc" id="obj-desc">Inizia subito per misurare il tuo livello di partenza!</div>
-          </div>
-          <div class="progress-ring">
-            <div class="progress-track"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
-            <div class="progress-pct" id="progress-pct">0%</div>
-          </div>
-          <div class="threshold-line">
-            <span class="threshold-lbl">0%</span>
-            <span class="threshold-lbl" style="color: rgba(26,86,219,.7)">▲ 60% soglia</span>
-            <span class="threshold-lbl">100%</span>
-          </div>
+        <div class="pills-row">
+          <div class="pill-card"><div class="pill-title">Protocolli di intervento</div><p class="pill-text">Contenuto in arrivo...</p></div>
+          <div class="pill-card"><div class="pill-title">Controllo accessi</div><p class="pill-text">Contenuto in arrivo...</p></div>
+          <div class="pill-card"><div class="pill-title">Gestione delle pattuglie</div><p class="pill-text">Contenuto in arrivo...</p></div>
+          <div class="pill-card"><div class="pill-title">Reportistica operativa</div><p class="pill-text">Contenuto in arrivo...</p></div>
         </div>
       </div>
+
+      <div class="pills-group topic-rischio">
+        <div class="pills-group-head">
+          <span class="cat-badge"><span class="dot"></span>Gestione del Rischio</span>
+        </div>
+        <div class="pills-row">
+          <div class="pill-card"><div class="pill-title">Identificazione delle minacce</div><p class="pill-text">Contenuto in arrivo...</p></div>
+          <div class="pill-card"><div class="pill-title">Analisi e valutazione del rischio</div><p class="pill-text">Contenuto in arrivo...</p></div>
+          <div class="pill-card"><div class="pill-title">Misure di mitigazione</div><p class="pill-text">Contenuto in arrivo...</p></div>
+        </div>
+      </div>
+
+      <div class="pills-group topic-fisica">
+        <div class="pills-group-head">
+          <span class="cat-badge"><span class="dot"></span>Sicurezza Fisica</span>
+        </div>
+        <div class="pills-row">
+          <div class="pill-card"><div class="pill-title">Sistemi di videosorveglianza</div><p class="pill-text">Contenuto in arrivo...</p></div>
+          <div class="pill-card"><div class="pill-title">Barriere e perimetri</div><p class="pill-text">Contenuto in arrivo...</p></div>
+          <div class="pill-card"><div class="pill-title">Illuminazione e deterrenza</div><p class="pill-text">Contenuto in arrivo...</p></div>
+          <div class="pill-card"><div class="pill-title">Gestione delle chiavi e badge</div><p class="pill-text">Contenuto in arrivo...</p></div>
+        </div>
+      </div>
+
+      <div class="pills-group topic-cyber">
+        <div class="pills-group-head">
+          <span class="cat-badge"><span class="dot"></span>Cyber Security</span>
+        </div>
+        <div class="pills-row">
+          <div class="pill-card"><div class="pill-title">Minacce informatiche comuni</div><p class="pill-text">Contenuto in arrivo...</p></div>
+          <div class="pill-card"><div class="pill-title">Protezione dei dati sensibili</div><p class="pill-text">Contenuto in arrivo...</p></div>
+          <div class="pill-card"><div class="pill-title">Buone pratiche di autenticazione</div><p class="pill-text">Contenuto in arrivo...</p></div>
+        </div>
+      </div>
+
+      <div class="pills-group topic-emergency">
+        <div class="pills-group-head">
+          <span class="cat-badge"><span class="dot"></span>Emergency Management</span>
+        </div>
+        <div class="pills-row">
+          <div class="pill-card"><div class="pill-title">Piani di evacuazione</div><p class="pill-text">Contenuto in arrivo...</p></div>
+          <div class="pill-card"><div class="pill-title">Primo soccorso e BLS</div><p class="pill-text">Contenuto in arrivo...</p></div>
+          <div class="pill-card"><div class="pill-title">Comunicazione in emergenza</div><p class="pill-text">Contenuto in arrivo...</p></div>
+          <div class="pill-card"><div class="pill-title">Coordinamento con i soccorsi</div><p class="pill-text">Contenuto in arrivo...</p></div>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -717,56 +721,16 @@
       }, 500 + Math.random() * 300);
     }
 
-    /* ── RESULTS & STATS ── */
-    function renderResults() {
-      const key  = 'alpha_test_results_' + (authUser || '');
-      const data = JSON.parse(localStorage.getItem(key) || '[]');
-
-      if (!data.length) return;
-
-      const total    = data.length;
-      const micro    = data.filter(r => r.tipo === 'micro').length;
-      const full     = data.filter(r => r.tipo === 'full').length;
-      const avgPct   = Math.round(data.reduce((s, r) => s + r.pct, 0) / total);
-      const passed   = data.filter(r => r.pct >= 60).length;
-      const passRate = Math.round(passed / total * 100);
-      const best     = Math.max(...data.map(r => r.pct));
-
-      document.getElementById('results-subtitle').textContent = `${total} simulazion${total === 1 ? 'e completata' : 'i completate'}`;
-      const badge = document.getElementById('results-badge');
-      badge.textContent = total + ' simulazioni'; badge.style.display = '';
-
-      document.getElementById('stat-avg').textContent   = avgPct + '%';
-      document.getElementById('stat-total').textContent = total;
-      document.getElementById('stat-types').textContent = `${micro} micro · ${full} complete`;
-      document.getElementById('stat-pass').textContent  = passRate + '%';
-      document.getElementById('stat-best').textContent  = best + '%';
-
-      const recent = data.slice(-6).reverse();
-      document.getElementById('history-bars').innerHTML = recent.map(r => {
-        const clr  = r.pct >= 75 ? '#10b981' : r.pct >= 60 ? '#3b82f6' : '#ef4444';
-        const date = new Date(r.ts).toLocaleDateString('it-IT', { day:'2-digit', month:'short' });
-        const tipo = r.tipo === 'micro' ? 'Microsim.' : 'Completa';
-        return `<div class="result-bar-row">
-          <div class="rbar-label"><span class="rbar-type">${tipo}</span><span class="rbar-date">${date}</span></div>
-          <div class="rbar-track"><div class="rbar-fill" style="width:${r.pct}%;background:${clr}"></div></div>
-          <span class="rbar-pct" style="color:${clr}">${r.pct}%</span>
-        </div>`;
-      }).join('');
-
-      let oTitle, oDesc, oTarget;
-      if (avgPct < 60)      { oTitle = 'Supera la soglia del 60%';  oDesc = 'Continua ad allenarti, sei sulla strada giusta!'; oTarget = 60; }
-      else if (avgPct < 75) { oTitle = 'Raggiungi il 75% di media'; oDesc = 'Ottimo ritmo! Affina ancora le aree più difficili.'; oTarget = 75; }
-      else if (avgPct < 90) { oTitle = 'Punta al 90%';              oDesc = 'Eccellente! Ormai sei pronto/a per l\'esame.'; oTarget = 90; }
-      else                  { oTitle = 'Risultato eccezionale 🏆';   oDesc = 'Sei al massimo della forma. Mantieni il ritmo!'; oTarget = 100; }
-
-      document.getElementById('obj-title').textContent = oTitle;
-      document.getElementById('obj-desc').textContent  = oDesc;
-      const pct = Math.min(100, Math.round(avgPct / oTarget * 100));
-      document.getElementById('progress-fill').style.width = pct + '%';
-      document.getElementById('progress-pct').textContent  = avgPct + '%';
-    }
-    renderResults();
+    /* ── PILLOLE: fade-in allo scroll ── */
+    const pillObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          pillObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.pill-card').forEach(card => pillObserver.observe(card));
   </script>
 </body>
 </html>

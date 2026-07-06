@@ -112,6 +112,17 @@
     .btn-retry:hover { opacity: .9; }
     .btn-dash { padding: 16px 40px; background: transparent; color: var(--text); border: 1.5px solid var(--border); border-radius: 10px; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; transition: all .2s; }
     .btn-dash:hover { border-color: var(--blue); color: var(--blue); }
+    /* ── EXPLANATION BANNER ── */
+    .explanation-banner { border-radius: 14px; padding: 16px 20px; margin-bottom: 20px; display: flex; gap: 14px; align-items: flex-start; animation: expl-in .3s ease; }
+    .explanation-banner.correct { background: rgba(16,185,129,.10); border: 1.5px solid var(--emerald); }
+    .explanation-banner.wrong   { background: rgba(239,68,68,.07);  border: 1.5px solid var(--red); }
+    .expl-icon  { font-size: 22px; flex-shrink: 0; line-height: 1.2; }
+    .expl-label { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 5px; }
+    .expl-label.correct { color: var(--emerald); }
+    .expl-label.wrong   { color: var(--red); }
+    .expl-body  { font-size: 13.5px; color: var(--text); line-height: 1.55; }
+    @keyframes expl-in { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+
     @media (max-width: 600px) { .header { padding: 16px 20px; } .wrapper { padding: 40px 20px; } .question-text { font-size: 18px; } }
   </style>
 </head>
@@ -149,6 +160,7 @@
       </div>
       <div class="question-text" id="question-text">...</div>
       <div class="options-list" id="options-list"></div>
+      <div id="explanation-banner" class="explanation-banner" style="display:none"></div>
       <div class="feedback-row"><button class="btn-next" id="btn-next" onclick="nextQuestion()">Prossima →</button></div>
     </div>
     <div id="result-screen">
@@ -178,13 +190,15 @@
     document.getElementById('gruppo-badge').textContent = gruppo || 'Simulazione';
     document.getElementById('back-link').href = dashUrl;
     let allQuestions = [], testQuestions = [], currentIndex = 0, answers = [];
-    let questionStartTime = 0, timerInterval = null;
+    let questionStartTime = 0, timerInterval = null, explanationTimer = null;
     const NUM_QUESTIONS = 30;
 
     fetch('domande.json?v=' + Date.now()).then(r => r.json()).then(data => {
-      allQuestions = data;
-      document.getElementById('total-archive').textContent = data.length;
-      const temi = new Set(data.map(q => q.macrotema).filter(Boolean));
+      allQuestions = Array.isArray(data)
+        ? data
+        : Object.entries(data).flatMap(([cat, qs]) => qs.map(q => ({ ...q, macrotema: cat })));
+      document.getElementById('total-archive').textContent = allQuestions.length;
+      const temi = new Set(allQuestions.map(q => q.macrotema).filter(Boolean));
       document.getElementById('total-temi').textContent = temi.size;
     });
 
@@ -216,37 +230,49 @@
       document.getElementById('q-timer').textContent = '0s';
       document.getElementById('question-text').textContent = q.domanda;
       document.getElementById('btn-next').style.display = 'none';
+      hideExplanation();
       startTimer();
-      const letters = Object.keys(q.opzioni);
-      let displayOptions;
-      if (q.mescola) {
-        const fixed = letters.filter(l => { const t=(q.opzioni[l]||'').toLowerCase(); return t.includes('tutte')||t.includes('nessuna')||t.includes('precedenti'); });
-        displayOptions = [...shuffle(letters.filter(l=>!fixed.includes(l))), ...fixed];
-      } else { displayOptions = letters; }
       const list = document.getElementById('options-list');
       list.innerHTML = '';
-      displayOptions.forEach((orig, i) => {
-        const text = q.opzioni[orig]; if (!text) return;
+      shuffle([...q.opzioni]).forEach((text, i) => {
         const btn = document.createElement('button');
-        btn.className = 'option-btn'; btn.dataset.orig = orig; btn.dataset.text = text;
+        btn.className = 'option-btn'; btn.dataset.text = text;
         btn.innerHTML = `<span class="letter">${String.fromCharCode(65+i)}</span><span>${text}</span>`;
-        btn.onclick = () => selectAnswer(btn, orig, q);
+        btn.onclick = () => selectAnswer(btn, q);
         list.appendChild(btn);
       });
     }
 
-    function selectAnswer(clickedBtn, sel, q) {
+    function selectAnswer(clickedBtn, q) {
       clearInterval(timerInterval);
       const elapsed = Date.now() - questionStartTime;
       document.querySelectorAll('.option-btn').forEach(b => b.disabled = true);
-      const ok = sel === q.risposta;
+      const ok = clickedBtn.dataset.text === q.risposta_corretta;
       clickedBtn.classList.add(ok ? 'correct' : 'wrong');
-      if (!ok) document.querySelectorAll('.option-btn').forEach(b => { if (b.dataset.orig===q.risposta) b.classList.add('correct'); });
-      answers.push({ correct: ok, tema: q.macrotema||'Altro', domanda: q.domanda, scelta: clickedBtn.dataset.text, corretta: q.opzioni[q.risposta]||'', tempoMs: elapsed });
+      if (!ok) document.querySelectorAll('.option-btn').forEach(b => { if (b.dataset.text===q.risposta_corretta) b.classList.add('correct'); });
+      answers.push({ correct: ok, tema: q.macrotema||'Altro', domanda: q.domanda, scelta: clickedBtn.dataset.text, corretta: q.risposta_corretta, tempoMs: elapsed });
+      showExplanation(ok, q.spiegazione);
       document.getElementById('btn-next').style.display = 'inline-flex';
     }
 
+    function showExplanation(ok, testo) {
+      const banner = document.getElementById('explanation-banner');
+      banner.className = 'explanation-banner ' + (ok ? 'correct' : 'wrong');
+      banner.innerHTML = `<div class="expl-icon">${ok ? '✅' : '❌'}</div>
+        <div><div class="expl-label ${ok ? 'correct' : 'wrong'}">${ok ? 'Risposta corretta!' : 'Risposta sbagliata'}</div>
+        <div class="expl-body">${testo || ''}</div></div>`;
+      banner.style.display = 'flex';
+      clearTimeout(explanationTimer);
+      explanationTimer = setTimeout(hideExplanation, 4000);
+    }
+
+    function hideExplanation() {
+      clearTimeout(explanationTimer);
+      document.getElementById('explanation-banner').style.display = 'none';
+    }
+
     function nextQuestion() {
+      hideExplanation();
       currentIndex++;
       if (currentIndex >= testQuestions.length) showResults();
       else renderQuestion();
@@ -292,7 +318,6 @@
     function goMicrosim(tema) { sessionStorage.setItem('microsim_tema', tema); window.location.href = 'microsim.html'; }
 
     function saveResult(result) {
-      // Salva nel formato letto dalle dashboard (chiave = username)
       const key = 'alpha_test_results_' + (authUser || 'default');
       const entry = { tipo: 'full', corrette: result.correct, totale: result.total, pct: result.pct, ts: Date.now(), byTema: result.byTema };
       const existing = JSON.parse(localStorage.getItem(key)||'[]');

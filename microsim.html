@@ -155,10 +155,11 @@
   <script>
     if (!localStorage.getItem('auth_user')) window.location.href = 'index.html';
 
-    const authUser  = localStorage.getItem('auth_user')  || '';
-    const authGruppo = localStorage.getItem('auth_gruppo') || '';
     const SUPABASE_URL = 'https://athqmxqratfyxnhmhwbn.supabase.co';
     const SUPABASE_KEY = 'sb_publishable_aVmmITMnZw0aqdxZoDNPkg_9_Cbarpn';
+
+    const authUser  = localStorage.getItem('auth_user')  || '';
+    const authGruppo = localStorage.getItem('auth_gruppo') || '';
     const dashUrl   = authGruppo === 'ISP' ? 'dashboard-isp.html' : authGruppo === 'Interaziendale' ? 'dashboard-inter.html' : 'index.html';
 
     document.getElementById('back-link').href = dashUrl;
@@ -282,12 +283,12 @@
             <div class="errore-row"><span class="errore-badge badge-correct">Risposta corretta</span><span style="color:var(--green); font-weight:500">${e.corretta}</span></div>
           </div>`).join('');
 
-      // Salva risultato nel formato letto dalle dashboard
+      // Salva in localStorage (usato dalle dashboard)
       const key      = 'alpha_test_results_' + authUser;
       const existing = JSON.parse(localStorage.getItem(key) || '[]');
       existing.push({ tipo: 'micro', corrette: correct, totale: answers.length, pct, ts: Date.now(), tema: currentTema });
       localStorage.setItem(key, JSON.stringify(existing));
-      sendToSupabase((authGruppo || 'ISP').toUpperCase(), 'micro', currentTema, correct, answers.length);
+      sendToSupabase(authGruppo || null, 'micro', currentTema, correct, answers.length);
     }
 
     function sendToSupabase(gruppo, tipo, macrotema, punteggio, totale) {

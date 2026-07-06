@@ -177,7 +177,6 @@
     const dashUrl   = gruppo === 'ISP' ? 'dashboard-isp.html' : gruppo === 'Interaziendale' ? 'dashboard-inter.html' : 'index.html';
     document.getElementById('gruppo-badge').textContent = gruppo || 'Simulazione';
     document.getElementById('back-link').href = dashUrl;
-    const SHEETS_URL = 'https://script.google.com/macros/s/AKfycbwgb-mm9AedoDRlqUjxcvw6N0JDmvsdkiBbBEVfUzZLv964OK2JN4jD2qPbU2KMavCDYw/exec';
     let allQuestions = [], testQuestions = [], currentIndex = 0, answers = [];
     let questionStartTime = 0, timerInterval = null;
     const NUM_QUESTIONS = 30;
@@ -300,20 +299,7 @@
       existing.push(entry); localStorage.setItem(key, JSON.stringify(existing));
       const all = JSON.parse(localStorage.getItem('alpha_test_results_ALL')||'[]');
       all.push({ ...entry, user: authUser, gruppo }); localStorage.setItem('alpha_test_results_ALL', JSON.stringify(all));
-      sendToSupabase((gruppo || 'ISP').toUpperCase(), 'completa', null, result.correct, result.total);
-      // Invia a Google Sheets via GET
-      const params = new URLSearchParams({
-        data: result.data,
-        gruppo: result.gruppo,
-        pct: String(Math.round(result.pct)),
-        correct: String(result.correct),
-        total: String(result.total),
-        avgTempo: String(result.avgTempo||0),
-        timestamp: String(result.timestamp),
-        byTema: JSON.stringify(result.byTema||{})
-      });
-      fetch(SHEETS_URL + '?' + params.toString())
-        .catch(err => console.log('Sheets error:', err));
+      sendToSupabase(gruppo || null, 'full', null, result.correct, result.total);
     }
 
     function sendToSupabase(gruppoVal, tipo, macrotema, punteggio, totale) {

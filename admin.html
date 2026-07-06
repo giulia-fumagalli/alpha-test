@@ -295,7 +295,7 @@
 
     const SUPABASE_URL = 'https://athqmxqratfyxnhmhwbn.supabase.co';
     const SUPABASE_KEY = 'sb_publishable_aVmmITMnZw0aqdxZoDNPkg_9_Cbarpn';
-    const KNOWN_USERS  = { 'isp': 'ISP', 'inter': 'Interaziendale' };
+    const KNOWN_USERS = { 'isp': 'ISP', 'inter': 'Interaziendale' };
 
     // ── Supabase fetch ──────────────────────────────────────────────────
     async function fetchFromSupabase() {
@@ -308,13 +308,14 @@
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const rows = await res.json();
       return rows.map(r => ({
-        user:    '—',
-        gruppo:  r.gruppo === 'INTERAZIENDALE' ? 'Interaziendale' : r.gruppo,
-        tipo:    r.tipo_simulazione === 'completa' ? 'full' : 'micro',
+        user:     r.gruppo === 'ISP' ? 'isp' : 'inter',
+        gruppo:   r.gruppo || '—',
+        tipo:     r.tipo_simulazione === 'micro' ? 'micro' : 'full',
         corrette: r.punteggio,
         totale:   r.totale_domande,
         pct:      Math.round((r.punteggio / r.totale_domande) * 100),
-        ts:       new Date(r.data_completamento).getTime()
+        ts:       new Date(r.data_completamento).getTime(),
+        tema:     r.macrotema || null
       }));
     }
 
@@ -364,7 +365,7 @@
           <td><div class="td-user"><div class="user-avatar ${avClass}">${avLetter}</div>${label}</div></td>
           <td>${r.gruppo}</td>
           <td><span class="badge-tipo ${r.tipo === 'micro' ? 'bt-micro' : 'bt-full'}">${tipo}</span></td>
-          <td><span class="td-score ${pass ? 'score-pass' : 'score-fail'}">${r.corrette}/${r.totale}</span></td>
+          <td><span class="td-score ${pass ? 'score-pass' : 'score-fail'}">${r.corrette != null ? r.corrette + '/' + r.totale : r.pct + '%'}</span></td>
           <td><span class="badge-esito ${pass ? 'be-pass' : 'be-fail'}">${r.pct}% — ${pass ? 'Superato' : 'Da rifare'}</span></td>
           <td>${date}</td>
         </tr>`;

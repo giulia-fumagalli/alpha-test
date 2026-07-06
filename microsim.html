@@ -184,7 +184,7 @@
 
     const NUM_QUESTIONS = 15;
     let rawData = {}, allQuestions = [], currentTema = '', testQuestions = [], currentIndex = 0, answers = [];
-    let timerInterval, questionStartTime, explanationTimer;
+    let timerInterval, questionStartTime;
 
     fetch('domande.json?v=' + Date.now())
       .then(r => r.json())
@@ -273,12 +273,9 @@
         <div><div class="expl-label ${ok ? 'correct' : 'wrong'}">${ok ? 'Risposta corretta!' : 'Risposta sbagliata'}</div>
         <div class="expl-body">${testo || ''}</div></div>`;
       banner.style.display = 'flex';
-      clearTimeout(explanationTimer);
-      explanationTimer = setTimeout(hideExplanation, 4000);
     }
 
     function hideExplanation() {
-      clearTimeout(explanationTimer);
       document.getElementById('explanation-banner').style.display = 'none';
     }
 

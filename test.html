@@ -190,7 +190,7 @@
     document.getElementById('gruppo-badge').textContent = gruppo || 'Simulazione';
     document.getElementById('back-link').href = dashUrl;
     let allQuestions = [], testQuestions = [], currentIndex = 0, answers = [];
-    let questionStartTime = 0, timerInterval = null, explanationTimer = null;
+    let questionStartTime = 0, timerInterval = null;
     const NUM_QUESTIONS = 30;
 
     fetch('domande.json?v=' + Date.now()).then(r => r.json()).then(data => {
@@ -262,12 +262,9 @@
         <div><div class="expl-label ${ok ? 'correct' : 'wrong'}">${ok ? 'Risposta corretta!' : 'Risposta sbagliata'}</div>
         <div class="expl-body">${testo || ''}</div></div>`;
       banner.style.display = 'flex';
-      clearTimeout(explanationTimer);
-      explanationTimer = setTimeout(hideExplanation, 4000);
     }
 
     function hideExplanation() {
-      clearTimeout(explanationTimer);
       document.getElementById('explanation-banner').style.display = 'none';
     }
 

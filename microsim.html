@@ -203,10 +203,9 @@
     document.getElementById('back-link').href = dashUrl;
 
     const ICONS = {
-      'Security & ERM':'🛡️', 'Risk Perception':'👁️', 'Time Management':'⏱️',
-      'Project Management':'📊', 'Sicurezza Fisica':'🔐', 'Sicurezza Pubblica':'🚔',
-      'Sicurezza Privata':'🏢', 'Sicurezza Urbana':'🏙️', 'Criminologia':'🔍',
-      'Crisis Management':'🚨', 'Organizzazione Aziendale':'📋', 'Economia e Finanza':'💰'
+      'Security & ERM':'🛡️', 'Risk Perception':'👁️', 'Crisis Management':'🚨',
+      'Sicurezza Fisica':'🔐', 'Sicurezza Pubblica, Privata e Urbana':'🚔',
+      'Criminologia e Time Management':'🔍'
     };
 
     const NUM_QUESTIONS = 15;
@@ -217,7 +216,7 @@
       .then(r => r.json())
       .then(data => {
         rawData = data;
-        allQuestions = Object.entries(data).flatMap(([cat, qs]) => qs.map(q => ({ ...q, macrotema: cat })));
+        allQuestions = data.map(q => ({ ...q, macrotema: q.categoria }));
         buildTemiGrid();
         const presel = sessionStorage.getItem('microsim_tema');
         if (presel) { sessionStorage.removeItem('microsim_tema'); startTema(presel); }
@@ -225,7 +224,11 @@
 
     function buildTemiGrid() {
       const grid = document.getElementById('temi-grid');
-      grid.innerHTML = Object.entries(rawData).map(([tema, qs]) => {
+      const byTema = rawData.reduce((acc, q) => {
+        (acc[q.categoria] = acc[q.categoria] || []).push(q);
+        return acc;
+      }, {});
+      grid.innerHTML = Object.entries(byTema).map(([tema, qs]) => {
         const icon = ICONS[tema] || '📚';
         const safe = tema.replace(/'/g, "\\'");
         return `<div class="tema-select-card" onclick="startTema('${safe}')">

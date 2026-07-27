@@ -1,6 +1,27 @@
 [
   {
     "categoria": "Security & ERM",
+    "domanda": "Una minaccia:",
+    "opzioni": [
+      "È una proprietà intrinseca o qualità di un determinato fattore.",
+      "È un evento certo o incerto.",
+      "È una fonte di rischio potenziale ma che non genera un danno.",
+      "È una mai evento intenzionale o esterno che sfrutta una vulnerabilità per arrecare danno."
+    ],
+    "risposta_corretta": "È una mai evento intenzionale o esterno che sfrutta una vulnerabilità per arrecare danno."
+  },
+  {
+    "categoria": "Security & ERM",
+    "domanda": "Qual è l'obiettivo prioritario della prevenzione?",
+    "opzioni": [
+      "Ridurre la probabilità di accadimento.",
+      "Ridurre i danni.",
+      "Limitare i costi assicurativi."
+    ],
+    "risposta_corretta": "Ridurre la probabilità di accadimento."
+  },
+  {
+    "categoria": "Security & ERM",
     "domanda": "Un disastro naturale è:",
     "opzioni": [
       "Un rischio speculativo.",
@@ -25,7 +46,7 @@
     "domanda": "Si definisce pericolo:",
     "opzioni": [
       "Proprietà intrinseca o qualità di un determinato fattore che potenzialmente può causare danni.",
-      "La probabilità che un certo evento si verifichi e l’impatto che ne può derivare.",
+      "La probabilità che un certo evento si verifichi e l'impatto che ne può derivare.",
       "La conseguenza di un evento rischioso.",
       "Elemento che non possiede il potenziale di originare un rischio."
     ],
@@ -43,7 +64,7 @@
   },
   {
     "categoria": "Security & ERM",
-    "domanda": "L’incertezza epistemica è:",
+    "domanda": "L'incertezza epistemica è:",
     "opzioni": [
       "Una incertezza dovuta alla mancanza di conoscenza o informazioni sufficienti",
       "Una variabilità naturale dei fenomeni",
@@ -53,7 +74,7 @@
   },
   {
     "categoria": "Security & ERM",
-    "domanda": "L’incertezza aleatoria indica:",
+    "domanda": "L'incertezza aleatoria indica:",
     "opzioni": [
       "Una mancanza di conoscenza dovuta a informazioni incomplete",
       "Una variabilità intrinseca dei fenomeni che non può essere eliminata",
@@ -66,8 +87,8 @@
     "domanda": "Il rischio residuo è:",
     "opzioni": [
       "Il livello di rischio che rimane dopo aver applicato le contromisure",
-      "Il rischio prima dell’applicazione delle contromisure",
-      "L’impatto economico massimo di un evento"
+      "Il rischio prima dell'applicazione delle contromisure",
+      "L'impatto economico massimo di un evento"
     ],
     "risposta_corretta": "Il livello di rischio che rimane dopo aver applicato le contromisure"
   },
@@ -87,7 +108,7 @@
     "opzioni": [
       "La probabilità che si verifichi un evento",
       "Il grado di debolezza di un sistema rispetto a una minaccia",
-      "L’impatto economico di un incidente"
+      "L'impatto economico di un incidente"
     ],
     "risposta_corretta": "Il grado di debolezza di un sistema rispetto a una minaccia"
   },
@@ -95,23 +116,23 @@
     "categoria": "Security & ERM",
     "domanda": "Quale delle seguenti affermazioni si riferisce al valore di mercato di un'azienda?",
     "opzioni": [
-      "Capacità dell’organizzazione di produrre reddito e risultati finanziari nel tempo.",
-      "Insieme delle risorse tangibili e intangibili che costituiscono la solidità strutturale dell’organizzazione.",
+      "Capacità dell'organizzazione di produrre reddito e risultati finanziari nel tempo.",
+      "Insieme delle risorse tangibili e intangibili che costituiscono la solidità strutturale dell'organizzazione.",
       "Capitale immateriale costruito nel tempo attraverso comportamenti coerenti e responsabili.",
-      "Valutazione attribuita all’impresa dagli investitori e dagli stakeholder esterni."
+      "Valutazione attribuita all'impresa dagli investitori e dagli stakeholder esterni."
     ],
-    "risposta_corretta": "Valutazione attribuita all’impresa dagli investitori e dagli stakeholder esterni."
+    "risposta_corretta": "Valutazione attribuita all'impresa dagli investitori e dagli stakeholder esterni."
   },
   {
     "categoria": "Security & ERM",
     "domanda": "Il rischio:",
     "opzioni": [
-      "Può essere descritto utilizzando la formula che moltiplica la probabilità di accadimento di un determinato evento per l’impatto provocato da tale evento.",
+      "Può essere descritto utilizzando la formula che moltiplica la probabilità di accadimento di un determinato evento per l'impatto provocato da tale evento.",
       "È sempre oggettivo.",
       "Non può essere calcolato perché riguarda eventi e conseguenze incerte.",
       "È definito dalla probabilità di accadimento di un determinato evento moltiplicato per la relativa frequenza di accadimento."
     ],
-    "risposta_corretta": "Può essere descritto utilizzando la formula che moltiplica la probabilità di accadimento di un determinato evento per l’impatto provocato da tale evento."
+    "risposta_corretta": "Può essere descritto utilizzando la formula che moltiplica la probabilità di accadimento di un determinato evento per l'impatto provocato da tale evento."
   },
   {
     "categoria": "Security & ERM",
@@ -129,10 +150,10 @@
     "opzioni": [
       "Evento che può avere un effetto negativo sugli obiettivi, misurato in termini di conseguenze e di probabilità.",
       "Possibile evento che influenzerà negativamente il raggiungimento degli obiettivi.",
-      "Effetto dell’incertezza in relazione agli obiettivi.",
+      "Effetto dell'incertezza in relazione agli obiettivi.",
       "Situazione o circostanza di incertezza sul raggiungimento degli obiettivi e dei programmi."
     ],
-    "risposta_corretta": "Effetto dell’incertezza in relazione agli obiettivi."
+    "risposta_corretta": "Effetto dell'incertezza in relazione agli obiettivi."
   },
   {
     "categoria": "Security & ERM",
@@ -158,14 +179,36 @@
   },
   {
     "categoria": "Security & ERM",
-    "domanda": "L’attività di security è volta a:",
+    "domanda": "L'attività di security è volta a:",
     "opzioni": [
-      "Prevenire, fronteggiare e superare azioni in prevalenza di natura illecita che espongono le persone e i beni (materiali e immateriali) dell’organizzazione a potenziali effetti lesivi e/o dannosi.",
-      "Prevenire, fronteggiare e superare azioni in prevalenza di natura dolosa e accidentale che espongono le persone e i beni (materiali e immateriali) dell’organizzazione a potenziali effetti lesivi e/o dannosi.",
+      "Prevenire, fronteggiare e superare azioni in prevalenza di natura illecita che espongono le persone e i beni (materiali e immateriali) dell'organizzazione a potenziali effetti lesivi e/o dannosi.",
+      "Prevenire, fronteggiare e superare azioni in prevalenza di natura dolosa e accidentale che espongono le persone e i beni (materiali e immateriali) dell'organizzazione a potenziali effetti lesivi e/o dannosi.",
       "Prevenire e fronteggiare eventi in prevalenza accidentali che possono causare conseguenze dannose per la salute psico-fisica delle persone nei luoghi di lavoro.",
       "Prevenire, fronteggiare e superare rischi causati da azioni in prevalenza illecite contro l'ambiente."
     ],
-    "risposta_corretta": "Prevenire, fronteggiare e superare azioni in prevalenza di natura illecita che espongono le persone e i beni (materiali e immateriali) dell’organizzazione a potenziali effetti lesivi e/o dannosi."
+    "risposta_corretta": "Prevenire, fronteggiare e superare azioni in prevalenza di natura illecita che espongono le persone e i beni (materiali e immateriali) dell'organizzazione a potenziali effetti lesivi e/o dannosi."
+  },
+  {
+    "categoria": "Security & ERM",
+    "domanda": "Come si è evoluta negli anni la funzione di security?",
+    "opzioni": [
+      "Modello Risk Financing e poi Risk Controlling.",
+      "Modello Castle Based, Business Oriented e infine Total Risk Governance.",
+      "Modello Castle Based, Perimeter Security e infine Business Oriented.",
+      "Nessuna delle risposte precedenti."
+    ],
+    "risposta_corretta": "Modello Castle Based, Business Oriented e infine Total Risk Governance."
+  },
+  {
+    "categoria": "Security & ERM",
+    "domanda": "Quali scenari globali è utile prendere in considerazione per comprendere i rischi?",
+    "opzioni": [
+      "Tecnologici e Socio-economici.",
+      "Ambientali e Alimentari.",
+      "Geopolitici.",
+      "Tutte le risposte precedenti."
+    ],
+    "risposta_corretta": "Tutte le risposte precedenti."
   },
   {
     "categoria": "Security & ERM",
@@ -202,13 +245,36 @@
   },
   {
     "categoria": "Security & ERM",
+    "domanda": "Secondo la definizione di \"Sistema Paese\", quale delle seguenti affermazioni ne interpreta correttamente il significato strategico?",
+    "opzioni": [
+      "È l'insieme delle politiche di sicurezza e difesa adottate da uno Stato per contrastare minacce interne ed esterne.",
+      "È la somma dei fattori interni di uno Stato che ne determinano la stabilità politica ed economica.",
+      "È l'insieme integrato di fattori interni ed esterni attribuibili a uno Stato, che ne influenzano la posizione internazionale e sono orientati alla tutela dell'interesse nazionale.",
+      "È il coordinamento operativo tra istituzioni civili e militari finalizzato alla gestione delle emergenze internazionali."
+    ],
+    "risposta_corretta": "È l'insieme integrato di fattori interni ed esterni attribuibili a uno Stato, che ne influenzano la posizione internazionale e sono orientati alla tutela dell'interesse nazionale."
+  },
+  {
+    "categoria": "Security & ERM",
     "domanda": "Un sistema di ERM (Enterprise Risk Management) è/deve essere?",
     "opzioni": [
       "Statico e immutabile nel tempo",
       "Circolare (PDCA – Plan Do Check Act) e adattivo.",
-      "Rigorosamente analitico e senza approssimazioni di sorta."
+      "Rigorosamente analitico e senza approssimazioni di sorta.",
+      "Nessuna delle risposte precedenti."
     ],
     "risposta_corretta": "Circolare (PDCA – Plan Do Check Act) e adattivo."
+  },
+  {
+    "categoria": "Security & ERM",
+    "domanda": "Quali sono le due dimensioni considerate nell'analisi del contesto?",
+    "opzioni": [
+      "Interno ed Esterno.",
+      "Internazionale e Nazionale.",
+      "Geografica e Politica.",
+      "Ambientale e Sanitaria."
+    ],
+    "risposta_corretta": "Interno ed Esterno."
   },
   {
     "categoria": "Security & ERM",
@@ -223,7 +289,7 @@
   },
   {
     "categoria": "Security & ERM",
-    "domanda": "Quale tra questi NON è un aspetto da tenere in considerazione per l’analisi del contesto interno:",
+    "domanda": "Quale tra questi NON è un aspetto da tenere in considerazione per l'analisi del contesto interno:",
     "opzioni": [
       "Risorse.",
       "Strutture e infrastrutture.",
@@ -234,7 +300,7 @@
   },
   {
     "categoria": "Security & ERM",
-    "domanda": "Nel risk management process, quale fase viene dopo l’identificazione dei rischi?",
+    "domanda": "Nel risk management process, quale fase viene dopo l'identificazione dei rischi?",
     "opzioni": [
       "Revisione tecniche di gestione.",
       "Monitoraggio risultati",
@@ -256,14 +322,14 @@
   },
   {
     "categoria": "Security & ERM",
-    "domanda": "Quali sono gli strumenti principali per l’analisi del settore?",
+    "domanda": "Quali sono gli strumenti principali per l'analisi del settore?",
     "opzioni": [
-      "PESTLE Analysis, Porter’s Five Forces e SWOT.",
+      "PESTLE Analysis, Porter's Five Forces e SWOT.",
       "Balanced Scorecard, Canvas e Gantt.",
       "Benchmarking, Audit e Brainstorming.",
       "Organigramma, Budget e KPI."
     ],
-    "risposta_corretta": "PESTLE Analysis, Porter’s Five Forces e SWOT."
+    "risposta_corretta": "PESTLE Analysis, Porter's Five Forces e SWOT."
   },
   {
     "categoria": "Security & ERM",
@@ -278,9 +344,9 @@
   },
   {
     "categoria": "Security & ERM",
-    "domanda": "L’attività di prevenzione è volta a:",
+    "domanda": "L'attività di prevenzione è volta a:",
     "opzioni": [
-      "ridurre la gravità dell’evento",
+      "ridurre la gravità dell'evento",
       "trasferire il rischio a terzi",
       "ridurre la probabilità di un evento",
       "aumentare il risk appetite"
@@ -289,7 +355,7 @@
   },
   {
     "categoria": "Security & ERM",
-    "domanda": "Qual è l’obiettivo principale dell’attività di protezione?",
+    "domanda": "Qual è l'obiettivo principale dell'attività di protezione?",
     "opzioni": [
       "Eliminare completamente il rischio",
       "Ridurre la gravità di un evento",
@@ -303,7 +369,7 @@
     "domanda": "Il Risk Treatment consiste nel:",
     "opzioni": [
       "Eliminare automaticamente i rischi",
-      "Trasferire sempre il rischio all’assicurazione",
+      "Trasferire sempre il rischio all'assicurazione",
       "Definire e implementare misure per gestire il rischio"
     ],
     "risposta_corretta": "Definire e implementare misure per gestire il rischio"
@@ -313,11 +379,11 @@
     "domanda": "Nel risk treatment, a cosa si riferisce il risk financing?",
     "opzioni": [
       "Alla scelta tra rischio accettabile e non accettabile",
-      "All’individuazione dei mezzi di finanziamento per ripristinare la capacità produttiva dopo un evento dannoso",
+      "All'individuazione dei mezzi di finanziamento per ripristinare la capacità produttiva dopo un evento dannoso",
       "Alla riduzione della probabilità che un rischio si verifichi",
-      "All’eliminazione preventiva di ogni rischio operativo"
+      "All'eliminazione preventiva di ogni rischio operativo"
     ],
-    "risposta_corretta": "All’individuazione dei mezzi di finanziamento per ripristinare la capacità produttiva dopo un evento dannoso"
+    "risposta_corretta": "All'individuazione dei mezzi di finanziamento per ripristinare la capacità produttiva dopo un evento dannoso"
   },
   {
     "categoria": "Security & ERM",
@@ -325,7 +391,7 @@
     "opzioni": [
       "Scegliere se il rischio è accettabile o non accettabile",
       "Stabilire il budget annuale della funzione security",
-      "Trasferire automaticamente tutti i rischi all’assicurazione",
+      "Trasferire automaticamente tutti i rischi all'assicurazione",
       "Quantificare esclusivamente il danno economico finale"
     ],
     "risposta_corretta": "Scegliere se il rischio è accettabile o non accettabile"
@@ -364,7 +430,7 @@
   },
   {
     "categoria": "Security & ERM",
-    "domanda": "Quale categoria comprende i rischi al di fuori del controllo dell’organizzazione?",
+    "domanda": "Quale categoria comprende i rischi al di fuori del controllo dell'organizzazione?",
     "opzioni": [
       "Esterni",
       "Parzialmente indirizzabili",
@@ -390,36 +456,36 @@
     "opzioni": [
       "Si concentra soprattutto su profili di rischio noti e su processi semplificati",
       "È basato su standard, regole e sistemi chiusi",
-      "Si fonda sui Futures Studies e sulla gestione dell’incertezza autentica",
+      "Si fonda sui Futures Studies e sulla gestione dell'incertezza autentica",
       "È orientato prevalentemente a dati quantitativi e informazione accessibile"
     ],
-    "risposta_corretta": "Si fonda sui Futures Studies e sulla gestione dell’incertezza autentica"
+    "risposta_corretta": "Si fonda sui Futures Studies e sulla gestione dell'incertezza autentica"
   },
   {
     "categoria": "Security & ERM",
     "domanda": "Nel confronto tra RMR e RMA, per quale motivo vengono definiti sistemi complementari?",
     "opzioni": [
-      "Per la completa eliminazione dell’incertezza",
-      "Per la resilienza culturale dell’organizzazione",
+      "Per la completa eliminazione dell'incertezza",
+      "Per la resilienza culturale dell'organizzazione",
       "Per la riduzione dei soli rischi interni",
       "Per la sostituzione del modello reattivo con quello anticipatorio"
     ],
-    "risposta_corretta": "Per la resilienza culturale dell’organizzazione"
+    "risposta_corretta": "Per la resilienza culturale dell'organizzazione"
   },
   {
     "categoria": "Security & ERM",
-    "domanda": "Nella Business Impact Analysis, che cosa indica l’RTO (Recovery Time Objective)?",
+    "domanda": "Nella Business Impact Analysis, che cosa indica l'RTO (Recovery Time Objective)?",
     "opzioni": [
       "Il livello minimo di operatività necessario per garantire la continuità del business",
       "Il tempo massimo tollerabile di interruzione prima che il danno diventi insostenibile",
-      "Il tempo obiettivo entro cui ripristinare l’operatività dopo un’interruzione",
-      "La quantità di dati che l’organizzazione può perdere senza subire impatti rilevanti"
+      "Il tempo obiettivo entro cui ripristinare l'operatività dopo un'interruzione",
+      "La quantità di dati che l'organizzazione può perdere senza subire impatti rilevanti"
     ],
-    "risposta_corretta": "Il tempo obiettivo entro cui ripristinare l’operatività dopo un’interruzione"
+    "risposta_corretta": "Il tempo obiettivo entro cui ripristinare l'operatività dopo un'interruzione"
   },
   {
     "categoria": "Security & ERM",
-    "domanda": "Quale tra queste è una delle cinque componenti principali del framework COSO per l’Enterprise Risk Management?",
+    "domanda": "Quale tra queste è una delle cinque componenti principali del framework COSO per l'Enterprise Risk Management?",
     "opzioni": [
       "Governance & Culture",
       "Crisis & Recovery",
@@ -445,7 +511,7 @@
     "opzioni": [
       "Definisce le scadenze temporali per il raggiungimento degli obiettivi",
       "Analizza gli obiettivi rispetto a punti di forza, debolezze, opportunità e minacce",
-      "Misura esclusivamente i rischi economico-finanziari dell’organizzazione",
+      "Misura esclusivamente i rischi economico-finanziari dell'organizzazione",
       "Stabilisce il budget necessario per attuare il piano strategico"
     ],
     "risposta_corretta": "Analizza gli obiettivi rispetto a punti di forza, debolezze, opportunità e minacce"
@@ -457,13 +523,13 @@
       "Rischio inerente più i punti di forza interni",
       "Rischio lordo più le vulnerabilità interne",
       "Rischio inerente meno i punti di forza interni",
-      "Rischio esterno meno l’impatto sugli obiettivi"
+      "Rischio esterno meno l'impatto sugli obiettivi"
     ],
     "risposta_corretta": "Rischio inerente meno i punti di forza interni"
   },
   {
     "categoria": "Security & ERM",
-    "domanda": "Nel modello ERM, quale concetto indica il livello di rischio che l’organizzazione vuole supportare rispetto ai propri obiettivi?",
+    "domanda": "Nel modello ERM, quale concetto indica il livello di rischio che l'organizzazione vuole supportare rispetto ai propri obiettivi?",
     "opzioni": [
       "Risk appetite",
       "Risk capacity",
@@ -474,7 +540,7 @@
   },
   {
     "categoria": "Security & ERM",
-    "domanda": "Nel modello ERM, quale tra questi concetti rappresenta l’ampiezza massima entro cui l’organizzazione può discostarsi dai propri obiettivi?",
+    "domanda": "Nel modello ERM, quale tra questi concetti rappresenta l'ampiezza massima entro cui l'organizzazione può discostarsi dai propri obiettivi?",
     "opzioni": [
       "Risk appetite",
       "Risk tolerance",
@@ -495,230 +561,6 @@
     "risposta_corretta": "Deviazione dal budget, debito pubblico e liquidità"
   },
   {
-    "categoria": "Risk Perception",
-    "domanda": "Perché il rischio non può essere percepito secondo Brehmer?",
-    "opzioni": [
-      "È invisibile",
-      "Dipende dalla tecnologia",
-      "Riguarda eventi futuri e non oggetti presenti",
-      "Secondo la teoria del doppio processo di Kahneman, quale caratteristica distingue principalmente il Sistema 1 dal Sistema 2?",
-      "È lento e richiede uno sforzo cognitivo elevato",
-      "È basato su regole formali e calcoli espliciti",
-      "È veloce, automatico e richiede poche risorse cognitive",
-      "Si attiva solo in situazioni nuove e complesse"
-    ],
-    "risposta_corretta": "È veloce, automatico e richiede poche risorse cognitive"
-  },
-  {
-    "categoria": "Risk Perception",
-    "domanda": "Quale attività, secondo la teoria del doppio processo di Kahneman, è tipica del Sistema 2?",
-    "opzioni": [
-      "Calcolare 17 × 24",
-      "Riconoscere un volto",
-      "Guidare su un percorso abituale"
-    ],
-    "risposta_corretta": "Calcolare 17 × 24"
-  },
-  {
-    "categoria": "Risk Perception",
-    "domanda": "L’inattentional blindness è causata principalmente da:",
-    "opzioni": [
-      "Problemi di vista",
-      "Mancanza di esperienza e attenzione non focalizzata",
-      "Carico cognitivo elevato e attenzione focalizzata"
-    ],
-    "risposta_corretta": "Carico cognitivo elevato e attenzione focalizzata"
-  },
-  {
-    "categoria": "Risk Perception",
-    "domanda": "L’euristica della disponibilità indica che:",
-    "opzioni": [
-      "Valutiamo gli eventi in base alle probabilità di accadimento",
-      "Sopravvalutiamo gli eventi che ricordiamo facilmente",
-      "Prendiamo decisioni basate solo sui dati da fonti attendibili",
-      "Secondo l’euristica della disponibilità, come valutano le persone la probabilità che un evento si verifichi?",
-      "In base alla frequenza statistica reale dell’evento",
-      "In base alla facilità con cui esempi dell’evento vengono richiamati alla mente",
-      "In base al valore atteso dell’evento",
-      "In base a un’analisi logica e sistematica di tutte le informazioni disponibili"
-    ],
-    "risposta_corretta": "In base alla facilità con cui esempi dell’evento vengono richiamati alla mente"
-  },
-  {
-    "categoria": "Risk Perception",
-    "domanda": "L’euristica dell’affettività porta le persone a:",
-    "opzioni": [
-      "Valutare il rischio solo con dati numerici",
-      "Considerare pericolose tutte le tecnologie",
-      "Giudicare meno rischiose attività associate a emozioni positive",
-      "Secondo l’approccio del nudging, una nudge è:",
-      "Una strategia che obbliga le persone a compiere la scelta considerata migliore",
-      "Un incentivo economico che modifica il comportamento individuale",
-      "Un aspetto dell’architettura delle scelte che influenza il comportamento senza limitare la libertà di scelta",
-      "Una tecnica basata su sanzioni per ridurre decisioni rischiose"
-    ],
-    "risposta_corretta": "Un aspetto dell’architettura delle scelte che influenza il comportamento senza limitare la libertà di scelta"
-  },
-  {
-    "categoria": "Risk Perception",
-    "domanda": "Secondo la Prospect Theory, di fronte alle perdite le persone:",
-    "opzioni": [
-      "Diventano più propense al rischio",
-      "Preferiscono sempre opzioni sicure",
-      "Ignorano le probabilità",
-      "Cosa afferma il principio di avversione alla perdita nella Prospect Theory?",
-      "Le perdite generano un impatto psicologico circa doppio rispetto ai guadagni",
-      "Le perdite e i guadagni di pari entità si compensano psicologicamente",
-      "I guadagni producono un piacere maggiore delle perdite equivalenti",
-      "Le persone sono sempre propense al rischio"
-    ],
-    "risposta_corretta": "Le perdite generano un impatto psicologico circa doppio rispetto ai guadagni"
-  },
-  {
-    "categoria": "Risk Perception",
-    "domanda": "Il bias dell’ottimismo porta a:",
-    "opzioni": [
-      "Sopravvalutare i rischi personali",
-      "Sottovalutare i rischi personali rispetto agli altri",
-      "Percepire tutti i rischi allo stesso modo"
-    ],
-    "risposta_corretta": "Sottovalutare i rischi personali rispetto agli altri"
-  },
-  {
-    "categoria": "Risk Perception",
-    "domanda": "Le due dimensioni fondamentali della percezione del rischio sono:",
-    "opzioni": [
-      "Cognitiva e affettiva",
-      "Razionale e intuitiva",
-      "Tecnologica e psicologica"
-    ],
-    "risposta_corretta": "Cognitiva e affettiva"
-  },
-  {
-    "categoria": "Risk Perception",
-    "domanda": "Lo stress acuto sulla consapevolezza situazionale provoca:",
-    "opzioni": [
-      "Maggiore precisione percettiva",
-      "Nessun effetto",
-      "Riduzione del campo attentivo e della capacità decisionale"
-    ],
-    "risposta_corretta": "Riduzione del campo attentivo e della capacità decisionale"
-  },
-  {
-    "categoria": "Risk Perception",
-    "domanda": "I rischi informatici vengono spesso sottovalutati perché:",
-    "opzioni": [
-      "Sono sempre a bassa probabilità",
-      "Il cervello umano si è evoluto per gestire minacce visibili e immediate",
-      "Sono sempre facilmente rilevabili",
-      "L’effetto framing dimostra che:",
-      "Le decisioni sono indipendenti dal modo in cui le alternative sono presentate",
-      "Le persone scelgono sempre l’opzione con il valore atteso più alto",
-      "Il framing influenza solo individui con scarse competenze numeriche",
-      "La stessa informazione può portare a decisioni diverse se formulata in modo diverso"
-    ],
-    "risposta_corretta": "La stessa informazione può portare a decisioni diverse se formulata in modo diverso"
-  },
-  {
-    "categoria": "Criminologia e Time Management",
-    "domanda": "Il Time Management:",
-    "opzioni": [
-      "implica che vi sia un solo modo per raggiungere un obiettivo in modo efficiente",
-      "riguarda ciò che le persone fanno con il loro tempo per ottenere qualcosa",
-      "riguarda ciò che le persone fanno con il loro tempo, in generale",
-      "è un metodo per evitare di delegare i compiti più importanti"
-    ],
-    "risposta_corretta": "riguarda ciò che le persone fanno con il loro tempo per ottenere qualcosa"
-  },
-  {
-    "categoria": "Criminologia e Time Management",
-    "domanda": "Il Time Discounting descrive:",
-    "opzioni": [
-      "La tendenza delle persone a preferire obiettivi complessi a obiettivi semplici.",
-      "La capacità delle persone di attribuire più valore ai risultati futuri rispetto a quelli immediati.",
-      "La tendenza delle persone a svalutare le ricompense future rispetto a quelle immediate.",
-      "Il metodo con cui si calcola il tempo medio necessario a completare un’attività."
-    ],
-    "risposta_corretta": "La tendenza delle persone a svalutare le ricompense future rispetto a quelle immediate."
-  },
-  {
-    "categoria": "Criminologia e Time Management",
-    "domanda": "La Planning Fallacy consiste nella tendenza a:",
-    "opzioni": [
-      "Sopravvalutare costi, rischi e durata di un’attività e sottovalutare i benefici.",
-      "Essere eccessivamente ottimisti sui tempi necessari per completare un compito.",
-      "Pianificare solo attività urgenti e non importanti.",
-      "Rinviare le attività che dipendono da altri soggetti."
-    ],
-    "risposta_corretta": "Essere eccessivamente ottimisti sui tempi necessari per completare un compito."
-  },
-  {
-    "categoria": "Criminologia e Time Management",
-    "domanda": "Quale dei seguenti elementi è tra i “ladri del tempo” legati alla disorganizzazione?",
-    "opzioni": [
-      "E-mail continue.",
-      "Incapacità di dire di no",
-      "Multitasking",
-      "Internet e social"
-    ],
-    "risposta_corretta": "Multitasking"
-  },
-  {
-    "categoria": "Criminologia e Time Management",
-    "domanda": "Il Cerchio dell’Influenza invita a concentrarsi principalmente su:",
-    "opzioni": [
-      "Le cose che si possono controllare o influenzare",
-      "Tutto ciò che accade intorno a noi",
-      "Le attività fuori dal nostro controllo",
-      "I problemi più urgenti degli altri"
-    ],
-    "risposta_corretta": "Le cose che si possono controllare o influenzare"
-  },
-  {
-    "categoria": "Criminologia e Time Management",
-    "domanda": "La Matrice di Eisenhower/Covey interseca 2 dimensioni, quali?",
-    "opzioni": [
-      "Necessità ed efficienza",
-      "Distrazione e spreco",
-      "Urgenza e incertezza",
-      "Importanza e urgenza"
-    ],
-    "risposta_corretta": "Importanza e urgenza"
-  },
-  {
-    "categoria": "Criminologia e Time Management",
-    "domanda": "Nel confronto tra gestione del tempo ed efficienza, il time management è collegato principalmente a:",
-    "opzioni": [
-      "Goal setting",
-      "Risk assessment.",
-      "Decision making.",
-      "Problem solving creativo."
-    ],
-    "risposta_corretta": "Decision making."
-  },
-  {
-    "categoria": "Criminologia e Time Management",
-    "domanda": "Il cuore di un’efficace gestione del tempo personale consiste nel dedicare il massimo tempo possibile a:",
-    "opzioni": [
-      "Lavori urgenti in un’atmosfera altamente reattiva.",
-      "Lavori importanti in un’atmosfera non urgente.",
-      "Attività non importanti ma rapide da concludere.",
-      "Compiti più semplici per liberare spazio mentale."
-    ],
-    "risposta_corretta": "Lavori importanti in un’atmosfera non urgente."
-  },
-  {
-    "categoria": "Criminologia e Time Management",
-    "domanda": "Una priorità:",
-    "opzioni": [
-      "è \"urgenza\" ed è oggettiva, se definita in base al tempo",
-      "è \"urgenza\" ed è oggettiva, se definita in base al valore/utilità",
-      "ha solo una componente oggettiva",
-      "nessuna delle risposte precedenti"
-    ],
-    "risposta_corretta": "è \"urgenza\" ed è oggettiva, se definita in base al tempo"
-  },
-  {
     "categoria": "Security & ERM",
     "domanda": "Quale delle seguenti affermazioni sul diagramma di Gantt è vera?",
     "opzioni": [
@@ -734,11 +576,11 @@
     "domanda": "Nel Project Management, un progetto è:",
     "opzioni": [
       "Un insieme di attività ripetitive senza scadenza",
-      "Un’attività temporanea con inizio e fine, orientata a uno specifico obiettivo",
-      "Un processo continuo dell’organizzazione orientato verso obiettivi generali",
-      "Un’attività priva di vincoli di costo e risorse"
+      "Un'attività temporanea con inizio e fine, orientata a uno specifico obiettivo",
+      "Un processo continuo dell'organizzazione orientato verso obiettivi generali",
+      "Un'attività priva di vincoli di costo e risorse"
     ],
-    "risposta_corretta": "Un’attività temporanea con inizio e fine, orientata a uno specifico obiettivo"
+    "risposta_corretta": "Un'attività temporanea con inizio e fine, orientata a uno specifico obiettivo"
   },
   {
     "categoria": "Security & ERM",
@@ -775,7 +617,7 @@
   },
   {
     "categoria": "Security & ERM",
-    "domanda": "Qual è l’ordine corretto delle 5 fasi di un progetto secondo la lezione?",
+    "domanda": "Qual è l'ordine corretto delle 5 fasi di un progetto secondo la lezione?",
     "opzioni": [
       "Pianificazione – Avvio – Esecuzione – Controllo – Chiusura",
       "Avvio – Esecuzione – Pianificazione – Controllo – Chiusura",
@@ -830,422 +672,278 @@
   },
   {
     "categoria": "Security & ERM",
-    "domanda": "Nella matrice RACI, chi è l’Accountable?",
+    "domanda": "Nella matrice RACI, chi è l'Accountable?",
     "opzioni": [
       "Chi esegue materialmente il lavoro",
-      "Chi deve essere informato sull’avanzamento",
+      "Chi deve essere informato sull'avanzamento",
       "Chi fornisce supporto consulenziale",
       "Chi è responsabile del risultato finale"
     ],
     "risposta_corretta": "Chi è responsabile del risultato finale"
   },
   {
-    "categoria": "Sicurezza Fisica",
-    "domanda": "Un sistema di controllo accessi serve a:",
+    "categoria": "Security & ERM",
+    "domanda": "1. Secondo la UNI ISO 31030:2021, che cosa dovrebbe fare il top management rispetto ai rischi di viaggio?",
     "opzioni": [
-      "Regolare chi può accedere a un’area e in quali condizioni",
-      "Proteggere dati informatici",
-      "Monitorare solo il personale interno"
+      "a.  Delegare integralmente il tema alla travel agency esterna.",
+      "b.  Assumersi la responsabilità dei rischi di viaggio dell'organizzazione e fornire prove del proprio impegno e sostegno.",
+      "c.  Limitarsi a vietare tutte le trasferte verso Paesi non europei.",
+      "d.  Valutare i rischi solo dopo il rientro del viaggiatore."
     ],
-    "risposta_corretta": "Regolare chi può accedere a un’area e in quali condizioni"
+    "risposta_corretta": "b.  Assumersi la responsabilità dei rischi di viaggio dell'organizzazione e fornire prove del proprio impegno e sostegno."
   },
   {
-    "categoria": "Sicurezza Fisica",
-    "domanda": "La norma CEI EN 50131 riguarda:",
+    "categoria": "Security & ERM",
+    "domanda": "2.  Nel Travel Risk Management, che rapporto esiste tra Duty of Care e Duty of Loyalty?",
     "opzioni": [
-      "Videosorveglianza",
-      "Sistemi di allarme intrusione",
-      "Sistemi di controllo accessi"
+      "a.  Il Duty of Care riguarda il viaggiatore, mentre il Duty of Loyalty riguarda solo la travel agency.",
+      "b.  Il Duty of Care riguarda l'organizzazione e il dovere di protezione; il Duty of Loyalty riguarda il viaggiatore e la collaborazione con policy e procedure.",
+      "c.  Sono due sinonimi che indicano esclusivamente gli obblighi assicurativi.",
+      "d.  Il Duty of Loyalty elimina il dovere dell'organizzazione di proteggere il viaggiatore."
     ],
-    "risposta_corretta": "Sistemi di allarme intrusione"
+    "risposta_corretta": "b.  Il Duty of Care riguarda l'organizzazione e il dovere di protezione; il Duty of Loyalty riguarda il viaggiatore e la collaborazione con policy e procedure."
   },
   {
-    "categoria": "Sicurezza Fisica",
-    "domanda": "La norma CEI EN 62676 riguarda:",
+    "categoria": "Security & ERM",
+    "domanda": "3.  Qual è il ruolo della policy di Travel Risk Management?",
     "opzioni": [
-      "Progettazione dei sistemi di videosorveglianza",
-      "Sistemi di allarme",
-      "Sistemi di controllo accessi"
+      "a.  È il primo e più importante mattone per costruire un processo solido, definendo ambito di applicazione e procedure da seguire.",
+      "b.  È un documento facoltativo utile solo per le trasferte ad alto rischio.",
+      "c.  Serve esclusivamente a prenotare voli e alberghi.",
+      "d.  Sostituisce la valutazione dei rischi e il DVR."
     ],
-    "risposta_corretta": "Progettazione dei sistemi di videosorveglianza"
+    "risposta_corretta": "a.  È il primo e più importante mattone per costruire un processo solido, definendo ambito di applicazione e procedure da seguire."
   },
   {
-    "categoria": "Sicurezza Fisica",
-    "domanda": "Secondo la norma CEI EN 62676, nella progettazione di un sistema di videosorveglianza è necessario considerare:",
+    "categoria": "Security & ERM",
+    "domanda": "4.  Perché la sola valutazione del 'rischio Paese' non è sufficiente nel TRM?",
     "opzioni": [
-      "Solo la qualità delle telecamere",
-      "Solo il numero delle telecamere",
-      "Il livello di rischio, le minacce e il contesto operativo"
+      "a.  Perché il rischio Paese non contiene informazioni di viaggio utilizzabili dall'azienda.",
+      "b.  Perché considera solo gli aspetti sanitari e non quelli di security.",
+      "c.  Perché è solo il primo step e non considera la rischiosità specifica della trasferta, della persona e delle attività svolte.",
+      "d.  Perché deve essere sostituita sempre da una valutazione soggettiva del viaggiatore."
     ],
-    "risposta_corretta": "Il livello di rischio, le minacce e il contesto operativo"
+    "risposta_corretta": "c.  Perché è solo il primo step e non considera la rischiosità specifica della trasferta, della persona e delle attività svolte."
   },
   {
-    "categoria": "Sicurezza Fisica",
-    "domanda": "Nella sicurezza fisica, la security in depth indica che:",
+    "categoria": "Security & ERM",
+    "domanda": "5.  Per definire il risk profile nel TRM, che cosa deve analizzare l'organizzazione?",
     "opzioni": [
-      "La sicurezza deve essere solo perimetrale",
-      "La protezione deve essere realizzata tramite più livelli di difesa",
-      "Riguarda solo il digitale"
+      "a.  Solo il Paese di destinazione e il costo del viaggio.",
+      "b.  Contesto organizzativo, settore, operazioni o mansioni specifiche, destinazioni e profilo individuale del viaggiatore.",
+      "c.  Solo il passaporto, il visto e le prenotazioni alberghiere.",
+      "d.  Solo gli eventi critici avvenuti durante trasferte precedenti."
     ],
-    "risposta_corretta": "La protezione deve essere realizzata tramite più livelli di difesa"
+    "risposta_corretta": "b.  Contesto organizzativo, settore, operazioni o mansioni specifiche, destinazioni e profilo individuale del viaggiatore."
   },
   {
-    "categoria": "Sicurezza Fisica",
-    "domanda": "I building blocks della sicurezza fisica comprendono:",
+    "categoria": "Security & ERM",
+    "domanda": "6.  Quali attività rientrano nella fase PRE trip secondo le slide TRM?",
     "opzioni": [
-      "Solo sistemi tecnologici",
-      "Solo personale di sicurezza",
-      "Tecnologie, persone, procedure e sistemi di risposta"
+      "a.  Debriefing, monitoraggio sanitario e miglioramento continuo.",
+      "b.  Incident management e rimpatrio del dipendente.",
+      "c.  TRM Policy & Procedure, analisi rischi e contromisure, schede Paese, formazione e verifica sanitaria.",
+      "d.  Solo prenotazione del viaggio e rimborso spese."
     ],
-    "risposta_corretta": "Tecnologie, persone, procedure e sistemi di risposta"
+    "risposta_corretta": "c.  TRM Policy & Procedure, analisi rischi e contromisure, schede Paese, formazione e verifica sanitaria."
   },
   {
-    "categoria": "Sicurezza Fisica",
-    "domanda": "Relativamente alle classi di soluzione di sicurezza fisica (Building Blocks) quali hanno come obiettivo rallentare o al massimo impedire l’azione illecita:",
+    "categoria": "Security & ERM",
+    "domanda": "6.  Quale affermazione sulla formazione nel Travel Risk Management è corretta?",
     "opzioni": [
-      "Hardening, Access Control, Safes and Vaults",
-      "Hardening, Access Control, Allarm Systems",
-      "Access Control, Safes and Vaults, Command and Control Center"
+      "a.  La formazione è facoltativa se il lavoratore ha già viaggiato all'estero.",
+      "b.  La sola messa a disposizione di slide o portali esterni è sufficiente come formazione valida.",
+      "c.  La formazione non è facoltativa, non può essere rifiutata e deve lasciarne traccia verificabile.",
+      "d.  La formazione è necessaria solo per il personale che gestisce il processo, non per chi viaggia."
     ],
-    "risposta_corretta": "Hardening, Access Control, Safes and Vaults"
+    "risposta_corretta": "c.  La formazione non è facoltativa, non può essere rifiutata e deve lasciarne traccia verificabile."
   },
   {
-    "categoria": "Sicurezza Fisica",
-    "domanda": "Hardening, Access Control e Safes servono a:",
+    "categoria": "Security & ERM",
+    "domanda": "7.  Quali attività sono indicate nella fase ON trip?",
     "opzioni": [
-      "Rallentare o impedire l’azione illecita",
-      "Rilevare intrusioni",
-      "Gestire la comunicazione"
+      "a.  Verifica della situazione Paese, attivazione assicurazione sanitaria, regole di comportamento e Travel Card, monitoraggio, gestione emergenze e verifica itinerari.",
+      "b.  Solo debriefing psicologico e follow-up medico.",
+      "c.  Solo firma della policy e compilazione del modulo spese.",
+      "d.  Solo aggiornamento annuale del DVR."
     ],
-    "risposta_corretta": "Rallentare o impedire l’azione illecita"
+    "risposta_corretta": "a.  Verifica della situazione Paese, attivazione assicurazione sanitaria, regole di comportamento e Travel Card, monitoraggio, gestione emergenze e verifica itinerari."
   },
   {
-    "categoria": "Sicurezza Fisica",
-    "domanda": "Nei sistemi di sicurezza fisica, le misure passive hanno l’obiettivo di:",
+    "categoria": "Risk Perception",
+    "domanda": "Perché il rischio non può essere percepito secondo Brehmer?",
     "opzioni": [
-      "Rilevare intrusioni",
-      "Generare allarmi e attivare una risposta",
-      "Ritardare o impedire l’accesso non autorizzato"
+      "È invisibile",
+      "Dipende dalla tecnologia",
+      "Riguarda eventi futuri e non oggetti presenti"
     ],
-    "risposta_corretta": "Ritardare o impedire l’accesso non autorizzato"
+    "risposta_corretta": "Riguarda eventi futuri e non oggetti presenti"
   },
   {
-    "categoria": "Sicurezza Fisica",
-    "domanda": "Nei sistemi di sicurezza fisica, le misure attive hanno l’obiettivo principale di:",
+    "categoria": "Risk Perception",
+    "domanda": "Secondo la teoria del doppio processo di Kahneman, quale caratteristica distingue principalmente il Sistema 1 dal Sistema 2?",
     "opzioni": [
-      "Rilevare le intrusioni e attivare SE",
-      "Generare allarmi e attivare una risposta",
-      "Ritardare o impedire l’accesso non autorizzato"
+      "È lento e richiede uno sforzo cognitivo elevato",
+      "È basato su regole formali e calcoli espliciti",
+      "È veloce, automatico e richiede poche risorse cognitive",
+      "Si attiva solo in situazioni nuove e complesse"
     ],
-    "risposta_corretta": "Generare allarmi e attivare una risposta"
+    "risposta_corretta": "È veloce, automatico e richiede poche risorse cognitive"
   },
   {
-    "categoria": "Sicurezza Fisica",
-    "domanda": "Gli obiettivi funzionali della sicurezza fisica sono:",
+    "categoria": "Risk Perception",
+    "domanda": "Quale attività, secondo la teoria del doppio processo di Kahneman, è tipica del Sistema 2?",
     "opzioni": [
-      "Integrità, disponibilità, riservatezza",
-      "Deter, Detect, Delay, Deny",
-      "Plan Do Check Act"
+      "Calcolare 17 × 24",
+      "Riconoscere un volto",
+      "Guidare su un percorso abituale"
     ],
-    "risposta_corretta": "Deter, Detect, Delay, Deny"
+    "risposta_corretta": "Calcolare 17 × 24"
   },
   {
-    "categoria": "Sicurezza Fisica",
-    "domanda": "Relativamente alla sicurezza fisica, l’equazione dei tempi è:",
+    "categoria": "Risk Perception",
+    "domanda": "Quando, secondo la teoria del doppio processo, entra in funzione in modo più marcato il Sistema 2 (analitico)?",
     "opzioni": [
-      "Il tempo di effrazione deve essere minore di quello di reazione",
-      "Il tempo di effrazione deve essere maggiore di quello di reazione",
-      "Deve essere maggiore di quello di allarme"
+      "Ogni volta che viene presa una decisione quotidiana",
+      "Solo quando siamo completamente inconsapevoli delle alternative",
+      "Quando il Sistema 1 non raggiunge una conclusione plausibile",
+      "Quando siamo cognitivamente affaticati"
     ],
-    "risposta_corretta": "Il tempo di effrazione deve essere maggiore di quello di reazione"
+    "risposta_corretta": "Quando il Sistema 1 non raggiunge una conclusione plausibile"
   },
   {
-    "categoria": "Sicurezza Fisica",
-    "domanda": "I sensori nei sistemi di sicurezza elettronica servono a:",
+    "categoria": "Risk Perception",
+    "domanda": "Il paradigma psicometrico (Fischhoff, Slovic) identifica due fattori principali che influenzano la percezione del rischio. Quali?",
     "opzioni": [
-      "Registrare immagini",
-      "Convertire fenomeni fisici in segnali elettrici",
-      "Trasmettere allarmi"
+      "Terrore e novità",
+      "Controllabilità e familiarità",
+      "Incertezza e impatto"
     ],
-    "risposta_corretta": "Convertire fenomeni fisici in segnali elettrici"
+    "risposta_corretta": "Terrore e novità"
   },
   {
-    "categoria": "Sicurezza Fisica",
-    "domanda": "La cyber physical security riguarda:",
+    "categoria": "Risk Perception",
+    "domanda": "L'inattentional blindness è causata principalmente da:",
     "opzioni": [
-      "Protezione informatica",
-      "Protezione fisica",
-      "Protezione integrata di sistemi fisici e digitali"
+      "Problemi di vista",
+      "Mancanza di esperienza e attenzione non focalizzata",
+      "Carico cognitivo elevato e attenzione focalizzata"
     ],
-    "risposta_corretta": "Protezione integrata di sistemi fisici e digitali"
+    "risposta_corretta": "Carico cognitivo elevato e attenzione focalizzata"
   },
   {
-    "categoria": "Sicurezza Fisica",
-    "domanda": "Secondo il principio dell’equazione dei tempi:",
+    "categoria": "Risk Perception",
+    "domanda": "L'euristica della disponibilità indica che:",
     "opzioni": [
-      "Il tempo di effrazione deve essere minore del tempo di reazione",
-      "Il tempo di effrazione deve essere maggiore del tempo di reazione",
-      "Il tempo di effrazione deve essere maggiore del tempo di allarme"
+      "Valutiamo gli eventi in base alle probabilità di accadimento",
+      "Sopravvalutiamo gli eventi che ricordiamo facilmente",
+      "Prendiamo decisioni basate solo sui dati da fonti attendibili"
     ],
-    "risposta_corretta": "Il tempo di effrazione deve essere maggiore del tempo di reazione"
+    "risposta_corretta": "Sopravvalutiamo gli eventi che ricordiamo facilmente"
   },
   {
-    "categoria": "Sicurezza Pubblica, Privata e Urbana",
-    "domanda": "Il Questore",
+    "categoria": "Risk Perception",
+    "domanda": "Secondo l'euristica della disponibilità, come valutano le persone la probabilità che un evento si verifichi?",
     "opzioni": [
-      "È il rappresentante del governo nella provincia",
-      "È l’autorità provinciale di pubblica sicurezza politico-amministrativa",
-      "È l’autorità provinciale di pubblica sicurezza tecnico-operativa"
+      "In base alla frequenza statistica reale dell'evento",
+      "In base alla facilità con cui esempi dell'evento vengono richiamati alla mente",
+      "In base al valore atteso dell'evento",
+      "In base a un'analisi logica e sistematica di tutte le informazioni disponibili"
     ],
-    "risposta_corretta": "È l’autorità provinciale di pubblica sicurezza tecnico-operativa"
+    "risposta_corretta": "In base alla facilità con cui esempi dell'evento vengono richiamati alla mente"
   },
   {
-    "categoria": "Sicurezza Pubblica, Privata e Urbana",
-    "domanda": "Il prefetto:",
+    "categoria": "Risk Perception",
+    "domanda": "L'euristica dell'affettività porta le persone a:",
     "opzioni": [
-      "È autorità provinciale politico-amministrativa di pubblica sicurezza",
-      "È autorità provinciale di pubblica sicurezza tecnico-operativa",
-      "È autorità provinciale e locale di pubblica sicurezza"
+      "Valutare il rischio solo con dati numerici",
+      "Considerare pericolose tutte le tecnologie",
+      "Giudicare meno rischiose attività associate a emozioni positive"
     ],
-    "risposta_corretta": "È autorità provinciale politico-amministrativa di pubblica sicurezza"
+    "risposta_corretta": "Giudicare meno rischiose attività associate a emozioni positive"
   },
   {
-    "categoria": "Sicurezza Pubblica, Privata e Urbana",
-    "domanda": "È autorità nazionale di pubblica sicurezza:",
+    "categoria": "Risk Perception",
+    "domanda": "Secondo l'approccio del nudging, una nudge è:",
     "opzioni": [
-      "Il presidente del consiglio dei ministri",
-      "Il sottosegretario di stato con delega alla sicurezza nazionale",
-      "Il ministro dell’interno"
+      "Una strategia che obbliga le persone a compiere la scelta considerata migliore",
+      "Un incentivo economico che modifica il comportamento individuale",
+      "Un aspetto dell'architettura delle scelte che influenza il comportamento senza limitare la libertà di scelta",
+      "Una tecnica basata su sanzioni per ridurre decisioni rischiose"
     ],
-    "risposta_corretta": "Il ministro dell’interno"
+    "risposta_corretta": "Un aspetto dell'architettura delle scelte che influenza il comportamento senza limitare la libertà di scelta"
   },
   {
-    "categoria": "Sicurezza Pubblica, Privata e Urbana",
-    "domanda": "Ogni restrizione alle libertà personali previste dalla Costituzione italiana è disciplinata da:",
+    "categoria": "Risk Perception",
+    "domanda": "Secondo la Prospect Theory, di fronte alle perdite le persone:",
     "opzioni": [
-      "Un atto normativo avente forza di legge",
-      "Un atto prefettizio",
-      "Un decreto del Presidente della Repubblica",
-      "Un decreto del Ministro dell’Interno"
+      "Diventano più propense al rischio",
+      "Preferiscono sempre opzioni sicure",
+      "Ignorano le probabilità"
     ],
-    "risposta_corretta": "Un atto normativo avente forza di legge"
+    "risposta_corretta": "Diventano più propense al rischio"
   },
   {
-    "categoria": "Sicurezza Pubblica, Privata e Urbana",
-    "domanda": "A norma dell’art. 13 della Costituzione",
+    "categoria": "Risk Perception",
+    "domanda": "Cosa afferma il principio di avversione alla perdita nella Prospect Theory?",
     "opzioni": [
-      "La libertà personale è inviolabile, salvo quanto disposti ai commi 2 e 3",
-      "La libertà personale può sempre essere violata in caso di necessità",
-      "La libertà personale può sempre essere violata dalle Forze dell’Ordine"
+      "Le perdite generano un impatto psicologico circa doppio rispetto ai guadagni",
+      "Le perdite e i guadagni di pari entità si compensano psicologicamente",
+      "I guadagni producono un piacere maggiore delle perdite equivalenti",
+      "Le persone sono sempre propense al rischio"
     ],
-    "risposta_corretta": "La libertà personale è inviolabile, salvo quanto disposti ai commi 2 e 3"
+    "risposta_corretta": "Le perdite generano un impatto psicologico circa doppio rispetto ai guadagni"
   },
   {
-    "categoria": "Sicurezza Pubblica, Privata e Urbana",
-    "domanda": "Perché l’ordine e la sicurezza pubblica sono prerogative dei pubblici poteri?",
+    "categoria": "Risk Perception",
+    "domanda": "Il bias dell'ottimismo porta a:",
     "opzioni": [
-      "perché i soggetti privati non sarebbero mai in grado di gestire tali ambiti",
-      "perché in uno stato democratico è giusto così",
-      "perché l'art. 1 della legge 18 giugno 1931, n. 773, sancisce che \"l'autorità di pubblica sicurezza « veglia al mantenimento dell'ordine pubblico, alla sicurezza dei cittadini, alla loro incolumità e alla tutela della proprietà; cura l'osservanza delle leggi e dei regolamenti generali e speciali dello Stato, delle province e dei comuni, nonché delle ordinanze delle autorità; presta soccorso nel caso di pubblici e privati infortuni\"; \"per mezzo dei suoi ufficiali, e a richiesta delle parti, provvede alla bonaria composizione dei dissidi privati”"
+      "Sopravvalutare i rischi personali",
+      "Sottovalutare i rischi personali rispetto agli altri",
+      "Percepire tutti i rischi allo stesso modo"
     ],
-    "risposta_corretta": "perché l'art. 1 della legge 18 giugno 1931, n. 773, sancisce che \"l'autorità di pubblica sicurezza « veglia al mantenimento dell'ordine pubblico, alla sicurezza dei cittadini, alla loro incolumità e alla tutela della proprietà; cura l'osservanza delle leggi e dei regolamenti generali e speciali dello Stato, delle province e dei comuni, nonché delle ordinanze delle autorità; presta soccorso nel caso di pubblici e privati infortuni\"; \"per mezzo dei suoi ufficiali, e a richiesta delle parti, provvede alla bonaria composizione dei dissidi privati”"
+    "risposta_corretta": "Sottovalutare i rischi personali rispetto agli altri"
   },
   {
-    "categoria": "Sicurezza Pubblica, Privata e Urbana",
-    "domanda": "La qualifica di pubblico ufficiale, ai sensi dell'art. 357 c.p., deve esser riconosciuta:",
+    "categoria": "Risk Perception",
+    "domanda": "Le due dimensioni fondamentali della percezione del rischio sono:",
     "opzioni": [
-      "a chiunque si trovi a prestare soccorso ad altri",
-      "a chiunque porti un’arma",
-      "a quei soggetti che, pubblici dipendenti o semplici privati, possono e debbono - quale che sia la loro posizione soggettiva - formare e manifestare, nell'ambito di una potestà regolata dal diritto pubblico, la volontà della p.a., ovvero esercitare, indipendentemente da formali investiture, poteri autoritativi, deliberativi o certificativi, disgiuntamente e non cumulativamente considerati"
+      "Cognitiva e affettiva",
+      "Razionale e intuitiva",
+      "Tecnologica e psicologica"
     ],
-    "risposta_corretta": "a quei soggetti che, pubblici dipendenti o semplici privati, possono e debbono - quale che sia la loro posizione soggettiva - formare e manifestare, nell'ambito di una potestà regolata dal diritto pubblico, la volontà della p.a., ovvero esercitare, indipendentemente da formali investiture, poteri autoritativi, deliberativi o certificativi, disgiuntamente e non cumulativamente considerati"
+    "risposta_corretta": "Cognitiva e affettiva"
   },
   {
-    "categoria": "Sicurezza Pubblica, Privata e Urbana",
-    "domanda": "In materia di porto d’armi",
+    "categoria": "Risk Perception",
+    "domanda": "Lo stress acuto sulla consapevolezza situazionale provoca:",
     "opzioni": [
-      "Si tratta di un diritto di ogni cittadino in quanto espressione del principio di legittima difesa",
-      "È un’autorizzazione di polizia e come tale sottoposta a requisiti e condizioni",
-      "Entrambe le risposte precedenti sono valide"
+      "Maggiore precisione percettiva",
+      "Nessun effetto",
+      "Riduzione del campo attentivo e della capacità decisionale"
     ],
-    "risposta_corretta": "È un’autorizzazione di polizia e come tale sottoposta a requisiti e condizioni"
+    "risposta_corretta": "Riduzione del campo attentivo e della capacità decisionale"
   },
   {
-    "categoria": "Sicurezza Pubblica, Privata e Urbana",
-    "domanda": "I patti per l’attuazione della sicurezza urbana sono sottoscritti da:",
+    "categoria": "Risk Perception",
+    "domanda": "I rischi informatici vengono spesso sottovalutati perché:",
     "opzioni": [
-      "Prefetto e Sindaco",
-      "Sindaco e Presidente della Regione",
-      "Sindaco e Questore",
-      "Questore e Presidente della Regione"
+      "Sono sempre a bassa probabilità",
+      "Il cervello umano si è evoluto per gestire minacce visibili e immediate",
+      "Sono sempre facilmente rilevabili"
     ],
-    "risposta_corretta": "Prefetto e Sindaco"
+    "risposta_corretta": "Il cervello umano si è evoluto per gestire minacce visibili e immediate"
   },
   {
-    "categoria": "Sicurezza Pubblica, Privata e Urbana",
-    "domanda": "Il decreto Minniti (DL 14/2017 concernente disposizioni urgenti in materia di sicurezza delle città) definisce la sicurezza urbana come:",
+    "categoria": "Risk Perception",
+    "domanda": "L'effetto framing dimostra che:",
     "opzioni": [
-      "un diritto della collettività",
-      "un dovere dello Stato verso la collettività",
-      "un bene pubblico",
-      "un dovere della polizia locale verso il territorio"
+      "Le decisioni sono indipendenti dal modo in cui le alternative sono presentate",
+      "Le persone scelgono sempre l'opzione con il valore atteso più alto",
+      "Il framing influenza solo individui con scarse competenze numeriche",
+      "La stessa informazione può portare a decisioni diverse se formulata in modo diverso"
     ],
-    "risposta_corretta": "un bene pubblico"
-  },
-  {
-    "categoria": "Sicurezza Pubblica, Privata e Urbana",
-    "domanda": "Secondo l’art. 52 c.p., quando sussiste sempre il rapporto di proporzione nella legittima difesa?",
-    "opzioni": [
-      "Quando una persona reagisce a qualsiasi offesa subita usando un mezzo ritenuto utile, anche se manca un concreto pericolo di aggressione.",
-      "Quando una persona legittimamente presente nel luogo usa un’arma legittimamente detenuta o altro mezzo idoneo per difendere l’incolumità propria o altrui, oppure i beni, in assenza di desistenza e con pericolo di aggressione.",
-      "Quando una persona presente nel luogo utilizza un’arma o altro mezzo di difesa per impedire un danno ai beni, anche se l’autore del fatto ha già desistito.",
-      "Quando una persona che si trova nel luogo decide di reagire a un’intrusione per tutelare sé stessa o i propri beni, anche senza i presupposti previsti dalla legge."
-    ],
-    "risposta_corretta": "Quando una persona che si trova nel luogo decide di reagire a un’intrusione per tutelare sé stessa o i propri beni, anche senza i presupposti previsti dalla legge."
-  },
-  {
-    "categoria": "Sicurezza Pubblica, Privata e Urbana",
-    "domanda": "Quale tra le seguenti affermazioni descrive correttamente una differenza tra denuncia e querela?",
-    "opzioni": [
-      "La denuncia serve a esprimere la volontà di punire il colpevole ed è presentabile solo dalla parte lesa entro tre mesi dal fatto.",
-      "La querela riguarda reati perseguibili d’ufficio, non può essere rimessa e può essere presentata da chiunque senza formalità specifiche.",
-      "La denuncia informa l’autorità di un reato perseguibile d’ufficio, mentre la querela contiene l’esplicita volontà della parte lesa che il fatto venga perseguito.",
-      "Denuncia e querela hanno la stessa funzione, gli stessi termini di presentazione e le stesse condizioni di procedibilità."
-    ],
-    "risposta_corretta": "La denuncia informa l’autorità di un reato perseguibile d’ufficio, mentre la querela contiene l’esplicita volontà della parte lesa che il fatto venga perseguito."
-  },
-  {
-    "categoria": "Sicurezza Pubblica, Privata e Urbana",
-    "domanda": "Qual è la normativa che determina i requisiti dell’attività svolta dagli Istituti di Vigilanza privata e dalle Agenzie di Investigazione Privata?",
-    "opzioni": [
-      "R.G. R.D. 18.06.1931, n. 773.",
-      "R.D. 06.05.1940, n. 635.",
-      "D.P.R. 4 agosto 2008 n. 153.",
-      "D.M. del 1° dicembre 2010, n. 269."
-    ],
-    "risposta_corretta": "D.M. del 1° dicembre 2010, n. 269."
-  },
-  {
-    "categoria": "Sicurezza Pubblica, Privata e Urbana",
-    "domanda": "Quanti sono i livelli dimensionali secondo il DM 269/2010?",
-    "opzioni": [
-      "3",
-      "4",
-      "5",
-      "6"
-    ],
-    "risposta_corretta": "4"
-  },
-  {
-    "categoria": "Sicurezza Pubblica, Privata e Urbana",
-    "domanda": "La Guardia particolare Giurata è:",
-    "opzioni": [
-      "Un pubblico ufficiale",
-      "Un incaricato di pubblico servizio",
-      "Un privato cittadino professionalmente formato alla prevenzione di reati contro il patrimonio",
-      "Un agente di polizia giudiziaria"
-    ],
-    "risposta_corretta": "Un incaricato di pubblico servizio"
-  },
-  {
-    "categoria": "Sicurezza Pubblica, Privata e Urbana",
-    "domanda": "Le attività di vigilanza e investigazione sono previste e disciplinate da:",
-    "opzioni": [
-      "Testo Unico delle Leggi di Pubblica Sicurezza (TULPS) con le integrazioni del DPR n.153/2008",
-      "Testo Unico D. Lgs. 81/08",
-      "D.Lgs. 196/2003",
-      "D.Lgs 231/01"
-    ],
-    "risposta_corretta": "Testo Unico delle Leggi di Pubblica Sicurezza (TULPS) con le integrazioni del DPR n.153/2008"
-  },
-  {
-    "categoria": "Sicurezza Pubblica, Privata e Urbana",
-    "domanda": "I servizi ausiliari alla sicurezza sono:",
-    "opzioni": [
-      "Servizi di sicurezza passiva, effettuati esclusivamente da operatori disarmati",
-      "Servizi di sicurezza passiva, effettuati esclusivamente da operatori armati",
-      "Servizi di sicurezza attiva, effettuati esclusivamente da operatori armati",
-      "Servizi di sicurezza attiva, effettuati principalmente da operatori disarmati"
-    ],
-    "risposta_corretta": "Servizi di sicurezza passiva, effettuati esclusivamente da operatori disarmati"
-  },
-  {
-    "categoria": "Sicurezza Pubblica, Privata e Urbana",
-    "domanda": "Che cos’è la vigilanza privata?",
-    "opzioni": [
-      "È un servizio pubblico esercitato esclusivamente dalle Forze di polizia per la tutela dell’ordine pubblico.",
-      "È un settore che riguarda l’attività di vigilanza e custodia di beni mobili o immobili altrui, svolta da soggetti autorizzati nel rispetto della normativa vigente.",
-      "È un’attività investigativa libera che può essere svolta da qualsiasi privato cittadino per conto di terzi.",
-      "È un insieme di funzioni giudiziarie attribuite agli istituti di vigilanza per la repressione dei reati contro il patrimonio.",
-      "Quale è la norma primaria che inquadra la disciplina della vigilanza privata?"
-    ],
-    "risposta_corretta": "È un settore che riguarda l’attività di vigilanza e custodia di beni mobili o immobili altrui, svolta da soggetti autorizzati nel rispetto della normativa vigente."
-  },
-  {
-    "categoria": "Criminologia e Time Management",
-    "domanda": "Secondo Edwin Sutherland, la criminologia si definisce come:",
-    "opzioni": [
-      "Lo studio del comportamento deviante",
-      "The scientific study of lawmaking, lawbreaking and the response to lawbreaking",
-      "Lo studio delle leggi penali",
-      "L'analisi della mente criminale"
-    ],
-    "risposta_corretta": "The scientific study of lawmaking, lawbreaking and the response to lawbreaking"
-  },
-  {
-    "categoria": "Criminologia e Time Management",
-    "domanda": "La teoria dell'associazione differenziale sostiene che:",
-    "opzioni": [
-      "I criminali nascono predisposti al crimine",
-      "L'ambiente determina il comportamento criminale",
-      "I comportamenti criminali vengono appresi attraverso le interazioni con gli altri",
-      "La povertà è la causa principale del crimine"
-    ],
-    "risposta_corretta": "I comportamenti criminali vengono appresi attraverso le interazioni con gli altri"
-  },
-  {
-    "categoria": "Criminologia e Time Management",
-    "domanda": "Il modello CRAVED di Clarke (1999) identifica le caratteristiche degli \"hot products\". Cosa significa la lettera 'R'?",
-    "opzioni": [
-      "Resistant",
-      "Removable",
-      "Readable",
-      "Reliable"
-    ],
-    "risposta_corretta": "Removable"
-  },
-  {
-    "categoria": "Criminologia e Time Management",
-    "domanda": "Secondo la Crime Pattern Theory, quale delle seguenti affermazioni è corretta?",
-    "opzioni": [
-      "I crimini sono sempre distribuiti in modo casuale",
-      "I crimini sono uniformi nel tempo e nello spazio",
-      "I crimini non sono né casuali né uniformi nel tempo e nello spazio",
-      "I crimini seguono sempre lo stesso schema"
-    ],
-    "risposta_corretta": "I crimini non sono né casuali né uniformi nel tempo e nello spazio"
-  },
-  {
-    "categoria": "Criminologia e Time Management",
-    "domanda": "Nella teoria della Routine Activity, quali sono i tre elementi necessari perché si verifichi un'opportunità criminale?",
-    "opzioni": [
-      "Tempo, luogo e vittima",
-      "Target appetibile, assenza di guardiano capace e offender motivato",
-      "Denaro, movente e opportunità",
-      "Arma, vittima e luogo"
-    ],
-    "risposta_corretta": "Target appetibile, assenza di guardiano capace e offender motivato"
-  },
-  {
-    "categoria": "Criminologia e Time Management",
-    "domanda": "Per hot spot s’intende:",
-    "opzioni": [
-      "Un’area definita che concentra un numero di reati superiore alla media.",
-      "Un target (es. una banca) che ha subito più eventi criminali in un dato periodo.",
-      "Un’area oggetto di interventi mirati a ridurre le opportunità criminali.",
-      "Un target (es. una banca) con particolari caratteristiche che lo rendono appetibile per i criminali."
-    ],
-    "risposta_corretta": "Un’area definita che concentra un numero di reati superiore alla media."
+    "risposta_corretta": "La stessa informazione può portare a decisioni diverse se formulata in modo diverso"
   },
   {
     "categoria": "Crisis Management",
@@ -1253,7 +951,7 @@
     "opzioni": [
       "Un incidente tecnico",
       "Un evento improvviso che minaccia persone, asset o reputazione e richiede decisioni straordinarie",
-      "Un’emergenza operativa"
+      "Un'emergenza operativa"
     ],
     "risposta_corretta": "Un evento improvviso che minaccia persone, asset o reputazione e richiede decisioni straordinarie"
   },
@@ -1311,11 +1009,11 @@
     "categoria": "Crisis Management",
     "domanda": "Qual è la differenza principale tra emergenza e crisi?",
     "opzioni": [
-      "L’emergenza riguarda solo la sicurezza fisica o gli incidenti di sicurezza informatica",
+      "L'emergenza riguarda solo la sicurezza fisica o gli incidenti di sicurezza informatica",
       "La crisi riguarda solo la comunicazione che deve coinvolgere gli stakeholder",
-      "L’emergenza è gestita con procedure operative, la crisi richiede decisioni strategiche del management"
+      "L'emergenza è gestita con procedure operative, la crisi richiede decisioni strategiche del management"
     ],
-    "risposta_corretta": "L’emergenza è gestita con procedure operative, la crisi richiede decisioni strategiche del management"
+    "risposta_corretta": "L'emergenza è gestita con procedure operative, la crisi richiede decisioni strategiche del management"
   },
   {
     "categoria": "Crisis Management",
@@ -1412,10 +1110,10 @@
     "domanda": "La finestra di tolleranza indica:",
     "opzioni": [
       "Il tempo massimo di tolleranza di una risposta a una crisi",
-      "L’intervallo di attivazione fisiologica entro cui una persona riesce a gestire lo stress",
-      "La durata di un’emergenza"
+      "L'intervallo di attivazione fisiologica entro cui una persona riesce a gestire lo stress",
+      "La durata di un'emergenza"
     ],
-    "risposta_corretta": "L’intervallo di attivazione fisiologica entro cui una persona riesce a gestire lo stress"
+    "risposta_corretta": "L'intervallo di attivazione fisiologica entro cui una persona riesce a gestire lo stress"
   },
   {
     "categoria": "Crisis Management",
@@ -1429,7 +1127,7 @@
   },
   {
     "categoria": "Crisis Management",
-    "domanda": "Secondo la norma ISO 22361 dopo aver fatto una simulazione l’attività più rilevante è:",
+    "domanda": "Secondo la norma ISO 22361 dopo aver fatto una simulazione l'attività più rilevante è:",
     "opzioni": [
       "Rivedere le strategie e la governance",
       "Analizzare i punti di miglioramento delle soft skills del Crisis Team",
@@ -1451,7 +1149,7 @@
     "categoria": "Crisis Management",
     "domanda": "Il ciclo di gestione della crisi comprende:",
     "opzioni": [
-      "Solo risposta all’emergenza",
+      "Solo risposta all'emergenza",
       "Preparazione, risposta, ritorno alla normalità e apprendimento",
       "Pianificazione e comunicazione"
     ],
@@ -1459,7 +1157,7 @@
   },
   {
     "categoria": "Crisis Management",
-    "domanda": "La Direttiva CER dell’Unione Europea riguarda:",
+    "domanda": "La Direttiva CER dell'Unione Europea riguarda:",
     "opzioni": [
       "Protezione dei dati personali",
       "Resilienza delle infrastrutture e dei servizi critici",
@@ -1469,7 +1167,7 @@
   },
   {
     "categoria": "Crisis Management",
-    "domanda": "Le disposizioni di Banca d’Italia sulla continuità operativa richiedono alle istituzioni finanziarie di:",
+    "domanda": "Le disposizioni di Banca d'Italia sulla continuità operativa richiedono alle istituzioni finanziarie di:",
     "opzioni": [
       "Eliminare completamente i rischi operativi",
       "Garantire la continuità dei servizi critici anche in caso di incidenti gravi",
@@ -1483,9 +1181,9 @@
     "opzioni": [
       "Un test tecnico dei sistemi",
       "Una simulazione operativa sul campo",
-      "Un’esercitazione decisionale basata su uno scenario simulato"
+      "Un'esercitazione decisionale basata su uno scenario simulato"
     ],
-    "risposta_corretta": "Un’esercitazione decisionale basata su uno scenario simulato"
+    "risposta_corretta": "Un'esercitazione decisionale basata su uno scenario simulato"
   },
   {
     "categoria": "Crisis Management",
@@ -1551,11 +1249,11 @@
     "categoria": "Crisis Management",
     "domanda": "Nella classificazione dei disastri di Gill & Ritchie (2018), quelli \"non-intenzionali\" comprendono:",
     "opzioni": [
-      "Disastri naturali e tecnologici causati dall’uomo in modo accidentale",
+      "Disastri naturali e tecnologici causati dall'uomo in modo accidentale",
       "Solo disastri accidentali tecnologici",
       "Solo disastri naturali"
     ],
-    "risposta_corretta": "Disastri naturali e tecnologici causati dall’uomo in modo accidentale"
+    "risposta_corretta": "Disastri naturali e tecnologici causati dall'uomo in modo accidentale"
   },
   {
     "categoria": "Crisis Management",
@@ -1576,5 +1274,1566 @@
       "Disastro tecnologico non intenzionale"
     ],
     "risposta_corretta": "Disastro tecnologico non intenzionale"
+  },
+  {
+    "categoria": "Sicurezza Fisica",
+    "domanda": "Un sistema di controllo accessi serve a:",
+    "opzioni": [
+      "Regolare chi può accedere a un'area e in quali condizioni",
+      "Proteggere dati informatici",
+      "Monitorare solo il personale interno"
+    ],
+    "risposta_corretta": "Regolare chi può accedere a un'area e in quali condizioni"
+  },
+  {
+    "categoria": "Sicurezza Fisica",
+    "domanda": "La norma CEI EN 50131 riguarda:",
+    "opzioni": [
+      "Videosorveglianza",
+      "Sistemi di allarme intrusione",
+      "Sistemi di controllo accessi"
+    ],
+    "risposta_corretta": "Sistemi di allarme intrusione"
+  },
+  {
+    "categoria": "Sicurezza Fisica",
+    "domanda": "La norma CEI EN 62676 riguarda:",
+    "opzioni": [
+      "Progettazione dei sistemi di videosorveglianza",
+      "Sistemi di allarme",
+      "Sistemi di controllo accessi"
+    ],
+    "risposta_corretta": "Progettazione dei sistemi di videosorveglianza"
+  },
+  {
+    "categoria": "Sicurezza Fisica",
+    "domanda": "Secondo la norma CEI EN 62676, nella progettazione di un sistema di videosorveglianza è necessario considerare:",
+    "opzioni": [
+      "Solo la qualità delle telecamere",
+      "Solo il numero delle telecamere",
+      "Il livello di rischio, le minacce e il contesto operativo"
+    ],
+    "risposta_corretta": "Il livello di rischio, le minacce e il contesto operativo"
+  },
+  {
+    "categoria": "Sicurezza Fisica",
+    "domanda": "Nella sicurezza fisica, la security in depth indica che:",
+    "opzioni": [
+      "La sicurezza deve essere solo perimetrale",
+      "La protezione deve essere realizzata tramite più livelli di difesa",
+      "Riguarda solo il digitale"
+    ],
+    "risposta_corretta": "La protezione deve essere realizzata tramite più livelli di difesa"
+  },
+  {
+    "categoria": "Sicurezza Fisica",
+    "domanda": "I building blocks della sicurezza fisica comprendono:",
+    "opzioni": [
+      "Solo sistemi tecnologici",
+      "Solo personale di sicurezza",
+      "Tecnologie, persone, procedure e sistemi di risposta"
+    ],
+    "risposta_corretta": "Tecnologie, persone, procedure e sistemi di risposta"
+  },
+  {
+    "categoria": "Sicurezza Fisica",
+    "domanda": "Relativamente alle classi di soluzione di sicurezza fisica (Building Blocks) quali hanno come obiettivo rallentare o al massimo impedire l'azione illecita:",
+    "opzioni": [
+      "Hardening, Access Control, Safes and Vaults",
+      "Hardening, Access Control, Allarm Systems",
+      "Access Control, Safes and Vaults, Command and Control Center"
+    ],
+    "risposta_corretta": "Hardening, Access Control, Safes and Vaults"
+  },
+  {
+    "categoria": "Sicurezza Fisica",
+    "domanda": "Hardening, Access Control e Safes servono a:",
+    "opzioni": [
+      "Rallentare o impedire l'azione illecita",
+      "Rilevare intrusioni",
+      "Gestire la comunicazione"
+    ],
+    "risposta_corretta": "Rallentare o impedire l'azione illecita"
+  },
+  {
+    "categoria": "Sicurezza Fisica",
+    "domanda": "Nei sistemi di sicurezza fisica, le misure passive hanno l'obiettivo di:",
+    "opzioni": [
+      "Rilevare intrusioni",
+      "Generare allarmi e attivare una risposta",
+      "Ritardare o impedire l'accesso non autorizzato"
+    ],
+    "risposta_corretta": "Ritardare o impedire l'accesso non autorizzato"
+  },
+  {
+    "categoria": "Sicurezza Fisica",
+    "domanda": "Nei sistemi di sicurezza fisica, le misure attive hanno l'obiettivo principale di:",
+    "opzioni": [
+      "Rilevare le intrusioni e attivare SE",
+      "Generare allarmi e attivare una risposta",
+      "Ritardare o impedire l'accesso non autorizzato"
+    ],
+    "risposta_corretta": "Generare allarmi e attivare una risposta"
+  },
+  {
+    "categoria": "Sicurezza Fisica",
+    "domanda": "Gli obiettivi funzionali della sicurezza fisica sono:",
+    "opzioni": [
+      "Integrità, disponibilità, riservatezza",
+      "Deter, Detect, Delay, Deny",
+      "Plan Do Check Act"
+    ],
+    "risposta_corretta": "Deter, Detect, Delay, Deny"
+  },
+  {
+    "categoria": "Sicurezza Fisica",
+    "domanda": "Relativamente alla sicurezza fisica, l'equazione dei tempi è:",
+    "opzioni": [
+      "Il tempo di effrazione deve essere minore di quello di reazione",
+      "Il tempo di effrazione deve essere maggiore di quello di reazione",
+      "Deve essere maggiore di quello di allarme"
+    ],
+    "risposta_corretta": "Il tempo di effrazione deve essere maggiore di quello di reazione"
+  },
+  {
+    "categoria": "Sicurezza Fisica",
+    "domanda": "I sensori nei sistemi di sicurezza elettronica servono a:",
+    "opzioni": [
+      "Registrare immagini",
+      "Convertire fenomeni fisici in segnali elettrici",
+      "Trasmettere allarmi"
+    ],
+    "risposta_corretta": "Convertire fenomeni fisici in segnali elettrici"
+  },
+  {
+    "categoria": "Sicurezza Fisica",
+    "domanda": "La cyber physical security riguarda:",
+    "opzioni": [
+      "Protezione informatica",
+      "Protezione fisica",
+      "Protezione integrata di sistemi fisici e digitali"
+    ],
+    "risposta_corretta": "Protezione integrata di sistemi fisici e digitali"
+  },
+  {
+    "categoria": "Sicurezza Fisica",
+    "domanda": "Secondo il principio dell'equazione dei tempi:",
+    "opzioni": [
+      "Il tempo di effrazione deve essere minore del tempo di reazione",
+      "Il tempo di effrazione deve essere maggiore del tempo di reazione",
+      "Il tempo di effrazione deve essere maggiore del tempo di allarme"
+    ],
+    "risposta_corretta": "Il tempo di effrazione deve essere maggiore del tempo di reazione"
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "Il Questore",
+    "opzioni": [
+      "È il rappresentante del governo nella provincia",
+      "È l'autorità provinciale di pubblica sicurezza politico-amministrativa",
+      "È l'autorità provinciale di pubblica sicurezza tecnico-operativa"
+    ],
+    "risposta_corretta": "È l'autorità provinciale di pubblica sicurezza tecnico-operativa"
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "Il prefetto:",
+    "opzioni": [
+      "È autorità provinciale politico-amministrativa di pubblica sicurezza",
+      "È autorità provinciale di pubblica sicurezza tecnico-operativa",
+      "È autorità provinciale e locale di pubblica sicurezza"
+    ],
+    "risposta_corretta": "È autorità provinciale politico-amministrativa di pubblica sicurezza"
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "È autorità nazionale di pubblica sicurezza:",
+    "opzioni": [
+      "Il presidente del consiglio dei ministri",
+      "Il sottosegretario di stato con delega alla sicurezza nazionale",
+      "Il ministro dell'interno"
+    ],
+    "risposta_corretta": "Il ministro dell'interno"
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "Ogni restrizione alle libertà personali previste dalla Costituzione italiana è disciplinata da:",
+    "opzioni": [
+      "Un atto normativo avente forza di legge",
+      "Un atto prefettizio",
+      "Un decreto del Presidente della Repubblica",
+      "Un decreto del Ministro dell'Interno"
+    ],
+    "risposta_corretta": "Un atto normativo avente forza di legge"
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "A norma dell'art. 13 della Costituzione",
+    "opzioni": [
+      "La libertà personale è inviolabile, salvo quanto disposti ai commi 2 e 3",
+      "La libertà personale può sempre essere violata in caso di necessità",
+      "La libertà personale può sempre essere violata dalle Forze dell'Ordine"
+    ],
+    "risposta_corretta": "La libertà personale è inviolabile, salvo quanto disposti ai commi 2 e 3"
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "Perché l'ordine e la sicurezza pubblica sono prerogative dei pubblici poteri?",
+    "opzioni": [
+      "perché i soggetti privati non sarebbero mai in grado di gestire tali ambiti",
+      "perché in uno stato democratico è giusto così",
+      "perché l'art. 1 della legge 18 giugno 1931, n. 773, sancisce che \"l'autorità di pubblica sicurezza « veglia al mantenimento dell'ordine pubblico, alla sicurezza dei cittadini, alla loro incolumità e alla tutela della proprietà; cura l'osservanza delle leggi e dei regolamenti generali e speciali dello Stato, delle province e dei comuni, nonché delle ordinanze delle autorità; presta soccorso nel caso di pubblici e privati infortuni\"; \"per mezzo dei suoi ufficiali, e a richiesta delle parti, provvede alla bonaria composizione dei dissidi privati”"
+    ],
+    "risposta_corretta": "perché l'art. 1 della legge 18 giugno 1931, n. 773, sancisce che \"l'autorità di pubblica sicurezza « veglia al mantenimento dell'ordine pubblico, alla sicurezza dei cittadini, alla loro incolumità e alla tutela della proprietà; cura l'osservanza delle leggi e dei regolamenti generali e speciali dello Stato, delle province e dei comuni, nonché delle ordinanze delle autorità; presta soccorso nel caso di pubblici e privati infortuni\"; \"per mezzo dei suoi ufficiali, e a richiesta delle parti, provvede alla bonaria composizione dei dissidi privati”"
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "La qualifica di pubblico ufficiale, ai sensi dell'art. 357 c.p., deve esser riconosciuta:",
+    "opzioni": [
+      "a chiunque si trovi a prestare soccorso ad altri",
+      "a chiunque porti un'arma",
+      "a quei soggetti che, pubblici dipendenti o semplici privati, possono e debbono - quale che sia la loro posizione soggettiva - formare e manifestare, nell'ambito di una potestà regolata dal diritto pubblico, la volontà della p.a., ovvero esercitare, indipendentemente da formali investiture, poteri autoritativi, deliberativi o certificativi, disgiuntamente e non cumulativamente considerati"
+    ],
+    "risposta_corretta": "a quei soggetti che, pubblici dipendenti o semplici privati, possono e debbono - quale che sia la loro posizione soggettiva - formare e manifestare, nell'ambito di una potestà regolata dal diritto pubblico, la volontà della p.a., ovvero esercitare, indipendentemente da formali investiture, poteri autoritativi, deliberativi o certificativi, disgiuntamente e non cumulativamente considerati"
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "In materia di porto d'armi",
+    "opzioni": [
+      "Si tratta di un diritto di ogni cittadino in quanto espressione del principio di legittima difesa",
+      "È un'autorizzazione di polizia e come tale sottoposta a requisiti e condizioni",
+      "Entrambe le risposte precedenti sono valide"
+    ],
+    "risposta_corretta": "È un'autorizzazione di polizia e come tale sottoposta a requisiti e condizioni"
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "I patti per l'attuazione della sicurezza urbana sono sottoscritti da:",
+    "opzioni": [
+      "Prefetto e Sindaco",
+      "Sindaco e Presidente della Regione",
+      "Sindaco e Questore",
+      "Questore e Presidente della Regione"
+    ],
+    "risposta_corretta": "Prefetto e Sindaco"
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "Il decreto Minniti (DL 14/2017 concernente disposizioni urgenti in materia di sicurezza delle città) definisce la sicurezza urbana come:",
+    "opzioni": [
+      "un diritto della collettività",
+      "un dovere dello Stato verso la collettività",
+      "un bene pubblico",
+      "un dovere della polizia locale verso il territorio"
+    ],
+    "risposta_corretta": "un bene pubblico"
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "Quale tra le seguenti affermazioni descrive correttamente una differenza tra denuncia e querela?",
+    "opzioni": [
+      "La denuncia serve a esprimere la volontà di punire il colpevole ed è presentabile solo dalla parte lesa entro tre mesi dal fatto.",
+      "La querela riguarda reati perseguibili d'ufficio, non può essere rimessa e può essere presentata da chiunque senza formalità specifiche.",
+      "La denuncia informa l'autorità di un reato perseguibile d'ufficio, mentre la querela contiene l'esplicita volontà della parte lesa che il fatto venga perseguito.",
+      "Denuncia e querela hanno la stessa funzione, gli stessi termini di presentazione e le stesse condizioni di procedibilità."
+    ],
+    "risposta_corretta": "La denuncia informa l'autorità di un reato perseguibile d'ufficio, mentre la querela contiene l'esplicita volontà della parte lesa che il fatto venga perseguito."
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "Qual è la normativa che determina i requisiti dell'attività svolta dagli Istituti di Vigilanza privata e dalle Agenzie di Investigazione Privata?",
+    "opzioni": [
+      "R.G. R.D. 18.06.1931, n. 773.",
+      "R.D. 06.05.1940, n. 635.",
+      "D.P.R. 4 agosto 2008 n. 153.",
+      "D.M. del 1° dicembre 2010, n. 269."
+    ],
+    "risposta_corretta": "D.M. del 1° dicembre 2010, n. 269."
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "Quanti sono i livelli dimensionali secondo il DM 269/2010?",
+    "opzioni": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "risposta_corretta": "4"
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "La Guardia particolare Giurata è:",
+    "opzioni": [
+      "Un pubblico ufficiale",
+      "Un incaricato di pubblico servizio",
+      "Un privato cittadino professionalmente formato alla prevenzione di reati contro il patrimonio",
+      "Un agente di polizia giudiziaria"
+    ],
+    "risposta_corretta": "Un incaricato di pubblico servizio"
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "Le attività di vigilanza e investigazione sono previste e disciplinate da:",
+    "opzioni": [
+      "Testo Unico delle Leggi di Pubblica Sicurezza (TULPS) con le integrazioni del DPR n.153/2008",
+      "Testo Unico D. Lgs. 81/08",
+      "D.Lgs. 196/2003",
+      "D.Lgs 231/01"
+    ],
+    "risposta_corretta": "Testo Unico delle Leggi di Pubblica Sicurezza (TULPS) con le integrazioni del DPR n.153/2008"
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "I servizi ausiliari alla sicurezza sono:",
+    "opzioni": [
+      "Servizi di sicurezza passiva, effettuati esclusivamente da operatori disarmati",
+      "Servizi di sicurezza passiva, effettuati esclusivamente da operatori armati",
+      "Servizi di sicurezza attiva, effettuati esclusivamente da operatori armati",
+      "Servizi di sicurezza attiva, effettuati principalmente da operatori disarmati"
+    ],
+    "risposta_corretta": "Servizi di sicurezza passiva, effettuati esclusivamente da operatori disarmati"
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "Che cos'è la vigilanza privata?",
+    "opzioni": [
+      "È un servizio pubblico esercitato esclusivamente dalle Forze di polizia per la tutela dell'ordine pubblico.",
+      "È un settore che riguarda l'attività di vigilanza e custodia di beni mobili o immobili altrui, svolta da soggetti autorizzati nel rispetto della normativa vigente.",
+      "È un'attività investigativa libera che può essere svolta da qualsiasi privato cittadino per conto di terzi.",
+      "È un insieme di funzioni giudiziarie attribuite agli istituti di vigilanza per la repressione dei reati contro il patrimonio."
+    ],
+    "risposta_corretta": "È un settore che riguarda l'attività di vigilanza e custodia di beni mobili o immobili altrui, svolta da soggetti autorizzati nel rispetto della normativa vigente."
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "Quale è la norma primaria che inquadra la disciplina della vigilanza privata?",
+    "opzioni": [
+      "Il Codice Penale.",
+      "Il codice di Procedura penale.",
+      "Il TULPS (Testo Unico Leggi di Pubblica Sicurezza).",
+      "Il Codice del Consumo."
+    ],
+    "risposta_corretta": "Il TULPS (Testo Unico Leggi di Pubblica Sicurezza)."
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "La guardia Particolare Giurata diviene tale:",
+    "opzioni": [
+      "A seguito della sottoscrizione del contratto di lavoro con un istituto di vigilanza privata.",
+      "A seguito del conseguimento del decreto prefettizio di nomina e del giuramento, che avviene presso la Prefettura di competenza.",
+      "A seguito del conseguimento del decreto prefettizio di nomina che avviene presso la Prefettura di competenza.",
+      "A seguito del conseguimento del decreto prefettizio di nomina e del giuramento che avviene presso la Questura di competenza."
+    ],
+    "risposta_corretta": "A seguito del conseguimento del decreto prefettizio di nomina e del giuramento, che avviene presso la Prefettura di competenza."
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "Il Regolamento di Servizio è:",
+    "opzioni": [
+      "Un documento questorile in cui vengono definite le modalità di servizio di singoli IVP operanti sotto la questura competente per territorio.",
+      "Un documento interno redatto dal titolare di licenza in cui vengono descritti i servizi e le modalità di erogazione degli stessi all'interno dell'istituto posto sotto la sua responsabilità.",
+      "Un documento interno redatto dal titolare di licenza in cui vengono descritti i servizi e le modalità di erogazione degli stessi all'interno dell'istituto posto sotto la sua responsabilità ed approvato dal questore.",
+      "Un documento prefettizio che regola in maniera omogenea le attività svolte dagli istituti di vigilanza operanti all'interno di una singola provincia."
+    ],
+    "risposta_corretta": "Un documento interno redatto dal titolare di licenza in cui vengono descritti i servizi e le modalità di erogazione degli stessi all'interno dell'istituto posto sotto la sua responsabilità ed approvato dal questore."
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "Lo Steward è:",
+    "opzioni": [
+      "Un operatore di sicurezza che svolge servizio nelle strade e presso i locali pubblici.",
+      "Un accompagnatore nelle manifestazioni pubbliche.",
+      "Una figura professionale addetta all'accoglienza ed alla cura dei passeggeri.",
+      "Figura professionale regolamentata che opera negli impianti sportivi ove si svolgono manifestazioni calcistiche professionistiche."
+    ],
+    "risposta_corretta": "Figura professionale regolamentata che opera negli impianti sportivi ove si svolgono manifestazioni calcistiche professionistiche."
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "Quali sono i tre settori di intervento fondamentali in un approccio integrato alla sicurezza urbana?",
+    "opzioni": [
+      "Istituzionale, formale e di polizia.",
+      "Istituzionale, sociale e ambientale.",
+      "Sociale, di polizia e tecnologico.",
+      "Giudiziario, ambientale e videosorveglianza."
+    ],
+    "risposta_corretta": "Istituzionale, sociale e ambientale."
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "Forma ed uso dello spazio hanno un ruolo attivo, nel determinare la sicurezza dei luoghi, su:",
+    "opzioni": [
+      "la sicurezza reale/il livello di criminalità.",
+      "la sicurezza percepita.",
+      "Entrambe le risposte.",
+      "Nessuna delle due: i fattori determinanti sono altri."
+    ],
+    "risposta_corretta": "la sicurezza percepita."
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "Per valutare la sicurezza di un luogo è sufficiente monitorare l'andamento dei reati.",
+    "opzioni": [
+      "Vero, è l'indicatore di riferimento.",
+      "Falso, è necessario rappresentare l'intero quadro anche attraverso indagini sulla vittimizzazione e sulla percezione.",
+      "Vero ma solo nelle zone ad elevata criminalità.",
+      "Falso, l'andamento dei reati non è significativo."
+    ],
+    "risposta_corretta": "Falso, è necessario rappresentare l'intero quadro anche attraverso indagini sulla vittimizzazione e sulla percezione."
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "Quali di questi elementi si possono considerare indicatori utili per valutare la propensione alla sicurezza urbana?",
+    "opzioni": [
+      "L'illuminazione degli spazi.",
+      "Gli orari di apertura delle attività commerciali.",
+      "Nessuno di questi.",
+      "Entrambi."
+    ],
+    "risposta_corretta": "Entrambi."
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "Quale di queste affermazioni, in riferimento alla sicurezza urbana, è vera?",
+    "opzioni": [
+      "La sicurezza reale è sempre slegata da quella percepita.",
+      "Sicurezza reale e percepita hanno origini solo in parte comuni e vanno affrontate ciascuna con strumenti appropriati.",
+      "La sicurezza reale è sempre correlata a quella percepita.",
+      "Nessuna delle tre."
+    ],
+    "risposta_corretta": "Sicurezza reale e percepita hanno origini solo in parte comuni e vanno affrontate ciascuna con strumenti appropriati."
+  },
+  {
+    "categoria": "Sicurezza Pubblica, Privata e Urbana",
+    "domanda": "Il CPTED:",
+    "opzioni": [
+      "È uno strumento tecnico che consente di contrastare criminalità e paura nello modificando l'assetto e l'uso dello spazio.",
+      "È utile in un approccio integrato con forze dell'ordine e intervento sociale.",
+      "Dovrebbe essere applicato già in fase di progetto.",
+      "Tutte e tre le risposte sono valide."
+    ],
+    "risposta_corretta": "Tutte e tre le risposte sono valide."
+  },
+  {
+    "categoria": "Criminologia e Time Management",
+    "domanda": "Il Time Management:",
+    "opzioni": [
+      "implica che vi sia un solo modo per raggiungere un obiettivo in modo efficiente",
+      "riguarda ciò che le persone fanno con il loro tempo per ottenere qualcosa",
+      "riguarda ciò che le persone fanno con il loro tempo, in generale",
+      "è un metodo per evitare di delegare i compiti più importanti"
+    ],
+    "risposta_corretta": "riguarda ciò che le persone fanno con il loro tempo per ottenere qualcosa"
+  },
+  {
+    "categoria": "Criminologia e Time Management",
+    "domanda": "Il Time Discounting descrive:",
+    "opzioni": [
+      "La tendenza delle persone a preferire obiettivi complessi a obiettivi semplici.",
+      "La capacità delle persone di attribuire più valore ai risultati futuri rispetto a quelli immediati.",
+      "La tendenza delle persone a svalutare le ricompense future rispetto a quelle immediate.",
+      "Il metodo con cui si calcola il tempo medio necessario a completare un'attività."
+    ],
+    "risposta_corretta": "La tendenza delle persone a svalutare le ricompense future rispetto a quelle immediate."
+  },
+  {
+    "categoria": "Criminologia e Time Management",
+    "domanda": "La Planning Fallacy consiste nella tendenza a:",
+    "opzioni": [
+      "Sopravvalutare costi, rischi e durata di un'attività e sottovalutare i benefici.",
+      "Essere eccessivamente ottimisti sui tempi necessari per completare un compito.",
+      "Pianificare solo attività urgenti e non importanti.",
+      "Rinviare le attività che dipendono da altri soggetti."
+    ],
+    "risposta_corretta": "Essere eccessivamente ottimisti sui tempi necessari per completare un compito."
+  },
+  {
+    "categoria": "Criminologia e Time Management",
+    "domanda": "Quale dei seguenti elementi è tra i “ladri del tempo” legati alla disorganizzazione?",
+    "opzioni": [
+      "E-mail continue.",
+      "Incapacità di dire di no",
+      "Multitasking",
+      "Internet e social"
+    ],
+    "risposta_corretta": "Multitasking"
+  },
+  {
+    "categoria": "Criminologia e Time Management",
+    "domanda": "Il Cerchio dell'Influenza invita a concentrarsi principalmente su:",
+    "opzioni": [
+      "Le cose che si possono controllare o influenzare",
+      "Tutto ciò che accade intorno a noi",
+      "Le attività fuori dal nostro controllo",
+      "I problemi più urgenti degli altri"
+    ],
+    "risposta_corretta": "Le cose che si possono controllare o influenzare"
+  },
+  {
+    "categoria": "Criminologia e Time Management",
+    "domanda": "La Matrice di Eisenhower/Covey interseca 2 dimensioni, quali?",
+    "opzioni": [
+      "Necessità ed efficienza",
+      "Distrazione e spreco",
+      "Urgenza e incertezza",
+      "Importanza e urgenza"
+    ],
+    "risposta_corretta": "Importanza e urgenza"
+  },
+  {
+    "categoria": "Criminologia e Time Management",
+    "domanda": "Nel confronto tra gestione del tempo ed efficienza, il time management è collegato principalmente a:",
+    "opzioni": [
+      "Goal setting",
+      "Risk assessment.",
+      "Decision making.",
+      "Problem solving creativo."
+    ],
+    "risposta_corretta": "Decision making."
+  },
+  {
+    "categoria": "Criminologia e Time Management",
+    "domanda": "Il cuore di un'efficace gestione del tempo personale consiste nel dedicare il massimo tempo possibile a:",
+    "opzioni": [
+      "Lavori urgenti in un'atmosfera altamente reattiva.",
+      "Lavori importanti in un'atmosfera non urgente.",
+      "Attività non importanti ma rapide da concludere.",
+      "Compiti più semplici per liberare spazio mentale."
+    ],
+    "risposta_corretta": "Lavori importanti in un'atmosfera non urgente."
+  },
+  {
+    "categoria": "Criminologia e Time Management",
+    "domanda": "Una priorità:",
+    "opzioni": [
+      "è \"urgenza\" ed è oggettiva, se definita in base al tempo",
+      "è \"urgenza\" ed è oggettiva, se definita in base al valore/utilità",
+      "ha solo una componente oggettiva",
+      "nessuna delle risposte precedenti"
+    ],
+    "risposta_corretta": "è \"urgenza\" ed è oggettiva, se definita in base al tempo"
+  },
+  {
+    "categoria": "Criminologia e Time Management",
+    "domanda": "Secondo Edwin Sutherland, la criminologia si definisce come:",
+    "opzioni": [
+      "Lo studio del comportamento deviante",
+      "The scientific study of lawmaking, lawbreaking and the response to lawbreaking",
+      "Lo studio delle leggi penali",
+      "L'analisi della mente criminale"
+    ],
+    "risposta_corretta": "The scientific study of lawmaking, lawbreaking and the response to lawbreaking"
+  },
+  {
+    "categoria": "Criminologia e Time Management",
+    "domanda": "La teoria dell'associazione differenziale sostiene che:",
+    "opzioni": [
+      "I criminali nascono predisposti al crimine",
+      "L'ambiente determina il comportamento criminale",
+      "I comportamenti criminali vengono appresi attraverso le interazioni con gli altri",
+      "La povertà è la causa principale del crimine"
+    ],
+    "risposta_corretta": "I comportamenti criminali vengono appresi attraverso le interazioni con gli altri"
+  },
+  {
+    "categoria": "Criminologia e Time Management",
+    "domanda": "Il modello CRAVED di Clarke (1999) identifica le caratteristiche degli \"hot products\". Cosa significa la lettera 'R'?",
+    "opzioni": [
+      "Resistant",
+      "Removable",
+      "Readable",
+      "Reliable"
+    ],
+    "risposta_corretta": "Removable"
+  },
+  {
+    "categoria": "Criminologia e Time Management",
+    "domanda": "Secondo la Crime Pattern Theory, quale delle seguenti affermazioni è corretta?",
+    "opzioni": [
+      "I crimini sono sempre distribuiti in modo casuale",
+      "I crimini sono uniformi nel tempo e nello spazio",
+      "I crimini non sono né casuali né uniformi nel tempo e nello spazio",
+      "I crimini seguono sempre lo stesso schema"
+    ],
+    "risposta_corretta": "I crimini non sono né casuali né uniformi nel tempo e nello spazio"
+  },
+  {
+    "categoria": "Criminologia e Time Management",
+    "domanda": "Nella teoria della Routine Activity, quali sono i tre elementi necessari perché si verifichi un'opportunità criminale?",
+    "opzioni": [
+      "Tempo, luogo e vittima",
+      "Target appetibile, assenza di guardiano capace e offender motivato",
+      "Denaro, movente e opportunità",
+      "Arma, vittima e luogo"
+    ],
+    "risposta_corretta": "Target appetibile, assenza di guardiano capace e offender motivato"
+  },
+  {
+    "categoria": "Criminologia e Time Management",
+    "domanda": "Per hot spot s'intende:",
+    "opzioni": [
+      "Un'area definita che concentra un numero di reati superiore alla media.",
+      "Un target (es. una banca) che ha subito più eventi criminali in un dato periodo.",
+      "Un'area oggetto di interventi mirati a ridurre le opportunità criminali.",
+      "Un target (es. una banca) con particolari caratteristiche che lo rendono appetibile per i criminali."
+    ],
+    "risposta_corretta": "Un'area definita che concentra un numero di reati superiore alla media."
+  },
+  {
+    "categoria": "Safety Management",
+    "domanda": "Quale evoluzione caratterizza il passaggio dalla disciplina prevalentemente tecnico-prescrittiva del DPR 547/1955 al sistema delineato dal D.Lgs. 81/2008?",
+    "opzioni": [
+      "Il passaggio a un sistema organico di prevenzione fondato sulla valutazione di tutti i rischi, sulla programmazione delle misure e sul coinvolgimento dei soggetti della prevenzione.",
+      "Il passaggio da un sistema di prevenzione aziendale a un sistema autorizzativo affidato esclusivamente alle ASL.",
+      "L'eliminazione della responsabilità del datore di lavoro nella valutazione dei rischi.",
+      "La sostituzione del DVR con procedure operative non documentate."
+    ],
+    "risposta_corretta": "Il passaggio a un sistema organico di prevenzione fondato sulla valutazione di tutti i rischi, sulla programmazione delle misure e sul coinvolgimento dei soggetti della prevenzione."
+  },
+  {
+    "categoria": "Safety Management",
+    "domanda": "Quali tra le seguenti rientrano nelle misure generali di tutela previste dal D.Lgs. 81/2008?",
+    "opzioni": [
+      "La sola vigilanza esterna e l'applicazione di sanzioni dopo un infortunio.",
+      "La valutazione dei rischi, la programmazione della prevenzione e l'informazione e formazione adeguate dei lavoratori.",
+      "Esclusivamente il controllo degli accessi e la protezione dei beni aziendali.",
+      "La sola predisposizione del piano di evacuazione."
+    ],
+    "risposta_corretta": "La valutazione dei rischi, la programmazione della prevenzione e l'informazione e formazione adeguate dei lavoratori."
+  },
+  {
+    "categoria": "Safety Management",
+    "domanda": "Secondo l'art. 15 del D.Lgs. 81/2008, come deve essere programmata la prevenzione?",
+    "opzioni": [
+      "Deve essere limitata alla consegna dei DPI ai lavoratori esposti.",
+      "Deve essere predisposta soltanto dopo il verificarsi di un infortunio significativo.",
+      "Deve integrare coerentemente le condizioni tecniche produttive, l'organizzazione e le condizioni di lavoro, le relazioni sociali e i fattori dell'ambiente di lavoro.",
+      "Deve riguardare esclusivamente i rischi fisici."
+    ],
+    "risposta_corretta": "Deve integrare coerentemente le condizioni tecniche produttive, l'organizzazione e le condizioni di lavoro, le relazioni sociali e i fattori dell'ambiente di lavoro."
+  },
+  {
+    "categoria": "Safety Management",
+    "domanda": "Nel D.Lgs. 81/2008, che cosa si intende per valutazione dei rischi?",
+    "opzioni": [
+      "Una valutazione globale e documentata di tutti i rischi per la salute e sicurezza dei lavoratori presenti nell'organizzazione, finalizzata a individuare misure adeguate e a elaborare il relativo programma di attuazione.",
+      "Una verifica informale svolta dal preposto durante l'attività quotidiana.",
+      "Una verifica tecnica delle sole attrezzature di lavoro.",
+      "Un documento facoltativo previsto soltanto per le attività produttive complesse."
+    ],
+    "risposta_corretta": "Una valutazione globale e documentata di tutti i rischi per la salute e sicurezza dei lavoratori presenti nell'organizzazione, finalizzata a individuare misure adeguate e a elaborare il relativo programma di attuazione."
+  },
+  {
+    "categoria": "Safety Management",
+    "domanda": "Quali obblighi del datore di lavoro non sono delegabili ai sensi dell'art. 17 del D.Lgs. 81/2008?",
+    "opzioni": [
+      "La nomina del medico competente e l'organizzazione delle squadre di emergenza.",
+      "La formazione dei lavoratori e la gestione quotidiana dei DPI.",
+      "La scelta dei fornitori e l'approvazione del budget destinato alla sicurezza.",
+      "La valutazione di tutti i rischi con la conseguente elaborazione del DVR e la designazione del RSPP."
+    ],
+    "risposta_corretta": "La valutazione di tutti i rischi con la conseguente elaborazione del DVR e la designazione del RSPP."
+  },
+  {
+    "categoria": "Safety Management",
+    "domanda": "Quali elementi deve contenere, tra l'altro, il DVR ai sensi dell'art. 28 del D.Lgs. 81/2008?",
+    "opzioni": [
+      "Soltanto l'elenco dei lavoratori e delle relative mansioni.",
+      "La relazione sulla valutazione di tutti i rischi e sui criteri adottati, le misure di prevenzione e protezione e i DPI adottati, nonché il programma delle misure di miglioramento.",
+      "Soltanto le procedure di emergenza e il piano di evacuazione.",
+      "Soltanto il registro degli infortuni e delle assenze per malattia."
+    ],
+    "risposta_corretta": "La relazione sulla valutazione di tutti i rischi e sui criteri adottati, le misure di prevenzione e protezione e i DPI adottati, nonché il programma delle misure di miglioramento."
+  },
+  {
+    "categoria": "Safety Management",
+    "domanda": "Quando deve essere rielaborata la valutazione dei rischi e, conseguentemente, il DVR secondo l'art. 29 del D.Lgs. 81/2008?",
+    "opzioni": [
+      "Soltanto alla scadenza fissa di cinque anni.",
+      "Soltanto quando ne faccia richiesta il RLS.",
+      "In caso di modifiche significative del processo o dell'organizzazione, in relazione all'evoluzione della tecnica, della prevenzione o della protezione, dopo infortuni significativi o quando la sorveglianza sanitaria ne evidenzi la necessità.",
+      "Ogni volta che cambia la sede legale dell'organizzazione, anche senza effetti sui rischi."
+    ],
+    "risposta_corretta": "In caso di modifiche significative del processo o dell'organizzazione, in relazione all'evoluzione della tecnica, della prevenzione o della protezione, dopo infortuni significativi o quando la sorveglianza sanitaria ne evidenzi la necessità."
+  },
+  {
+    "categoria": "Safety Management",
+    "domanda": "In base all'art. 37 del D.Lgs. 81/2008, quali caratteristiche deve avere l'addestramento?",
+    "opzioni": [
+      "Deve consistere nella prova pratica per l'uso corretto e sicuro di attrezzature, macchine, impianti, sostanze, dispositivi e DPI oppure nell'esercitazione applicata per le procedure di lavoro in sicurezza; gli interventi devono essere tracciati in un registro, anche informatizzato.",
+      "Può essere sostituito dalla sola consegna di istruzioni scritte.",
+      "È previsto esclusivamente per i dirigenti.",
+      "Non deve essere documentato quando è svolto da personale esperto."
+    ],
+    "risposta_corretta": "Deve consistere nella prova pratica per l'uso corretto e sicuro di attrezzature, macchine, impianti, sostanze, dispositivi e DPI oppure nell'esercitazione applicata per le procedure di lavoro in sicurezza; gli interventi devono essere tracciati in un registro, anche informatizzato."
+  },
+  {
+    "categoria": "Safety Management",
+    "domanda": "Che cosa si intende per Servizio di Prevenzione e Protezione?",
+    "opzioni": [
+      "L'insieme delle sole persone interne incaricate di controllare macchine e impianti.",
+      "Una struttura autonoma che sostituisce il datore di lavoro negli obblighi di sicurezza.",
+      "L'insieme delle persone, dei sistemi e dei mezzi esterni o interni all'azienda finalizzati alla prevenzione e protezione dai rischi professionali per i lavoratori.",
+      "L'insieme delle sole squadre incaricate della gestione delle emergenze."
+    ],
+    "risposta_corretta": "L'insieme delle persone, dei sistemi e dei mezzi esterni o interni all'azienda finalizzati alla prevenzione e protezione dai rischi professionali per i lavoratori."
+  },
+  {
+    "categoria": "Safety Management",
+    "domanda": "Quale affermazione descrive correttamente i compiti e le possibili responsabilità del RSPP?",
+    "opzioni": [
+      "Svolge compiti tecnici e consultivi a supporto del datore di lavoro e può rispondere secondo le regole penali generali se una sua condotta colposa contribuisce causalmente a un evento lesivo.",
+      "Sostituisce il datore di lavoro nella valutazione dei rischi e assume tutti i suoi obblighi non delegabili.",
+      "È sempre privo di qualunque possibile responsabilità penale, indipendentemente dalla condotta tenuta.",
+      "Esercita necessariamente poteri gerarchici e disciplinari su tutti i lavoratori."
+    ],
+    "risposta_corretta": "Svolge compiti tecnici e consultivi a supporto del datore di lavoro e può rispondere secondo le regole penali generali se una sua condotta colposa contribuisce causalmente a un evento lesivo."
+  },
+  {
+    "categoria": "Safety Management",
+    "domanda": "La delega di funzioni a un dirigente esclude l'obbligo di vigilanza del datore di lavoro sul corretto svolgimento delle funzioni trasferite?",
+    "opzioni": [
+      "Sì, in ogni caso e dal momento dell'accettazione della delega.",
+      "Sì, ma soltanto se il delegato dispone di autonomia di spesa.",
+      "No, la delega non esclude l'obbligo di vigilanza del datore di lavoro secondo quanto previsto dall'art. 16, comma 3.",
+      "No, perché le funzioni in materia di sicurezza non possono mai essere delegate."
+    ],
+    "risposta_corretta": "No, la delega non esclude l'obbligo di vigilanza del datore di lavoro secondo quanto previsto dall'art. 16, comma 3."
+  },
+  {
+    "categoria": "Safety Management",
+    "domanda": "Ai sensi dell'art. 2 del D.Lgs. 81/2008, chi è il lavoratore?",
+    "opzioni": [
+      "Soltanto chi ha un contratto di lavoro subordinato a tempo indeterminato.",
+      "La persona che, indipendentemente dalla tipologia contrattuale, svolge un'attività lavorativa nell'organizzazione di un datore di lavoro pubblico o privato, con o senza retribuzione, anche al solo fine di apprendere un mestiere, un'arte o una professione, esclusi gli addetti ai servizi domestici e familiari.",
+      "Soltanto chi riceve un compenso direttamente dal datore di lavoro.",
+      "Qualunque persona presente nei locali aziendali, anche se non svolge alcuna attività lavorativa."
+    ],
+    "risposta_corretta": "La persona che, indipendentemente dalla tipologia contrattuale, svolge un'attività lavorativa nell'organizzazione di un datore di lavoro pubblico o privato, con o senza retribuzione, anche al solo fine di apprendere un mestiere, un'arte o una professione, esclusi gli addetti ai servizi domestici e familiari."
+  },
+  {
+    "categoria": "Safety Management",
+    "domanda": "Su quali soggetti si distribuiscono gli obblighi di salute e sicurezza sul lavoro?",
+    "opzioni": [
+      "Esclusivamente sul datore di lavoro, perché è l'unico destinatario di obblighi e sanzioni.",
+      "Esclusivamente sui tecnici incaricati della manutenzione.",
+      "Sul datore di lavoro, sui dirigenti, sui preposti, sui lavoratori e sugli altri soggetti della prevenzione, nei limiti degli obblighi attribuiti a ciascuno dalla normativa.",
+      "Esclusivamente sul RSPP e sul medico competente."
+    ],
+    "risposta_corretta": "Sul datore di lavoro, sui dirigenti, sui preposti, sui lavoratori e sugli altri soggetti della prevenzione, nei limiti degli obblighi attribuiti a ciascuno dalla normativa."
+  },
+  {
+    "categoria": "Safety Management",
+    "domanda": "Qual è la finalità della valutazione e della gestione dei rischi?",
+    "opzioni": [
+      "Individuare i pericoli e valutare i rischi, eliminandoli ove possibile o riducendoli al minimo mediante adeguate misure di prevenzione e protezione.",
+      "Consentire esclusivamente ai lavoratori di esprimere le proprie preoccupazioni.",
+      "Verificare soltanto il rispetto formale delle norme di igiene del lavoro.",
+      "Trasferire sui lavoratori la responsabilità dei rischi non eliminabili."
+    ],
+    "risposta_corretta": "Individuare i pericoli e valutare i rischi, eliminandoli ove possibile o riducendoli al minimo mediante adeguate misure di prevenzione e protezione."
+  },
+  {
+    "categoria": "Safety Management",
+    "domanda": "Nell'affidamento di lavori, servizi o forniture, quali attività devono promuovere i datori di lavoro interessati per prevenire i rischi da interferenze, nei casi regolati dall'art. 26 del D.Lgs. 81/2008?",
+    "opzioni": [
+      "La cooperazione nell'attuazione delle misure di prevenzione e protezione e il coordinamento degli interventi.",
+      "La redazione di un contratto quadro, che sostituisce ogni altra attività di coordinamento.",
+      "La predisposizione di procedure separate affinché ogni impresa operi autonomamente.",
+      "La delega integrale della gestione dei rischi al committente."
+    ],
+    "risposta_corretta": "La cooperazione nell'attuazione delle misure di prevenzione e protezione e il coordinamento degli interventi."
+  },
+  {
+    "categoria": "Safety Management",
+    "domanda": "Quale direttiva europea costituisce la direttiva quadro in materia di sicurezza e salute dei lavoratori durante il lavoro?",
+    "opzioni": [
+      "La Direttiva 96/71/CE.",
+      "La Direttiva 2001/95/CE.",
+      "La Direttiva 89/391/CEE.",
+      "La Direttiva 2006/42/CE."
+    ],
+    "risposta_corretta": "La Direttiva 89/391/CEE."
+  },
+  {
+    "categoria": "Safety Management",
+    "domanda": "Quali requisiti deve possedere la delega di funzioni del datore di lavoro in materia di salute e sicurezza?",
+    "opzioni": [
+      "Può essere verbale, purché il delegato disponga di esperienza adeguata.",
+      "Deve risultare da atto scritto con data certa, essere conferita a un soggetto qualificato, attribuire i necessari poteri e l'autonomia di spesa, essere accettata per iscritto e ricevere adeguata pubblicità.",
+      "Non richiede l'accettazione del delegato se è prevista dall'organigramma.",
+      "Può riguardare anche la valutazione di tutti i rischi e la designazione del RSPP."
+    ],
+    "risposta_corretta": "Deve risultare da atto scritto con data certa, essere conferita a un soggetto qualificato, attribuire i necessari poteri e l'autonomia di spesa, essere accettata per iscritto e ricevere adeguata pubblicità."
+  },
+  {
+    "categoria": "Safety Management",
+    "domanda": "A chi si applicano le posizioni di garanzia del datore di lavoro, del dirigente e del preposto?",
+    "opzioni": [
+      "Soltanto ai soggetti indicati nell'organigramma aziendale.",
+      "Soltanto ai soggetti formalmente nominati con atto scritto.",
+      "Soltanto a chi sia destinatario di una delega di funzioni.",
+      "Sia ai soggetti formalmente investiti dei rispettivi ruoli, sia a chi, pur privo di regolare investitura, ne esercita concretamente i poteri giuridici."
+    ],
+    "risposta_corretta": "Sia ai soggetti formalmente investiti dei rispettivi ruoli, sia a chi, pur privo di regolare investitura, ne esercita concretamente i poteri giuridici."
+  },
+  {
+    "categoria": "Safety Management",
+    "domanda": "Quali soggetti appartengono alla cosiddetta linea operativa o decisionale della prevenzione?",
+    "opzioni": [
+      "Datore di lavoro, dirigenti e preposti.",
+      "Datore di lavoro, RSPP e RLS.",
+      "RSPP, medico competente e RLS.",
+      "Preposti, addetti alle emergenze e medico competente."
+    ],
+    "risposta_corretta": "Datore di lavoro, dirigenti e preposti."
+  },
+  {
+    "categoria": "Safety Management",
+    "domanda": "Secondo EU-OSHA, che cosa comprende la violenza da parte di terzi sul lavoro?",
+    "opzioni": [
+      "Soltanto le aggressioni fisiche per le quali sia stata presentata querela.",
+      "Gli atti di aggressione fisica, psicologica o verbale commessi da persone esterne all'organizzazione nei confronti del lavoratore.",
+      "Soltanto i comportamenti violenti commessi da colleghi o superiori gerarchici.",
+      "Qualunque divergenza professionale, anche priva di condotte aggressive."
+    ],
+    "risposta_corretta": "Gli atti di aggressione fisica, psicologica o verbale commessi da persone esterne all'organizzazione nei confronti del lavoratore."
+  },
+  {
+    "categoria": "Safety Management",
+    "domanda": "Secondo le misure generali di tutela previste dall'art. 15 del D.Lgs. 81/2008, che cosa deve essere sottoposto a regolare manutenzione?",
+    "opzioni": [
+      "Soltanto le macchine soggette a marcatura CE.",
+      "Soltanto gli impianti indicati nel Titolo III del decreto.",
+      "Esclusivamente i dispositivi di protezione individuale.",
+      "Ambienti, attrezzature e impianti, con particolare riguardo ai dispositivi di sicurezza, in conformità alle indicazioni dei fabbricanti."
+    ],
+    "risposta_corretta": "Ambienti, attrezzature e impianti, con particolare riguardo ai dispositivi di sicurezza, in conformità alle indicazioni dei fabbricanti."
+  },
+  {
+    "categoria": "Organizzazione Aziendale",
+    "domanda": "Nel modello di Seiler, che cosa evidenzia principalmente una visione sistemica dell'organizzazione?",
+    "opzioni": [
+      "Che i risultati dipendono solo dalle tecnologie utilizzate.",
+      "Che l'organizzazione è influenzata dall'ambiente e dalle relazioni tra più variabili interne.",
+      "Che il comportamento organizzativo non incide sui risultati.",
+      "Che le variabili individuali sono più importanti di tutte le altre."
+    ],
+    "risposta_corretta": "Che l'organizzazione è influenzata dall'ambiente e dalle relazioni tra più variabili interne."
+  },
+  {
+    "categoria": "Organizzazione Aziendale",
+    "domanda": "Quali sono le principali variabili progettuali per comprendere il contesto organizzativo?",
+    "opzioni": [
+      "Individuali, sociali, strategiche e tecnologiche",
+      "Economiche, giuridiche, politiche e culturali",
+      "Ambientali, produttive, finanziarie e commerciali",
+      "Gerarchiche, operative, normative e territoriali"
+    ],
+    "risposta_corretta": "Individuali, sociali, strategiche e tecnologiche"
+  },
+  {
+    "categoria": "Organizzazione Aziendale",
+    "domanda": "Come si strutturano le variabili organizzative?",
+    "opzioni": [
+      "Ambiente, mercato e profitti.",
+      "Leadership, marketing e finanza.",
+      "Struttura, meccanismi e cultura.",
+      "Tecnologie, clienti e fornitori."
+    ],
+    "risposta_corretta": "Struttura, meccanismi e cultura."
+  },
+  {
+    "categoria": "Organizzazione Aziendale",
+    "domanda": "Quale struttura organizzativa canonica raggruppa le attività in base alla specializzazione tecnica?",
+    "opzioni": [
+      "Struttura funzionale.",
+      "Struttura elementare.",
+      "Struttura divisionale.",
+      "Struttura informale."
+    ],
+    "risposta_corretta": "Struttura funzionale."
+  },
+  {
+    "categoria": "Organizzazione Aziendale",
+    "domanda": "Che cos'è un organigramma?",
+    "opzioni": [
+      "La descrizione testuale delle attività assegnate a una unità organizzativa.",
+      "La rappresentazione grafica dei raggruppamenti di attività e delle responsabilità.",
+      "Un elenco delle sole mansioni individuali.",
+      "Un documento che indica solo gli obiettivi aziendali."
+    ],
+    "risposta_corretta": "La rappresentazione grafica dei raggruppamenti di attività e delle responsabilità."
+  },
+  {
+    "categoria": "Organizzazione Aziendale",
+    "domanda": "Che cos'è un funzionigramma?",
+    "opzioni": [
+      "La rappresentazione grafica dei rapporti gerarchici tra le unità.",
+      "L'elenco dei dipendenti presenti in azienda.",
+      "Il documento che definisce soltanto la missione dell'impresa.",
+      "La descrizione testuale delle attività assegnate a una unità organizzativa."
+    ],
+    "risposta_corretta": "La descrizione testuale delle attività assegnate a una unità organizzativa."
+  },
+  {
+    "categoria": "Organizzazione Aziendale",
+    "domanda": "Quali sono, normalmente, le unità organizzative di line?",
+    "opzioni": [
+      "Le unità deputate ad attività di supporto o consulenza.",
+      "Le unità deputate alla realizzazione di compiti o servizi, o parti di essi.",
+      "Le unità che operano solo in staff alla direzione generale.",
+      "Le unità che si occupano esclusivamente di pianificazione strategica."
+    ],
+    "risposta_corretta": "Le unità deputate alla realizzazione di compiti o servizi, o parti di essi."
+  },
+  {
+    "categoria": "Organizzazione Aziendale",
+    "domanda": "Nella micro struttura organizzativa, quali elementi vengono definiti per descrivere il livello più puntuale dell'organizzazione?",
+    "opzioni": [
+      "Posizione, ruolo e mansione.",
+      "Organigramma, funzionigramma e unità divisionali.",
+      "Line, staff e criteri di raggruppamento.",
+      "Specializzazione tecnica, economie di scala e risultato finale."
+    ],
+    "risposta_corretta": "Posizione, ruolo e mansione."
+  },
+  {
+    "categoria": "Organizzazione Aziendale",
+    "domanda": "A cosa si fa riferimento quando si parla di strutture non formalizzate?",
+    "opzioni": [
+      "All'insieme delle regole scritte nell'organigramma.",
+      "Solo ai rapporti di subordinazione tra dirigenti e collaboratori.",
+      "All'insieme delle relazioni organizzative diverse dalla gerarchia, non formalizzate nei documenti ufficiali.",
+      "Esclusivamente alle procedure operative standard."
+    ],
+    "risposta_corretta": "All'insieme delle relazioni organizzative diverse dalla gerarchia, non formalizzate nei documenti ufficiali."
+  },
+  {
+    "categoria": "Organizzazione Aziendale",
+    "domanda": "Quale tra le seguenti è una relazione organizzativa rilevante nelle strutture non formalizzate?",
+    "opzioni": [
+      "Solo le relazioni gerarchiche formalizzate nell'organigramma.",
+      "Le relazioni di influenza, di mutua collaborazione e di conflitto.",
+      "Esclusivamente le relazioni previste dal funzionigramma.",
+      "Solo i rapporti tra unità appartenenti alla stessa funzione."
+    ],
+    "risposta_corretta": "Le relazioni di influenza, di mutua collaborazione e di conflitto."
+  },
+  {
+    "categoria": "Organizzazione Aziendale",
+    "domanda": "Secondo lo schema di Porter dei processi aziendali, quale tra le seguenti è un'attività primaria?",
+    "opzioni": [
+      "Gestione delle risorse umane.",
+      "Sviluppo della tecnologia.",
+      "Approvvigionamenti.",
+      "Marketing e vendite."
+    ],
+    "risposta_corretta": "Marketing e vendite."
+  },
+  {
+    "categoria": "Organizzazione Aziendale",
+    "domanda": "Secondo la catena del valore Porter, quale tra le seguenti è un'attività di sviluppo?",
+    "opzioni": [
+      "Gestione delle risorse umane",
+      "Logistica interna",
+      "Marketing e vendite"
+    ],
+    "risposta_corretta": "Gestione delle risorse umane"
+  },
+  {
+    "categoria": "Organizzazione Aziendale",
+    "domanda": "Quali sono le tre logiche utilizzate per definire/comprendere i meccanismi aziendali?",
+    "opzioni": [
+      "Logiche di pianificazione, esecuzione e valutazione.",
+      "Logiche gerarchiche, funzionali e divisionali.",
+      "Logiche di coordinamento, decisionali e di controllo.",
+      "Logiche operative, strategiche e finanziarie."
+    ],
+    "risposta_corretta": "Logiche di coordinamento, decisionali e di controllo."
+  },
+  {
+    "categoria": "Organizzazione Aziendale",
+    "domanda": "Secondo il modello di Thompson, quali sono i tre tipi di interdipendenza tra attività?",
+    "opzioni": [
+      "Generica, funzionale e divisionale.",
+      "Gerarchica, procedurale e informale.",
+      "Generica, sequenziale e reciproca.",
+      "Tecnica, operativa e strategica."
+    ],
+    "risposta_corretta": "Generica, sequenziale e reciproca."
+  },
+  {
+    "categoria": "Organizzazione Aziendale",
+    "domanda": "Quale tra i seguenti non rientra tra gli strumenti di coordinamento?",
+    "opzioni": [
+      "Standardizzazione.",
+      "Divisionalizzazione.",
+      "Pianificazione.",
+      "Mutuo aggiustamento."
+    ],
+    "risposta_corretta": "Divisionalizzazione."
+  },
+  {
+    "categoria": "Organizzazione Aziendale",
+    "domanda": "Nella progettazione dei meccanismi di controllo, quali sono i due step fondamentali?",
+    "opzioni": [
+      "Decidere l'oggetto del controllo e decidere il soggetto del controllo.",
+      "Definire chi decide e come decide.",
+      "Decidere la standardizzazione e il mutuo aggiustamento.",
+      "Decidere il coordinamento e la pianificazione."
+    ],
+    "risposta_corretta": "Decidere l'oggetto del controllo e decidere il soggetto del controllo."
+  },
+  {
+    "categoria": "Organizzazione Aziendale",
+    "domanda": "Quale tra i seguenti è un vantaggio del decentramento decisionale?",
+    "opzioni": [
+      "Coerenza decisionale.",
+      "Rapidità in situazioni di crisi.",
+      "Conoscenza situazionale locale.",
+      "Maggiore uniformità delle decisioni."
+    ],
+    "risposta_corretta": "Conoscenza situazionale locale."
+  },
+  {
+    "categoria": "Organizzazione Aziendale",
+    "domanda": "Secondo E. H. Schein (1985), che cos'è la cultura organizzativa?",
+    "opzioni": [
+      "L'insieme coerente di procedure formali, regole operative e strumenti di controllo utilizzati dall'organizzazione per disciplinare il comportamento dei membri.",
+      "L'insieme coerente di relazioni gerarchiche, ruoli istituzionali e livelli decisionali che definiscono la struttura formale dell'organizzazione.",
+      "L'insieme coerente di interazioni informali, pratiche spontanee e dinamiche relazionali che emergono tra i membri nel lavoro quotidiano.",
+      "L'insieme coerente di assunti fondamentali sviluppati da un gruppo e trasmessi ai nuovi membri come modo corretto di percepire, pensare e sentire."
+    ],
+    "risposta_corretta": "L'insieme coerente di assunti fondamentali sviluppati da un gruppo e trasmessi ai nuovi membri come modo corretto di percepire, pensare e sentire."
+  },
+  {
+    "categoria": "Organizzazione Aziendale",
+    "domanda": "Quale tra le seguenti affermazioni descrive correttamente la just culture?",
+    "opzioni": [
+      "È un approccio che mira a individuare rapidamente il colpevole principale, attribuire la responsabilità individuale dell'errore e sanzionare il comportamento scorretto.",
+      "È un approccio che considera gli errori come fatti da nascondere, limita il coinvolgimento delle persone e interviene solo quando il problema ha già prodotto danni evidenti.",
+      "È un approccio che punta a capire che cosa non ha funzionato e perché, favorendo la segnalazione degli errori, l'analisi sistemica delle cause e il miglioramento dell'organizzazione.",
+      "È un approccio che si concentra soprattutto sul rispetto formale delle procedure, sulla ricostruzione lineare dell'evento e sulla ricerca di un responsabile diretto del problema."
+    ],
+    "risposta_corretta": "È un approccio che punta a capire che cosa non ha funzionato e perché, favorendo la segnalazione degli errori, l'analisi sistemica delle cause e il miglioramento dell'organizzazione."
+  },
+  {
+    "categoria": "Budgeting e Finanza Aziendale",
+    "domanda": "Secondo il principio di competenza economica, quando viene rilevato a conto economico un costo non capitalizzabile?",
+    "opzioni": [
+      "Nel momento in cui viene pagato",
+      "Nell'esercizio al quale il costo si riferisce economicamente",
+      "Sempre nell'esercizio in cui viene ricevuta la fattura",
+      "Nell'esercizio scelto dagli amministratori"
+    ],
+    "risposta_corretta": "Nell'esercizio al quale il costo si riferisce economicamente"
+  },
+  {
+    "categoria": "Budgeting e Finanza Aziendale",
+    "domanda": "In che modo viene imputata la competenza economica di una CAPEX ?",
+    "opzioni": [
+      "Mediante la svalutazione annuale",
+      "Mediante quote di ammortamento distribuite lungo la vita utile",
+      "Interamente nell'anno del pagamento",
+      "Attraverso la variazione delle disponibilità liquide"
+    ],
+    "risposta_corretta": "Mediante quote di ammortamento distribuite lungo la vita utile"
+  },
+  {
+    "categoria": "Budgeting e Finanza Aziendale",
+    "domanda": "Da cosa dipende la valutazione economico-finanziaria tra una soluzione OPEX e una CAPEX?",
+    "opzioni": [
+      "Esclusivamente dall'importo iniziale",
+      "Esclusivamente dal trattamento fiscale",
+      "Dalla natura della spesa, dalla durata dei benefici e dai relativi effetti economici e finanziari",
+      "Dal fatto che le OPEX siano sempre preferibili alle CAPEX"
+    ],
+    "risposta_corretta": "Dalla natura della spesa, dalla durata dei benefici e dai relativi effetti economici e finanziari"
+  },
+  {
+    "categoria": "Budgeting e Finanza Aziendale",
+    "domanda": "Quale indicatore esprime il margine della gestione operativa prima di ammortamenti, svalutazioni, interessi e imposte?",
+    "opzioni": [
+      "EBITDA",
+      "EBIT",
+      "Risultato prima delle imposte",
+      "Utile netto"
+    ],
+    "risposta_corretta": "EBITDA"
+  },
+  {
+    "categoria": "Budgeting e Finanza Aziendale",
+    "domanda": "Quale indicatore esprime normalmente il risultato operativo dopo ammortamenti e svalutazioni, ma prima di interessi e imposte?",
+    "opzioni": [
+      "EBITDA",
+      "EBIT",
+      "ROE",
+      "Utile netto"
+    ],
+    "risposta_corretta": "EBIT"
+  },
+  {
+    "categoria": "Budgeting e Finanza Aziendale",
+    "domanda": "Quale voce esprime il risultato economico finale dell'esercizio?",
+    "opzioni": [
+      "EBITDA",
+      "EBIT",
+      "Risultato prima delle imposte",
+      "Utile o perdita netta d'esercizio"
+    ],
+    "risposta_corretta": "Utile o perdita netta d'esercizio"
+  },
+  {
+    "categoria": "Budgeting e Finanza Aziendale",
+    "domanda": "Secondo la definizione finanziaria, il Capitale Circolante Netto è dato da:",
+    "opzioni": [
+      "Capitale fisso meno patrimonio netto",
+      "Attività correnti meno passività correnti",
+      "Disponibilità liquide meno debiti finanziari complessivi",
+      "Rimanenze meno immobilizzazioni"
+    ],
+    "risposta_corretta": "Attività correnti meno passività correnti"
+  },
+  {
+    "categoria": "Budgeting e Finanza Aziendale",
+    "domanda": "In uno stato patrimoniale riclassificato, una CAPEX capitalizzata incrementa normalmente:",
+    "opzioni": [
+      "I costi operativi dell'esercizio",
+      "Il capitale circolante netto",
+      "Il capitale fisso o attivo immobilizzato",
+      "Il patrimonio netto"
+    ],
+    "risposta_corretta": "Il capitale fisso o attivo immobilizzato"
+  },
+  {
+    "categoria": "Budgeting e Finanza Aziendale",
+    "domanda": "Nell'analisi della redditività aziendale, il ROI è generalmente calcolato come:",
+    "opzioni": [
+      "Utile netto / patrimonio netto",
+      "Fatturato / capitale investito",
+      "Reddito operativo / capitale investito medio",
+      "Flusso di cassa / debiti finanziari"
+    ],
+    "risposta_corretta": "Reddito operativo / capitale investito medio"
+  },
+  {
+    "categoria": "Budgeting e Finanza Aziendale",
+    "domanda": "Tra i principali schemi di riclassificazione del conto economico rientrano:",
+    "opzioni": [
+      "Posizione finanziaria netta, valore aggiunto e break-even point",
+      "Valore aggiunto, costo del venduto e margine di contribuzione o costi fissi/variabili",
+      "Patrimonio netto, capitale investito e costo del capitale",
+      "Impieghi, fonti e posizione finanziaria netta"
+    ],
+    "risposta_corretta": "Valore aggiunto, costo del venduto e margine di contribuzione o costi fissi/variabili"
+  },
+  {
+    "categoria": "Budgeting e Finanza Aziendale",
+    "domanda": "Il grado di leva operativa misura:",
+    "opzioni": [
+      "La variazione percentuale dell'utile netto al variare dei debiti finanziari",
+      "La convenienza tra capitale proprio e capitale di debito",
+      "La sensibilità percentuale del reddito operativo a una variazione percentuale del fatturato, a parità delle altre condizioni",
+      "Il rapporto tra costi fissi e capitale investito"
+    ],
+    "risposta_corretta": "La sensibilità percentuale del reddito operativo a una variazione percentuale del fatturato, a parità delle altre condizioni"
+  },
+  {
+    "categoria": "Budgeting e Finanza Aziendale",
+    "domanda": "Nella riclassificazione finanziaria dello stato patrimoniale, le attività e le passività, comprensive del patrimonio netto, vengono rispettivamente rappresentate come:",
+    "opzioni": [
+      "Costi e ricavi",
+      "Impieghi e fonti",
+      "Liquidità e redditività",
+      "Capitale circolante e risultato operativo"
+    ],
+    "risposta_corretta": "Impieghi e fonti"
+  },
+  {
+    "categoria": "Budgeting e Finanza Aziendale",
+    "domanda": "Le CAPEX sono generalmente:",
+    "opzioni": [
+      "Costi operativi necessariamente ricorrenti",
+      "Spese imputate integralmente a conto economico indipendentemente dalla loro natura",
+      "Spese che, quando soddisfano i requisiti di rilevazione, sono capitalizzate come attività destinate a produrre benefici in più esercizi",
+      "Esclusivamente investimenti in beni materiali"
+    ],
+    "risposta_corretta": "Spese che, quando soddisfano i requisiti di rilevazione, sono capitalizzate come attività destinate a produrre benefici in più esercizi"
+  },
+  {
+    "categoria": "Budgeting e Finanza Aziendale",
+    "domanda": "Il Tasso Interno di Rendimento di un progetto è:",
+    "opzioni": [
+      "Il rapporto tra utile contabile e capitale investito",
+      "Il tasso di attualizzazione che rende nullo il VAN del progetto",
+      "Il costo medio del debito dell'impresa",
+      "Il tasso di crescita previsto del fatturato"
+    ],
+    "risposta_corretta": "Il tasso di attualizzazione che rende nullo il VAN del progetto"
+  },
+  {
+    "categoria": "Budgeting e Finanza Aziendale",
+    "domanda": "Il VAN di un progetto è:",
+    "opzioni": [
+      "La somma dei soli flussi di cassa positivi",
+      "La differenza non attualizzata tra incassi e investimento iniziale",
+      "La somma algebrica dei valori attuali di tutti i flussi di cassa del progetto, compreso l'investimento iniziale",
+      "Il tasso che rende nulli i flussi di cassa"
+    ],
+    "risposta_corretta": "La somma algebrica dei valori attuali di tutti i flussi di cassa del progetto, compreso l'investimento iniziale"
+  },
+  {
+    "categoria": "Budgeting e Finanza Aziendale",
+    "domanda": "Il ROE di un'azienda è generalmente calcolato come:",
+    "opzioni": [
+      "EBIT / capitale investito",
+      "Utile netto / patrimonio netto medio",
+      "Fatturato / totale attivo",
+      "EBITDA / patrimonio netto"
+    ],
+    "risposta_corretta": "Utile netto / patrimonio netto medio"
+  },
+  {
+    "categoria": "Budgeting e Finanza Aziendale",
+    "domanda": "Il Payback Period semplice rappresenta:",
+    "opzioni": [
+      "Il tasso che annulla il VAN",
+      "La redditività contabile media del progetto",
+      "Il tempo necessario affinché i flussi di cassa netti cumulati, non attualizzati, recuperino l'investimento iniziale",
+      "La somma dei flussi di cassa attualizzati"
+    ],
+    "risposta_corretta": "Il tempo necessario affinché i flussi di cassa netti cumulati, non attualizzati, recuperino l'investimento iniziale"
+  },
+  {
+    "categoria": "Budgeting e Finanza Aziendale",
+    "domanda": "Le OPEX si distinguono dalle CAPEX perché:",
+    "opzioni": [
+      "Sono sempre investimenti pluriennali ammortizzati nel tempo",
+      "Sono costi imputati a conto economico nell'esercizio di competenza, poiché non soddisfano i requisiti per essere capitalizzati come attività",
+      "Sono necessariamente spese una tantum",
+      "Riguardano esclusivamente beni materiali"
+    ],
+    "risposta_corretta": "Sono costi imputati a conto economico nell'esercizio di competenza, poiché non soddisfano i requisiti per essere capitalizzati come attività"
+  },
+  {
+    "categoria": "Budgeting e Finanza Aziendale",
+    "domanda": "Il fabbisogno finanziario a breve termine connesso alla gestione operativa dipende principalmente:",
+    "opzioni": [
+      "Dal valore degli ammortamenti",
+      "Dalla sola dimensione delle immobilizzazioni",
+      "Dall'ammontare e dalla durata del ciclo del capitale circolante, determinato dai tempi di pagamento, incasso e permanenza delle scorte",
+      "Esclusivamente dai debiti finanziari a lungo termine"
+    ],
+    "risposta_corretta": "Dall'ammontare e dalla durata del ciclo del capitale circolante, determinato dai tempi di pagamento, incasso e permanenza delle scorte"
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Che cosa sono i micro-stressors?",
+    "opzioni": [
+      "Grandi eventi traumatici che producono sempre effetti immediati e gravi.",
+      "Piccoli fastidi, irritazioni o difficoltà frequenti che possono accumularsi nel tempo e contribuire allo stress complessivo.",
+      "Sintomi esclusivamente fisici dello stress cronico.",
+      "Tecniche di rilassamento utilizzate per ridurre lo stress."
+    ],
+    "risposta_corretta": "Piccoli fastidi, irritazioni o difficoltà frequenti che possono accumularsi nel tempo e contribuire allo stress complessivo."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Che cosa sono i macro-stressors?",
+    "opzioni": [
+      "Fonti di stress ampie e significative, spesso legate a eventi importanti della vita o circostanze difficili e persistenti.",
+      "Piccoli fastidi quotidiani senza impatto sulla salute mentale.",
+      "Procedure aziendali per prevenire gli incidenti.",
+      "Solo disturbi fisici derivanti da carico ergonomico."
+    ],
+    "risposta_corretta": "Fonti di stress ampie e significative, spesso legate a eventi importanti della vita o circostanze difficili e persistenti."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Quali elementi possono descrivere il processo dello stress?",
+    "opzioni": [
+      "Stressor, processo di risposta/adattamento e strain.",
+      "Pericolo, minaccia e controllo accessi.",
+      "Leadership, budget e audit.",
+      "Policy, procedura e capitolato."
+    ],
+    "risposta_corretta": "Stressor, processo di risposta/adattamento e strain."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Nel Sistema Nervoso Autonomo, quale associazione è corretta?",
+    "opzioni": [
+      "Parasimpatico: fight-or-flight; Simpatico: rest-and-digest.",
+      "Parasimpatico: rest-and-digest; Simpatico: fight-or-flight.",
+      "Entrambi sono associati solo alla memoria di lavoro.",
+      "Il sistema simpatico è attivo solo durante il sonno."
+    ],
+    "risposta_corretta": "Parasimpatico: rest-and-digest; Simpatico: fight-or-flight."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Secondo la prospettiva transazionale di Lazarus e Folkman, da cosa dipende la risposta di stress?",
+    "opzioni": [
+      "Esclusivamente dall'intensità oggettiva dello stimolo esterno.",
+      "Dalla valutazione soggettiva della situazione: se è una minaccia e se si hanno risorse per affrontarla.",
+      "Solo dalla durata del turno di lavoro.",
+      "Dalla presenza o assenza di dispositivi tecnologici."
+    ],
+    "risposta_corretta": "Dalla valutazione soggettiva della situazione: se è una minaccia e se si hanno risorse per affrontarla."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Che cosa indica il termine strain?",
+    "opzioni": [
+      "L'insieme delle conseguenze dello stress, che possono essere fisiologiche, comportamentali e psicologiche.",
+      "Il solo stimolo esterno che attiva la risposta di stress.",
+      "La capacità dell'organizzazione di prevenire incidenti.",
+      "La valutazione del rischio Paese prima della trasferta."
+    ],
+    "risposta_corretta": "L'insieme delle conseguenze dello stress, che possono essere fisiologiche, comportamentali e psicologiche."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Come può essere descritto il burnout?",
+    "opzioni": [
+      "Una semplice stanchezza momentanea che si risolve sempre con il riposo del fine settimana.",
+      "Un fenomeno occupazionale derivante da stress cronico sul posto di lavoro non gestito con successo, con esaurimento emotivo, depersonalizzazione e ridotta realizzazione personale.",
+      "Una patologia causata esclusivamente da eventi traumatici esterni al lavoro.",
+      "Un comportamento volontario di scarsa motivazione del lavoratore."
+    ],
+    "risposta_corretta": "Un fenomeno occupazionale derivante da stress cronico sul posto di lavoro non gestito con successo, con esaurimento emotivo, depersonalizzazione e ridotta realizzazione personale."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Quale effetto può avere lo stress sulla sicurezza e sulle prestazioni cognitive?",
+    "opzioni": [
+      "Riduce l'attenzione e la memoria a breve termine, aumenta errori, violazioni e decisioni rischiose.",
+      "Migliora sempre la precisione e la qualità decisionale.",
+      "Non incide sui comportamenti di sicurezza se esistono procedure scritte.",
+      "Influenza solo il benessere individuale, senza effetti organizzativi."
+    ],
+    "risposta_corretta": "Riduce l'attenzione e la memoria a breve termine, aumenta errori, violazioni e decisioni rischiose."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Quale sequenza riassume l'evoluzione normativa sul rischio molestie nei luoghi di lavoro?",
+    "opzioni": [
+      "Codice Civile, GDPR, D.Lgs. 231/2001.",
+      "D.Lgs. 81/2008, Convenzione ILO n. 190 del 2019, Legge 4/2021 di ratifica della Convenzione ILO 190.",
+      "D.Lgs. 50/2016, Codice dei Contratti Pubblici, Legge 190/2012.",
+      "Accordo Stato-Regioni 2025, UNI ISO 31030:2021, ISO 22361:2022."
+    ],
+    "risposta_corretta": "D.Lgs. 81/2008, Convenzione ILO n. 190 del 2019, Legge 4/2021 di ratifica della Convenzione ILO 190."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Che cosa introduce la Legge n. 198/2025, di conversione del D.L. n. 159/2025, rispetto al rischio violenza e molestie?",
+    "opzioni": [
+      "La cancellazione dell'obbligo di valutazione del rischio molestie dal DVR.",
+      "L'introduzione dell'obbligo di programmazione di misure di prevenzione di condotte violente o moleste nei luoghi di lavoro.",
+      "La sostituzione del D.Lgs. 81/2008 con una norma volontaria internazionale.",
+      "L'obbligo di valutare solo le molestie di genere, escludendo aggressioni e condotte violente."
+    ],
+    "risposta_corretta": "L'introduzione dell'obbligo di programmazione di misure di prevenzione di condotte violente o moleste nei luoghi di lavoro."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Quale fattore contribuì maggiormente all'insorgere del panico nella squadra nel caso Mann Gulch?",
+    "opzioni": [
+      "La mancanza assoluta di addestramento al pericolo.",
+      "La sola velocità oggettiva di propagazione delle fiamme.",
+      "La disorganizzazione del gruppo e la perdita dei riferimenti organizzativi di fronte a un evento imprevisto.",
+      "La decisione di dirigersi inizialmente verso il fiume."
+    ],
+    "risposta_corretta": "La disorganizzazione del gruppo e la perdita dei riferimenti organizzativi di fronte a un evento imprevisto."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Quale insieme di condizioni descrive la disgregazione organizzativa della squadra nel caso Mann Gulch?",
+    "opzioni": [
+      "Ruoli stabili, leadership condivisa, comunicazioni ridondanti e ambiente correttamente interpretato.",
+      "Eccesso di procedure, forte coesione, controllo gerarchico e informazioni complete.",
+      "Perdita dell'identità di ruolo, leadership ambigua, mosse paradossali mal comprese, comunicazioni inefficaci e ambiente erroneamente identificato.",
+      "Elevata specializzazione, abbondanza di risorse e conflitto esclusivamente tecnico."
+    ],
+    "risposta_corretta": "Perdita dell'identità di ruolo, leadership ambigua, mosse paradossali mal comprese, comunicazioni inefficaci e ambiente erroneamente identificato."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Quale interpretazione spiega in modo più completo le cause dell'incidente?",
+    "opzioni": [
+      "Una sequenza di piccoli equivoci progressivi, un collasso del sensemaking e la disintegrazione della struttura dei ruoli.",
+      "La sola inosservanza dell'ordine impartito da Dodge.",
+      "L'insufficiente esperienza tecnica dei singoli smokejumpers.",
+      "L'impossibilità assoluta di prevedere qualsiasi cambiamento dell'incendio."
+    ],
+    "risposta_corretta": "Una sequenza di piccoli equivoci progressivi, un collasso del sensemaking e la disintegrazione della struttura dei ruoli."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Che cos'è il sensemaking?",
+    "opzioni": [
+      "Il processo di controllo basato esclusivamente su procedure e regole formalizzate.",
+      "Il processo attraverso cui le informazioni provenienti dall'esperienza in corso vengono interpretate mediante frame costruiti a partire dall'esperienza passata socializzata.",
+      "Una tecnica utilizzata per eliminare l'incertezza prima di assumere una decisione.",
+      "Un sistema di comunicazione finalizzato esclusivamente alla trasmissione di informazioni operative."
+    ],
+    "risposta_corretta": "Il processo attraverso cui le informazioni provenienti dall'esperienza in corso vengono interpretate mediante frame costruiti a partire dall'esperienza passata socializzata."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Che cosa può accadere quando il sensemaking collassa?",
+    "opzioni": [
+      "Gli individui abbandonano automaticamente ogni comportamento abituale.",
+      "Il cambiamento nella percezione della propria identità può favorire il ritorno alle routine e comportamenti difensivi.",
+      "La struttura dei ruoli diventa necessariamente più stabile.",
+      "Le comunicazioni informali vengono sostituite senza difficoltà da quelle formali."
+    ],
+    "risposta_corretta": "Il cambiamento nella percezione della propria identità può favorire il ritorno alle routine e comportamenti difensivi."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Quale sequenza può trasformare una minaccia emergente in una risposta preventiva efficace?",
+    "opzioni": [
+      "Mobilitazione, sanzione, riconoscimento e riduzione delle informazioni.",
+      "Priorità, negazione, attesa e intervento successivo all'evento.",
+      "Riconoscimento, eliminazione delle alternative, ricerca del colpevole e mobilitazione.",
+      "Riconoscimento della minaccia, attribuzione di priorità, mobilitazione e risposta preventiva efficace."
+    ],
+    "risposta_corretta": "Riconoscimento della minaccia, attribuzione di priorità, mobilitazione e risposta preventiva efficace."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Quali caratteristiche sono associate al concetto di «cigno nero»?",
+    "opzioni": [
+      "Alta frequenza, impatto limitato e piena prevedibilità prospettica.",
+      "Linearità del sistema, certezza causale e ripetitività degli eventi.",
+      "Rarità, impatto enorme, prevedibilità soprattutto retrospettiva, complessità e incertezza radicale.",
+      "Assenza di conseguenze organizzative e facile neutralizzazione preventiva."
+    ],
+    "risposta_corretta": "Rarità, impatto enorme, prevedibilità soprattutto retrospettiva, complessità e incertezza radicale."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Che cosa sono i weak signs?",
+    "opzioni": [
+      "Informazioni complete che consentono di determinare con certezza l'impatto di una minaccia.",
+      "Indicatori esclusivamente interni, già classificati e privi di ambiguità.",
+      "Eventi rari che producono necessariamente conseguenze catastrofiche.",
+      "Informazioni ambigue, controverse e poco strutturate, spesso nascoste dal rumore, che possono segnalare minacce o opportunità."
+    ],
+    "risposta_corretta": "Informazioni ambigue, controverse e poco strutturate, spesso nascoste dal rumore, che possono segnalare minacce o opportunità."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Come possono essere descritti i weak signs secondo la prospettiva strategica?",
+    "opzioni": [
+      "Avvertimenti, eventi o sviluppi ancora troppo incompleti per stimarne accuratamente l'impatto o definire una risposta.",
+      "Dati definitivi utilizzabili senza interpretazione e senza ulteriori verifiche.",
+      "Segnalazioni provenienti soltanto da fonti esterne all'organizzazione.",
+      "Informazioni che riguardano esclusivamente minacce già pienamente manifestate."
+    ],
+    "risposta_corretta": "Avvertimenti, eventi o sviluppi ancora troppo incompleti per stimarne accuratamente l'impatto o definire una risposta."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Qual è il paradosso legato all'uso dei weak signs nella pianificazione strategica?",
+    "opzioni": [
+      "Le informazioni vaghe sono sempre sufficienti, ma vengono ignorate per eccesso di prudenza.",
+      "Le informazioni complete arrivano sempre prima delle crisi, ma sono troppo costose da elaborare.",
+      "Attendere informazioni adeguate può rendere tardiva la risposta, mentre agire su informazioni vaghe può non offrire basi sufficienti per pianificare.",
+      "Le organizzazioni dispongono di segnali forti, ma preferiscono trasformarli in segnali deboli."
+    ],
+    "risposta_corretta": "Attendere informazioni adeguate può rendere tardiva la risposta, mentre agire su informazioni vaghe può non offrire basi sufficienti per pianificare."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Quale relazione esiste tra certezza e capacità generativa dei ragionamenti inferenziali?",
+    "opzioni": [
+      "L'abduzione presenta il massimo grado di certezza e la minima capacità creativa.",
+      "L'induzione è sempre più certa della deduzione e meno generativa dell'abduzione.",
+      "Deduzione, induzione e abduzione hanno lo stesso grado di certezza e creatività.",
+      "La deduzione offre maggiore certezza, mentre l'abduzione favorisce maggiormente innovazione e creatività."
+    ],
+    "risposta_corretta": "La deduzione offre maggiore certezza, mentre l'abduzione favorisce maggiormente innovazione e creatività."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "In che cosa consiste il paradigma indiziario?",
+    "opzioni": [
+      "Nella capacità di risalire da indizi e dati osservabili a una realtà complessa da interpretare.",
+      "Nell'escludere le informazioni incomplete dall'analisi.",
+      "Nel sostituire l'investigazione con l'applicazione meccanica delle procedure.",
+      "Nel considerare attendibili soltanto le prove che confermano l'ipotesi iniziale."
+    ],
+    "risposta_corretta": "Nella capacità di risalire da indizi e dati osservabili a una realtà complessa da interpretare."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Che cosa implica il passaggio manageriale dal problem solving al problem finding?",
+    "opzioni": [
+      "Attendere che il problema produca conseguenze misurabili prima di intervenire.",
+      "Concentrare la leadership esclusivamente sulla soluzione di problemi operativi già definiti.",
+      "Individuare precocemente problemi potenzialmente critici, prima che si manifestino pienamente e minaccino l'organizzazione.",
+      "Delegare la ricerca dei problemi soltanto agli organismi esterni di controllo."
+    ],
+    "risposta_corretta": "Individuare precocemente problemi potenzialmente critici, prima che si manifestino pienamente e minaccino l'organizzazione."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Qual è la principale sfida organizzativa nell'analisi di eventi estremi e incidenti?",
+    "opzioni": [
+      "Aumentare il numero dei procedimenti giudiziari indipendentemente dalle cause dell'evento.",
+      "Trasformare gli eventi in occasioni di apprendimento organizzativo e istituzionale, senza limitarsi alla ricerca del presunto colpevole.",
+      "Attribuire sempre la responsabilità al soggetto gerarchicamente più elevato.",
+      "Separare completamente l'analisi tecnica da quella organizzativa."
+    ],
+    "risposta_corretta": "Trasformare gli eventi in occasioni di apprendimento organizzativo e istituzionale, senza limitarsi alla ricerca del presunto colpevole."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Quale convinzione ricorre frequentemente nelle reazioni pubbliche agli eventi con vittime?",
+    "opzioni": [
+      "Gli eventi estremi sono sempre privi di conseguenze giudiziarie.",
+      "Gli attori devono essere valutati soltanto sulla base delle informazioni disponibili prima dell'evento.",
+      "Le cause organizzative sono sempre più evidenti delle azioni individuali.",
+      "Ogni vittima implica necessariamente un colpevole e gli eventi sono considerati sempre prevedibili e governabili."
+    ],
+    "risposta_corretta": "Ogni vittima implica necessariamente un colpevole e gli eventi sono considerati sempre prevedibili e governabili."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Qual è il limite principale dell'approccio accusatorio agli errori e agli incidenti?",
+    "opzioni": [
+      "Concentra l'attenzione sull'individuo, sulla colpa e sulle sanzioni, riducendo la capacità di individuare le cause sistemiche.",
+      "Analizza in modo eccessivo procedure, cultura e sistemi di incentivi.",
+      "Esclude completamente l'attribuzione di responsabilità individuali anche in presenza di condotte intenzionali.",
+      "Privilegia l'apprendimento organizzativo rispetto all'individuazione delle responsabilità."
+    ],
+    "risposta_corretta": "Concentra l'attenzione sull'individuo, sulla colpa e sulle sanzioni, riducendo la capacità di individuare le cause sistemiche."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Perché un disastro non può essere ricondotto normalmente a una sola causa?",
+    "opzioni": [
+      "Perché le cause individuali non producono mai conseguenze organizzative.",
+      "Perché le difese eliminano sempre gli effetti delle azioni pericolose.",
+      "Perché deriva dalla concatenazione di condizioni latenti, fattori organizzativi e lavorativi locali, azioni pericolose, eventi rischiosi e debolezze delle difese.",
+      "Perché ogni disastro è casuale e non può essere investigato."
+    ],
+    "risposta_corretta": "Perché deriva dalla concatenazione di condizioni latenti, fattori organizzativi e lavorativi locali, azioni pericolose, eventi rischiosi e debolezze delle difese."
+  },
+  {
+    "categoria": "Fattori Umani e Organizzativi",
+    "domanda": "Quale distinzione descrive correttamente single-loop e double-loop learning?",
+    "opzioni": [
+      "Il single-loop modifica la cultura organizzativa, mentre il double-loop corregge soltanto il comportamento del singolo.",
+      "Il single-loop interviene sulle azioni degli attori; il double-loop mette in discussione e modifica fattori organizzativi latenti come procedure, pratiche, processi, incentivi e cultura.",
+      "Entrambi riguardano esclusivamente la punizione della persona che ha commesso l'errore.",
+      "Il double-loop si applica soltanto quando il problema non ha alcuna origine organizzativa."
+    ],
+    "risposta_corretta": "Il single-loop interviene sulle azioni degli attori; il double-loop mette in discussione e modifica fattori organizzativi latenti come procedure, pratiche, processi, incentivi e cultura."
   }
 ]

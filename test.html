@@ -222,7 +222,7 @@
 
     fetch('domande.json?v=' + Date.now()).then(r => r.json()).then(data => {
       allQuestions = Array.isArray(data)
-        ? data
+        ? data.map(q => ({ ...q, macrotema: q.categoria }))
         : Object.entries(data).flatMap(([cat, qs]) => qs.map(q => ({ ...q, macrotema: cat })));
       document.getElementById('total-archive').textContent = allQuestions.length;
       const temi = new Set(allQuestions.map(q => q.macrotema).filter(Boolean));

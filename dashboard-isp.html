@@ -131,7 +131,7 @@
 
     /* ── MAIN GRID ── */
     .main-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
+      display: grid; grid-template-columns: 1fr 1fr 1fr;
       gap: 20px; max-width: 1400px; margin: 0 auto; padding: 28px 32px;
     }
     .col-header {
@@ -163,6 +163,7 @@
     }
     .card-micro::before { background: linear-gradient(90deg, var(--blue), var(--cyan)); }
     .card-full::before  { background: linear-gradient(90deg, var(--cyan), var(--teal)); }
+    .card-exam::before  { background: linear-gradient(90deg, var(--amber), #d97706); }
 
     /* holographic decoration */
     .card-holo {
@@ -188,6 +189,9 @@
     .card-full  .holo-outer { border-color: rgba(8,145,178,.18); box-shadow: 0 0 30px rgba(8,145,178,.08); }
     .card-full  .holo-inner { border-color: rgba(13,148,136,.16); }
     .card-full  .holo-dot   { background: radial-gradient(circle, var(--cyan) 0%, transparent 70%); box-shadow: 0 0 16px var(--cyan); }
+    .card-exam  .holo-outer { border-color: rgba(245,158,11,.20); box-shadow: 0 0 30px rgba(245,158,11,.10); }
+    .card-exam  .holo-inner { border-color: rgba(217,119,6,.18); }
+    .card-exam  .holo-dot   { background: radial-gradient(circle, var(--amber) 0%, transparent 70%); box-shadow: 0 0 16px var(--amber); }
 
     .card-body { padding: 28px 24px 24px; position: relative; z-index: 1; flex: 1; display: flex; flex-direction: column; }
     .card-icon-wrap {
@@ -196,13 +200,16 @@
     }
     .card-micro .card-icon-wrap { background: rgba(26,86,219,.10); box-shadow: 0 0 20px rgba(26,86,219,.10); }
     .card-full  .card-icon-wrap { background: rgba(8,145,178,.10); box-shadow: 0 0 20px rgba(8,145,178,.10); }
+    .card-exam  .card-icon-wrap { background: rgba(245,158,11,.12); box-shadow: 0 0 20px rgba(245,158,11,.12); }
     .card-icon-wrap svg { position: relative; z-index: 1; }
     .card-micro .card-icon-wrap svg { color: var(--blue); }
     .card-full  .card-icon-wrap svg { color: var(--cyan); }
+    .card-exam  .card-icon-wrap svg { color: var(--amber); }
 
     .card-tag { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 6px; }
     .card-micro .card-tag { color: var(--blue); }
     .card-full  .card-tag { color: var(--cyan); }
+    .card-exam  .card-tag { color: var(--amber); }
     .card-title {
       font-family: 'Plus Jakarta Sans', sans-serif; font-size: 20px; font-weight: 800;
       color: var(--text); margin-bottom: 10px; letter-spacing: -.2px;
@@ -235,6 +242,12 @@
       box-shadow: 0 4px 18px rgba(8,145,178,.32);
     }
     .card-full .btn-sim:hover { box-shadow: 0 6px 26px rgba(8,145,178,.42); }
+    .card-exam .btn-sim {
+      background: linear-gradient(135deg, var(--amber), #d97706);
+      color: #fff;
+      box-shadow: 0 4px 18px rgba(245,158,11,.32);
+    }
+    .card-exam .btn-sim:hover { box-shadow: 0 6px 26px rgba(245,158,11,.42); }
 
     /* ── IL METODO ── */
     .metodo-section {
@@ -351,6 +364,9 @@
     .score-total-label { font-size: 14px; font-weight: 700; color: #fff; }
     .score-total-pts { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 20px; font-weight: 800; color: #fff; }
 
+    @media (max-width: 1000px) {
+      .main-grid { grid-template-columns: 1fr 1fr; }
+    }
     @media (max-width: 700px) {
       .main-grid { grid-template-columns: 1fr; padding: 16px; gap: 14px; }
       .hero-content { padding: 32px 16px 24px; }
@@ -494,6 +510,40 @@
             <div class="meta-chip">
               <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
               30 domande
+            </div>
+          </div>
+          <span class="btn-sim">
+            Inizia ora
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </a>
+    </div>
+
+    <!-- CARD SIMULAZIONE ESAME -->
+    <div class="card-wrap" style="display:flex;flex-direction:column;gap:0">
+      <div class="col-header">Modulo esame</div>
+      <a class="sim-card card-exam" href="esame.html" style="flex:1">
+        <div class="card-holo">
+          <div class="holo-outer"></div>
+          <div class="holo-inner"></div>
+          <div class="holo-dot"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon-wrap">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div class="card-tag">Simulazione Esame</div>
+          <div class="card-title">Prova d'Esame<br/>Cronometrata</div>
+          <p class="card-desc">100 domande estratte proporzionalmente da tutti i macrotemi, con tempo massimo di 60 minuti. La prova si chiude automaticamente allo scadere.</p>
+          <div class="card-meta">
+            <div class="meta-chip">
+              <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              60 min
+            </div>
+            <div class="meta-chip">
+              <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+              100 domande
             </div>
           </div>
           <span class="btn-sim">
